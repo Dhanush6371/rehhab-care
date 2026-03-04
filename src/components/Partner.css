@@ -1,0 +1,246 @@
+.partner-section {
+    background: #fafafa;
+    padding: 100px 40px;
+}
+
+.partner-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+.partner-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.partner-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #1a5f5a;
+    background: #f0f9f8;
+    padding: 10px 24px;
+    border-radius: 30px;
+    margin-bottom: 24px;
+}
+
+.partner-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a3a52;
+    margin: 0 0 20px 0;
+    line-height: 1.3;
+}
+
+.partner-subtitle {
+    font-size: 17px;
+    color: #6b7c93;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Requirements Box */
+.requirements-box {
+    background: white;
+    padding: 48px;
+    border-radius: 24px;
+    margin-bottom: 48px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.requirements-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a3a52;
+    margin: 0 0 32px 0;
+    text-align: center;
+}
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.requirement-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.requirement-icon {
+    width: 56px;
+    height: 56px;
+    background: #f0f9f8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a5f5a;
+}
+
+.requirement-text {
+    font-size: 15px;
+    color: #1a3a52;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Application Form */
+.application-form-wrapper {
+    background: white;
+    padding: 48px;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.form-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-intro-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a3a52;
+    margin: 0 0 12px 0;
+}
+
+.form-intro-subtitle {
+    font-size: 16px;
+    color: #6b7c93;
+    margin: 0;
+}
+
+.partner-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: #999;
+}
+
+.form-input {
+    padding: 14px 18px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 15px;
+    background: #fafafa;
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #1a5f5a;
+    background: white;
+}
+
+.form-select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23666' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+    padding-right: 45px;
+}
+
+.submit-application-btn {
+    background: #1a5f5a;
+    color: white;
+    padding: 17px 48px;
+    border: none;
+    border-radius: 32px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 16px;
+}
+
+.submit-application-btn:hover {
+    background: #154d49;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(26, 95, 90, 0.3);
+}
+
+.form-disclaimer {
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+    margin: 16px 0 0 0;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .partner-section {
+        padding: 80px 32px;
+    }
+
+    .requirements-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .partner-section {
+        padding: 60px 24px;
+    }
+
+    .partner-title {
+        font-size: 36px;
+    }
+
+    .partner-subtitle {
+        font-size: 15px;
+    }
+
+    .requirements-box {
+        padding: 36px 28px;
+    }
+
+    .requirements-title {
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+
+    .application-form-wrapper {
+        padding: 36px 28px;
+    }
+
+    .form-intro-title {
+        font-size: 24px;
+    }
+
+    .form-intro-subtitle {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,531 @@
+.why-better-section {
+    background: #fafafa;
+    padding: 100px 40px;
+}
+
+.why-better-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 20px 0;
+    line-height: 1.3;
+}
+
+.section-subtitle {
+    font-size: 17px;
+    color: #666;
+    margin: 0 0 36px 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.section-subtitle strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.comparison-btn {
+    background: white;
+    border: 1.5px solid #d0d0d0;
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 56px;
+}
+
+.comparison-btn:hover {
+    border-color: #1a5f5a;
+    color: #1a5f5a;
+    transform: translateY(-1px);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-bottom: 56px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 48px 36px;
+    border-radius: 20px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    color: #1a5f5a;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.benefit-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 14px 0;
+    line-height: 1.4;
+}
+
+.benefit-description {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.check-availability-btn {
+    background: #1a5f5a;
+    color: white;
+    padding: 17px 52px;
+    border: none;
+    border-radius: 32px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.check-availability-btn:hover {
+    background: #154d49;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(26, 95, 90, 0.3);
+}
+
+/* Popup Styles */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    animation: fadeIn 0.25s ease;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.comparison-popup {
+    background: white;
+    border-radius: 28px;
+    padding: 56px 52px;
+    max-width: 950px;
+    width: 100%;
+    position: relative;
+    animation: slideUp 0.3s ease;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.popup-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: #f5f5f5;
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    transition: all 0.3s;
+    line-height: 1;
+    font-weight: 300;
+}
+
+.popup-close:hover {
+    background: #e5e5e5;
+    color: #333;
+    transform: rotate(90deg);
+}
+
+.comparison-header {
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.comparison-header h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 14px 0;
+    line-height: 1.3;
+}
+
+.comparison-header p {
+    font-size: 17px;
+    color: #666;
+    margin: 0;
+}
+
+.comparison-table {
+    margin-bottom: 40px;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 1.8fr 2fr 2fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.header-cell {
+    padding: 18px 24px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-align: center;
+    border-radius: 14px;
+}
+
+.criteria-header {
+    text-align: left;
+    color: #999;
+    background: transparent;
+    padding-left: 0;
+}
+
+.rehabb-header {
+    background: #1a5f5a;
+    color: white;
+}
+
+.traditional-header {
+    color: #999;
+    background: transparent;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 1.8fr 2fr 2fr;
+    gap: 20px;
+    margin-bottom: 14px;
+    align-items: center;
+}
+
+.table-cell {
+    padding: 24px 20px;
+    border-radius: 14px;
+    font-size: 15px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.criteria-cell {
+    font-weight: 600;
+    color: #1a1a1a;
+    text-align: left;
+    background: transparent;
+    padding-left: 0;
+}
+
+.rehabb-cell {
+    background: #f0f9f8;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.traditional-cell {
+    background: #f8f8f8;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    color: #999;
+    font-weight: 500;
+}
+
+.cell-text {
+    line-height: 1.5;
+}
+
+.check-icon {
+    color: #1a5f5a;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.cross-icon {
+    color: #d0d0d0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.popup-check-btn {
+    background: #1a5f5a;
+    color: white;
+    padding: 17px 52px;
+    border: none;
+    border-radius: 32px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.popup-check-btn:hover {
+    background: #154d49;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(26, 95, 90, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .why-better-section {
+        padding: 80px 32px;
+    }
+
+    .section-title {
+        font-size: 38px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 48px;
+    }
+
+    .benefit-card {
+        padding: 40px 32px;
+    }
+
+    .table-header,
+    .table-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .header-cell,
+    .table-cell {
+        text-align: center;
+    }
+
+    .criteria-cell {
+        text-align: center;
+        font-weight: 700;
+        background: #f5f5f5;
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    .criteria-header {
+        text-align: center;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-better-section {
+        padding: 60px 24px;
+    }
+
+    .section-badge {
+        font-size: 10px;
+        margin-bottom: 16px;
+    }
+
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .section-subtitle {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+
+    .comparison-btn {
+        padding: 12px 24px;
+        font-size: 11px;
+        margin-bottom: 48px;
+    }
+
+    .benefits-grid {
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .benefit-card {
+        padding: 36px 28px;
+    }
+
+    .benefit-title {
+        font-size: 18px;
+    }
+
+    .benefit-description {
+        font-size: 14px;
+    }
+
+    .check-availability-btn {
+        padding: 15px 40px;
+        font-size: 14px;
+    }
+
+    .comparison-popup {
+        padding: 40px 28px;
+        max-height: 85vh;
+    }
+
+    .comparison-header h2 {
+        font-size: 28px;
+    }
+
+    .comparison-header p {
+        font-size: 15px;
+    }
+
+    .table-cell {
+        min-height: 60px;
+        padding: 18px 16px;
+        font-size: 14px;
+    }
+
+    .popup-check-btn {
+        padding: 15px 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .why-better-section {
+        padding: 48px 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+
+    .comparison-btn {
+        padding: 11px 20px;
+        width: 100%;
+    }
+
+    .benefit-card {
+        padding: 32px 24px;
+    }
+
+    .benefit-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .benefit-title {
+        font-size: 17px;
+    }
+
+    .benefit-description {
+        font-size: 13px;
+    }
+
+    .check-availability-btn {
+        width: 100%;
+        padding: 14px 32px;
+    }
+
+    .comparison-popup {
+        padding: 32px 20px;
+    }
+
+    .popup-close {
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .comparison-header h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .comparison-header p {
+        font-size: 14px;
+    }
+
+    .table-cell {
+        padding: 16px 12px;
+        font-size: 13px;
+        min-height: 50px;
+    }
+
+    .check-icon,
+    .cross-icon {
+        font-size: 18px;
+    }
+
+    .popup-check-btn {
+        width: 100%;
+    }
+}

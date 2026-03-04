@@ -1,0 +1,16 @@
+REQUIRED IMAGES FOR THE WEBSITE:
+
+1. runner.png - Main athlete/runner image for hero section (recommended size: 500x600px)
+2. avatar1.jpg - User profile picture 1 (32x32px)
+3. avatar2.jpg - User profile picture 2 (32x32px)
+4. avatar3.jpg - User profile picture 3 (32x32px)
+5. specialist.jpg - Doctor/specialist image for stats card (recommended size: 300x200px)
+
+Place all these images in this folder (public/images/)
+
+For now, you can use placeholder images from:
+- https://via.placeholder.com/500x600 (for runner.png)
+- https://via.placeholder.com/32 (for avatars)
+- https://via.placeholder.com/300x200 (for specialist.jpg)
+
+Or use your own images with these names.

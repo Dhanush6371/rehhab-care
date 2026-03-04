@@ -1,0 +1,8 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="40" height="40" rx="8" fill="#1a5f5a"/>
+  <path d="M20 10C14.477 10 10 14.477 10 20C10 25.523 14.477 30 20 30C25.523 30 30 25.523 30 20C30 14.477 25.523 10 20 10ZM20 12C24.411 12 28 15.589 28 20C28 24.411 24.411 28 20 28C15.589 28 12 24.411 12 20C12 15.589 15.589 12 20 12Z" fill="white"/>
+  <path d="M20 15L22 18H18L20 15Z" fill="#e8d5c4"/>
+  <path d="M20 25L18 22H22L20 25Z" fill="#e8d5c4"/>
+  <circle cx="20" cy="20" r="2" fill="white"/>
+</svg>
+https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsiZGF0YSI6MTQzNDcwNzE2LCJwdXIiOiJibG9iX2lkIn19--1e2e22c61a1540ee524f559602b412ae08d2fc87/logo.svg
