@@ -1,5 +1,6 @@
 import React from 'react';
 import './WhyChoose.css';
+import LazySection from './LazySection';
 
 const WhyChoose = () => {
     const features = [
@@ -49,35 +50,41 @@ const WhyChoose = () => {
         <section className="why-choose-section">
             <div className="why-choose-container">
                 <div className="why-choose-content">
-                    <h2 className="why-choose-title">Why Choose Rehab Care?</h2>
+                    <LazySection animation="fade-up">
+                        <h2 className="why-choose-title">Why Choose Rehab Care?</h2>
+                    </LazySection>
 
                     <div className="why-choose-features">
                         {features.map((feature, index) => (
-                            <div key={index} className="feature-item">
-                                <div className="feature-icon">{feature.icon}</div>
-                                <div className="feature-text">
-                                    <h3 className="feature-title">{feature.title}</h3>
-                                    <p className="feature-description">{feature.description}</p>
+                            <LazySection key={index} animation="fade-right" delay={index * 100}>
+                                <div className="feature-item">
+                                    <div className="feature-icon">{feature.icon}</div>
+                                    <div className="feature-text">
+                                        <h3 className="feature-title">{feature.title}</h3>
+                                        <p className="feature-description">{feature.description}</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </LazySection>
                         ))}
                     </div>
                 </div>
 
-                <div className="why-choose-image-wrapper">
-                    <img
-                        src="/images/massage-gun.jpg"
-                        alt="Therapy Equipment"
-                        className="why-choose-image"
-                        onError={(e) => e.target.src = 'https://via.placeholder.com/500x500/1a5f5a/ffffff?text=Therapy+Equipment'}
-                    />
-                    <div className="promise-badge">
-                        <h4 className="promise-title">Promise of Care</h4>
-                        <p className="promise-text">
-                            We ensure every patient leaves stronger and more confident than they arrived.
-                        </p>
+                <LazySection animation="fade-left">
+                    <div className="why-choose-image-wrapper">
+                        <img
+                            src="/images/massage-gun.jpg"
+                            alt="Therapy Equipment"
+                            className="why-choose-image"
+                            onError={(e) => e.target.src = 'https://via.placeholder.com/500x500/1a5f5a/ffffff?text=Therapy+Equipment'}
+                        />
+                        <div className="promise-badge">
+                            <h4 className="promise-title">Promise of Care</h4>
+                            <p className="promise-text">
+                                We ensure every patient leaves stronger and more confident than they arrived.
+                            </p>
+                        </div>
                     </div>
-                </div>
+                </LazySection>
             </div>
         </section>
     );

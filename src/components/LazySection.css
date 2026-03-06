@@ -1,0 +1,49 @@
+.lazy-section {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.lazy-section.visible {
+    opacity: 1;
+}
+
+/* Fade up animation */
+.lazy-section.fade-up {
+    transform: translateY(30px);
+}
+
+.lazy-section.fade-up.visible {
+    transform: translateY(0);
+}
+
+/* Fade in animation */
+.lazy-section.fade-in {
+    transform: none;
+}
+
+/* Fade left animation */
+.lazy-section.fade-left {
+    transform: translateX(30px);
+}
+
+.lazy-section.fade-left.visible {
+    transform: translateX(0);
+}
+
+/* Fade right animation */
+.lazy-section.fade-right {
+    transform: translateX(-30px);
+}
+
+.lazy-section.fade-right.visible {
+    transform: translateX(0);
+}
+
+/* Scale animation */
+.lazy-section.scale {
+    transform: scale(0.95);
+}
+
+.lazy-section.scale.visible {
+    transform: scale(1);
+}

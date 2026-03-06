@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './WhyBetter.css';
+import LazySection from './LazySection';
 
 const WhyBetter = () => {
     const [showComparison, setShowComparison] = useState(false);
@@ -74,30 +75,36 @@ const WhyBetter = () => {
     return (
         <section className="why-better-section">
             <div className="why-better-container">
-                <div className="section-badge">● AT HOME CARE</div>
-                <h2 className="section-title">Why in-home physical therapy is better</h2>
-                <p className="section-subtitle">
-                    More convenience means our patients <strong>actually</strong> complete their care plans and recover faster.
-                </p>
+                <LazySection animation="fade-up">
+                    <div className="section-badge">● AT HOME CARE</div>
+                    <h2 className="section-title">Why in-home physical therapy is better</h2>
+                    <p className="section-subtitle">
+                        More convenience means our patients <strong>actually</strong> complete their care plans and recover faster.
+                    </p>
 
-                <button
-                    className="comparison-btn"
-                    onClick={() => setShowComparison(true)}
-                >
-                    SEE OUR CLINIC COMPARISON CHART →
-                </button>
+                    <button
+                        className="comparison-btn"
+                        onClick={() => setShowComparison(true)}
+                    >
+                        SEE OUR CLINIC COMPARISON CHART →
+                    </button>
+                </LazySection>
 
                 <div className="benefits-grid">
                     {benefits.map((benefit, index) => (
-                        <div key={index} className="benefit-card">
-                            <div className="benefit-icon">{benefit.icon}</div>
-                            <h3 className="benefit-title">{benefit.title}</h3>
-                            <p className="benefit-description">{benefit.description}</p>
-                        </div>
+                        <LazySection key={index} animation="fade-up" delay={index * 100}>
+                            <div className="benefit-card">
+                                <div className="benefit-icon">{benefit.icon}</div>
+                                <h3 className="benefit-title">{benefit.title}</h3>
+                                <p className="benefit-description">{benefit.description}</p>
+                            </div>
+                        </LazySection>
                     ))}
                 </div>
 
-                <button className="check-availability-btn">Check Availability</button>
+                <LazySection animation="fade-up" delay={300}>
+                    <button className="check-availability-btn">Check Availability</button>
+                </LazySection>
             </div>
 
             {/* Comparison Chart Popup */}

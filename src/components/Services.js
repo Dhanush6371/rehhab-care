@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.css';
+import LazySection from './LazySection';
 
 const Services = () => {
     const services = [
@@ -32,26 +33,30 @@ const Services = () => {
     return (
         <section className="services-section">
             <div className="services-container">
-                <div className="services-header">
-                    <h2>Specialized Treatments for <span className="italic">Your Recovery</span></h2>
-                    <p>Evidence-based physiotherapy tailored to your unique needs, using state-of-the-art techniques.</p>
-                </div>
+                <LazySection animation="fade-up">
+                    <div className="services-header">
+                        <h2>Specialized Treatments for <span className="italic">Your Recovery</span></h2>
+                        <p>Evidence-based physiotherapy tailored to your unique needs, using state-of-the-art techniques.</p>
+                    </div>
+                </LazySection>
 
                 <div className="services-grid">
-                    {services.map((service) => (
-                        <div key={service.id} className="service-card">
-                            <div className="service-image">
-                                <img
-                                    src={service.image}
-                                    alt={service.title}
-                                    onError={(e) => e.target.src = `https://via.placeholder.com/400x500/1a5f5a/ffffff?text=${service.title.replace(/ /g, '+')}`}
-                                />
-                                <div className="service-overlay">
-                                    <span className="service-category">{service.category}</span>
-                                    <h3 className="service-title">{service.title}</h3>
+                    {services.map((service, index) => (
+                        <LazySection key={service.id} animation="fade-up" delay={index * 100}>
+                            <div className="service-card">
+                                <div className="service-image">
+                                    <img
+                                        src={service.image}
+                                        alt={service.title}
+                                        onError={(e) => e.target.src = `https://via.placeholder.com/400x500/1a5f5a/ffffff?text=${service.title.replace(/ /g, '+')}`}
+                                    />
+                                    <div className="service-overlay">
+                                        <span className="service-category">{service.category}</span>
+                                        <h3 className="service-title">{service.title}</h3>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </LazySection>
                     ))}
                 </div>
             </div>

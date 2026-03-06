@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './FAQ.css';
+import LazySection from './LazySection';
 
 const FAQ = () => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -38,45 +39,48 @@ const FAQ = () => {
     return (
         <section className="faq-section">
             <div className="faq-container">
-                <div className="faq-header">
-                    <h2 className="faq-title">
-                        Frequently Asked <span className="italic">Questions</span>
-                    </h2>
-                    <p className="faq-subtitle">
-                        Quick answers to common questions about our therapy process and services.
-                    </p>
-                </div>
+                <LazySection animation="fade-up">
+                    <div className="faq-header">
+                        <h2 className="faq-title">
+                            Frequently Asked <span className="italic">Questions</span>
+                        </h2>
+                        <p className="faq-subtitle">
+                            Quick answers to common questions about our therapy process and services.
+                        </p>
+                    </div>
+                </LazySection>
 
                 <div className="faq-content">
-                    <div className="faq-image-wrapper">
-                        <div className="faq-image-card">
-                            <img
-                                src="/images/female.png"
-                                alt="Doctor with question"
-                                className="faq-image"
-                                onError={(e) => e.target.src = 'https://via.placeholder.com/400x350/d91e6e/ffffff?text=FAQ+Doctor'}
-                            />
-                            <p className="faq-tagline">"Restoring movement, enhancing life."</p>
+                    <LazySection animation="fade-right">
+                        <div className="faq-image-wrapper">
+                            <div className="faq-image-card">
+                                <img
+                                    src="/images/female.png"
+                                    alt="Doctor with question"
+                                    className="faq-image"
+                                    onError={(e) => e.target.src = 'https://via.placeholder.com/400x350/d91e6e/ffffff?text=FAQ+Doctor'}
+                                />
+                                <p className="faq-tagline">"Restoring movement, enhancing life."</p>
+                            </div>
                         </div>
-                    </div>
+                    </LazySection>
 
                     <div className="faq-accordion">
                         {faqs.map((faq, index) => (
-                            <div
-                                key={index}
-                                className={`faq-item ${activeIndex === index ? 'active' : ''}`}
-                            >
-                                <button
-                                    className="faq-question"
-                                    onClick={() => toggleFAQ(index)}
-                                >
-                                    <span className="faq-question-text">{faq.question}</span>
-                                    <span className="faq-icon">+</span>
-                                </button>
-                                <div className="faq-answer">
-                                    <p className="faq-answer-text">{faq.answer}</p>
+                            <LazySection key={index} animation="fade-left" delay={index * 50}>
+                                <div className={`faq-item ${activeIndex === index ? 'active' : ''}`}>
+                                    <button
+                                        className="faq-question"
+                                        onClick={() => toggleFAQ(index)}
+                                    >
+                                        <span className="faq-question-text">{faq.question}</span>
+                                        <span className="faq-icon">+</span>
+                                    </button>
+                                    <div className="faq-answer">
+                                        <p className="faq-answer-text">{faq.answer}</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </LazySection>
                         ))}
                     </div>
                 </div>

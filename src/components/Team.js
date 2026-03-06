@@ -1,5 +1,6 @@
 import React from 'react';
 import './Team.css';
+import LazySection from './LazySection';
 
 const Team = () => {
     const teamMembers = [
@@ -44,31 +45,35 @@ const Team = () => {
     return (
         <section className="team-section">
             <div className="team-container">
-                <div className="team-header">
-                    <div className="team-badge">● OUR SPECIALISTS</div>
-                    <h2 className="team-title">Meet our dedicated and experienced team</h2>
-                    <p className="team-subtitle">
-                        Helping you regain strength, mobility, and confidence with personalized care from world-class experts.
-                    </p>
-                </div>
+                <LazySection animation="fade-up">
+                    <div className="team-header">
+                        <div className="team-badge">● OUR SPECIALISTS</div>
+                        <h2 className="team-title">Meet our dedicated and experienced team</h2>
+                        <p className="team-subtitle">
+                            Helping you regain strength, mobility, and confidence with personalized care from world-class experts.
+                        </p>
+                    </div>
+                </LazySection>
 
                 <div className="team-grid">
                     {teamMembers.map((member, index) => (
-                        <div key={index} className="team-card">
-                            <div className="team-image-wrapper">
-                                <img
-                                    src={member.image}
-                                    alt={member.name}
-                                    className="team-image"
-                                    onError={(e) => e.target.src = `https://via.placeholder.com/350x400/1a5f5a/ffffff?text=${member.name.replace(/ /g, '+')}`}
-                                />
+                        <LazySection key={index} animation="fade-up" delay={index * 100}>
+                            <div className="team-card">
+                                <div className="team-image-wrapper">
+                                    <img
+                                        src={member.image}
+                                        alt={member.name}
+                                        className="team-image"
+                                        onError={(e) => e.target.src = `https://via.placeholder.com/350x400/1a5f5a/ffffff?text=${member.name.replace(/ /g, '+')}`}
+                                    />
+                                </div>
+                                <div className="team-info">
+                                    <h3 className="team-name">{member.name}</h3>
+                                    <p className="team-role">{member.role}</p>
+                                    <p className="team-experience">{member.experience}</p>
+                                </div>
                             </div>
-                            <div className="team-info">
-                                <h3 className="team-name">{member.name}</h3>
-                                <p className="team-role">{member.role}</p>
-                                <p className="team-experience">{member.experience}</p>
-                            </div>
-                        </div>
+                        </LazySection>
                     ))}
                 </div>
             </div>

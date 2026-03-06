@@ -1,5 +1,6 @@
 import React from 'react';
 import './Process.css';
+import LazySection from './LazySection';
 
 const Process = () => {
     const steps = [
@@ -39,42 +40,47 @@ const Process = () => {
 
     return (
         <section className="process-section">
-            <div className="process-header">
-                <div className="process-badge">● OUR METHODOLOGY</div>
-                <h2 className="process-title">
-                    Our Proven <span className="italic">Recovery Process</span>
-                </h2>
-                <p className="process-subtitle">
-                    Walk through the four steps we take to ensure you regain your strength and confidence with the highest level of care.
-                </p>
-            </div>
+            <LazySection animation="fade-up">
+                <div className="process-header">
+                    <div className="process-badge">● OUR METHODOLOGY</div>
+                    <h2 className="process-title">
+                        Our Proven <span className="italic">Recovery Process</span>
+                    </h2>
+                    <p className="process-subtitle">
+                        Walk through the four steps we take to ensure you regain your strength and confidence with the highest level of care.
+                    </p>
+                </div>
+            </LazySection>
 
             <div className="process-steps">
                 {steps.map((step, index) => (
-                    <div
+                    <LazySection
                         key={index}
-                        className={`process-step ${step.align === 'right' ? 'reverse' : ''}`}
+                        animation={step.align === 'right' ? 'fade-left' : 'fade-right'}
+                        delay={index * 100}
                     >
-                        <div className="step-content">
-                            <div className="step-number-bg">{step.number}</div>
-                            <div className="step-text">
-                                <h3 className="step-number">{step.number}</h3>
-                                <h4 className="step-title">{step.title}</h4>
-                                <p className="step-description">{step.description}</p>
+                        <div className={`process-step ${step.align === 'right' ? 'reverse' : ''}`}>
+                            <div className="step-content">
+                                <div className="step-number-bg">{step.number}</div>
+                                <div className="step-text">
+                                    <h3 className="step-number">{step.number}</h3>
+                                    <h4 className="step-title">{step.title}</h4>
+                                    <p className="step-description">{step.description}</p>
+                                </div>
+                            </div>
+                            <div className="step-image-wrapper">
+                                <div className="step-badge">{step.badge}</div>
+                                <img
+                                    src={step.image}
+                                    alt={step.title}
+                                    className="step-image"
+                                    width="600"
+                                    height="400"
+                                    onError={(e) => e.target.src = `https://via.placeholder.com/600x400/1a5f5a/ffffff?text=${step.title.replace(/ /g, '+')}`}
+                                />
                             </div>
                         </div>
-                        <div className="step-image-wrapper">
-                            <div className="step-badge">{step.badge}</div>
-                            <img
-                                src={step.image}
-                                alt={step.title}
-                                className="step-image"
-                                width="600"
-                                height="400"
-                                onError={(e) => e.target.src = `https://via.placeholder.com/600x400/1a5f5a/ffffff?text=${step.title.replace(/ /g, '+')}`}
-                            />
-                        </div>
-                    </div>
+                    </LazySection>
                 ))}
             </div>
         </section>

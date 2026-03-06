@@ -1,3 +1,13 @@
 .App {
     min-height: 100vh;
 }
+
+/* Remove default margins and ensure seamless sections */
+section {
+    margin: 0;
+}
+
+/* Ensure LazySection doesn't add extra spacing */
+.lazy-section {
+    margin: 0;
+}
