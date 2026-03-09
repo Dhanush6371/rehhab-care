@@ -12,7 +12,7 @@ const Header = () => {
         <header className="header">
             <nav className="navbar">
                 <div className="logo">
-                    <img src="/logo.svg" alt="Rebuild Care" />
+                    <img src="/images/logo.png" alt="Rebuild Care" />
                     <span>Rebuild Care</span>
                 </div>
 
