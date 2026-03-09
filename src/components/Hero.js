@@ -548,7 +548,7 @@ const Hero = () => {
                         <LazySection animation="fade-left" delay={100}>
                             <div className="pain-content-wrapper">
                                 {/* Pain Description */}
-                                <div className="pain-text">
+                                <div className="pain-text" key={activePainPoint}>
                                     <h2>{currentPainPoint.title}</h2>
                                     <p>{currentPainPoint.description}</p>
 
@@ -563,7 +563,7 @@ const Hero = () => {
                                 </div>
 
                                 {/* Person Image */}
-                                <div className="pain-image">
+                                <div className="pain-image" key={`${activePainPoint}-image`}>
                                     <img src={currentPainPoint.image} alt={`Person with ${currentPainPoint.title.toLowerCase()} pain`} />
                                 </div>
                             </div>

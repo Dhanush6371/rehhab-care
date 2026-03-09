@@ -404,6 +404,7 @@
     margin: 0 0 20px 0;
     letter-spacing: -1.5px;
     line-height: 1.1;
+    animation: slideInLeft 0.5s ease-out;
 }
 
 .pain-text p {
@@ -412,6 +413,19 @@
     color: #4a5568;
     margin: 0 0 32px 0;
     font-weight: 400;
+    animation: slideInLeft 0.5s ease-out 0.1s both;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .cta-buttons {
@@ -494,6 +508,19 @@
     height: 100%;
     object-fit: cover;
     object-position: top center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 /* Appointment Stats */
