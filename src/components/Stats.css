@@ -1,5 +1,5 @@
 .stats-section {
-    background: #f5f5f5;
+    background: #ffff;
     padding: 60px 40px 80px;
     margin: 0;
     position: relative;
@@ -182,24 +182,31 @@
     border-radius: 24px;
     padding: 48px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+}
+
+.consultation-form-wrapper {
+    max-width: 100%;
+}
+
+.form-header {
+    display: flex;
     align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
 }
 
 .form-header h2 {
     font-size: 36px;
     font-weight: 700;
     color: #1a1a1a;
-    margin: 0 0 12px 0;
+    margin: 0;
 }
 
 .rating {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 32px;
+    margin-bottom: 0;
 }
 
 .stars {
@@ -219,9 +226,14 @@
 }
 
 .consultation-form {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 48px;
+}
+
+.form-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr auto !important;
     gap: 16px;
+    align-items: end;
 }
 
 .form-group {
@@ -231,10 +243,9 @@
 }
 
 .form-group label {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #999;
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
 }
 
 .form-group input {
@@ -253,46 +264,39 @@
 }
 
 .submit-btn {
-    grid-column: span 3;
-    background: #1a5f5a;
+    background: #8ba4ff;
     color: white;
-    padding: 16px 32px;
+    padding: 14px 40px;
     border: none;
-    border-radius: 30px;
+    border-radius: 50px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.3s;
-    margin-top: 8px;
+    white-space: nowrap;
+    height: fit-content;
 }
 
 .submit-btn:hover {
-    background: #154d49;
+    background: #7090ff;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(26, 95, 90, 0.3);
+    box-shadow: 0 8px 20px rgba(139, 164, 255, 0.4);
 }
 
-.consultation-stats {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.consultation-stat-below {
+    text-align: left;
 }
 
-.big-stat {
-    text-align: center;
-}
-
-.big-stat h3 {
-    font-size: 72px;
+.consultation-stat-below h3 {
+    font-size: 64px;
     font-weight: 700;
     color: #1a1a1a;
-    margin: 0 0 16px 0;
+    margin: 0 0 8px 0;
 }
 
-.big-stat p {
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
+.consultation-stat-below p {
+    font-size: 13px;
+    font-weight: 400;
     color: #666;
     line-height: 1.6;
     margin: 0;
@@ -348,13 +352,25 @@
     }
 
     .consultation-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
         padding: 40px;
     }
 
     .form-header h2 {
         font-size: 32px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 16px !important;
+    }
+
+    .submit-btn {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    .consultation-stat-below h3 {
+        font-size: 56px;
     }
 
     .bottom-stats {
@@ -400,8 +416,13 @@
 
     .consultation-container {
         padding: 32px 24px;
-        gap: 32px;
         border-radius: 20px;
+    }
+
+    .form-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
     }
 
     .form-header h2 {
@@ -409,26 +430,30 @@
     }
 
     .rating {
-        margin-bottom: 24px;
+        margin-bottom: 0;
     }
 
     .consultation-form {
-        grid-template-columns: 1fr;
-        gap: 14px;
+        margin-bottom: 32px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
     }
 
     .submit-btn {
-        grid-column: span 1;
-        padding: 14px 28px;
+        padding: 14px 24px;
         font-size: 14px;
+        width: 100%;
     }
 
-    .big-stat h3 {
-        font-size: 56px;
+    .consultation-stat-below h3 {
+        font-size: 48px;
     }
 
-    .big-stat p {
-        font-size: 13px;
+    .consultation-stat-below p {
+        font-size: 12px;
     }
 
     .bottom-stats {
@@ -477,17 +502,26 @@
         font-size: 24px;
     }
 
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
     .form-group input {
         padding: 12px 16px;
         font-size: 13px;
     }
 
-    .big-stat h3 {
-        font-size: 48px;
+    .consultation-stat-below h3 {
+        font-size: 42px;
     }
 
-    .big-stat p {
-        font-size: 12px;
+    .consultation-stat-below p {
+        font-size: 11px;
     }
 
     .bottom-stats {

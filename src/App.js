@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -12,27 +13,41 @@ import Partner from './components/Partner';
 import FAQ from './components/FAQ';
 import Testimonials from './components/Testimonials';
 import Appointment from './components/Appointment';
-import CTA from './components/CTA';
 import Footer from './components/Footer';
+import DoctorProfile from './components/DoctorProfile';
+import WhatsAppFloat from './components/WhatsAppFloat';
 
-function App() {
+function HomePage() {
     return (
-        <div className="App">
+        <>
             <Header />
             <Hero />
             <Stats />
             <Services />
-            <WhyBetter />
-            <Process />
             <WhyChoose />
             <Team />
+            <WhyBetter />
+            <Process />
             <Partner />
             <FAQ />
             <Testimonials />
             <Appointment />
-            <CTA />
             <Footer />
-        </div>
+            <WhatsAppFloat />
+        </>
+    );
+}
+
+function App() {
+    return (
+        <Router>
+            <div className="App">
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/doctor/:id" element={<><DoctorProfile /><WhatsAppFloat /></>} />
+                </Routes>
+            </div>
+        </Router>
     );
 }
 

@@ -27,6 +27,18 @@ const Services = () => {
             category: 'Sports',
             title: 'Post-Operative Rehabilitation',
             image: '/images/post-operative.jpg'
+        },
+        {
+            id: 5,
+            category: 'Specialist',
+            title: 'Specialist Consultation',
+            image: '/images/specialist.jpg'
+        },
+        {
+            id: 6,
+            category: 'FAQ',
+            title: 'Expert Medical Guidance',
+            image: '/images/faq-doctor.jpg'
         }
     ];
 

@@ -92,6 +92,17 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+
+                    {/* Legal & Practices */}
+                    <div className="footer-column">
+                        <h3 className="footer-column-title">Legal & Practices</h3>
+                        <ul className="footer-links">
+                            <li><a href="#accessibility">Accessibility Options</a></li>
+                            <li><a href="#terms">Terms of Use</a></li>
+                            <li><a href="#privacy-practices">Notice of Privacy Practices</a></li>
+                            <li><a href="#privacy-policy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 {/* Footer Bottom */}
