@@ -213,6 +213,12 @@
 @media (max-width: 768px) {
     .partner-section {
         padding: 60px 24px;
+        overflow-x: hidden;
+    }
+
+    .partner-container {
+        width: 100%;
+        max-width: 100%;
     }
 
     .partner-title {
@@ -225,6 +231,8 @@
 
     .requirements-box {
         padding: 36px 28px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .requirements-title {
@@ -232,8 +240,16 @@
         margin-bottom: 28px;
     }
 
+    .requirements-grid {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .application-form-wrapper {
         padding: 36px 28px;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .form-intro-title {
@@ -242,6 +258,33 @@
 
     .form-intro-subtitle {
         font-size: 15px;
+    }
+
+    .partner-form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-row {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-input,
+    .form-select {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .submit-application-btn {
+        width: 100%;
+        max-width: 100%;
     }
 }
 

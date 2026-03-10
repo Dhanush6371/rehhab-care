@@ -219,6 +219,12 @@
 @media (max-width: 768px) {
     .appointment-section {
         padding: 60px 24px;
+        overflow-x: hidden;
+    }
+
+    .appointment-container {
+        width: 100%;
+        max-width: 100%;
     }
 
     .appointment-title {
@@ -233,6 +239,8 @@
     .appointment-steps {
         flex-direction: column;
         gap: 24px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .step-line {
@@ -243,6 +251,9 @@
 
     .appointment-form-card {
         padding: 36px 28px;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .form-card-title {
@@ -250,8 +261,33 @@
         margin-bottom: 28px;
     }
 
+    .appointment-form {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .form-row-two {
         grid-template-columns: 1fr;
         gap: 16px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .submit-appointment-btn {
+        width: 100%;
+        max-width: 100%;
     }
 }

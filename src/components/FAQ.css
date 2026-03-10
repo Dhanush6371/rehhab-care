@@ -179,6 +179,12 @@
 @media (max-width: 768px) {
     .faq-section {
         padding: 60px 24px;
+        overflow-x: hidden;
+    }
+
+    .faq-container {
+        width: 100%;
+        max-width: 100%;
     }
 
     .faq-header {
@@ -193,12 +199,36 @@
         font-size: 15px;
     }
 
+    .faq-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .faq-image-wrapper {
+        position: relative;
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
     .faq-image-card {
         padding: 36px 28px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .faq-image {
+        width: 100%;
+        max-width: 100%;
     }
 
     .faq-tagline {
         font-size: 18px;
+    }
+
+    .faq-accordion {
+        width: 100%;
+        max-width: 100%;
     }
 
     .faq-question {

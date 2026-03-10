@@ -121,6 +121,7 @@
 @media (max-width: 768px) {
     .services-section {
         padding: 48px 24px;
+        overflow-x: hidden;
     }
 
     .services-header {
@@ -139,10 +140,25 @@
     .services-grid {
         grid-template-columns: 1fr;
         gap: 16px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 100%;
     }
 
     .service-image {
         height: 320px;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .service-image img {
+        width: 100%;
+        max-width: 100%;
     }
 
     .service-overlay {

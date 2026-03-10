@@ -339,6 +339,7 @@
 @media (max-width: 768px) {
     .team-section {
         padding: 60px 24px;
+        overflow-x: hidden;
     }
 
     .team-header {
@@ -355,18 +356,25 @@
 
     .team-carousel-wrapper {
         padding: 0;
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
     }
 
     .team-carousel {
         flex-direction: column;
         gap: 24px;
-        overflow-x: visible;
+        overflow-x: hidden;
+        overflow-y: visible;
+        width: 100%;
+        max-width: 100%;
     }
 
     .team-card {
         flex: 0 0 auto;
         width: 100%;
         min-width: auto;
+        max-width: 100%;
     }
 
     .carousel-arrow {
@@ -375,6 +383,13 @@
 
     .team-image-wrapper {
         height: 260px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .team-image {
+        width: 100%;
+        max-width: 100%;
     }
 
     .team-info {

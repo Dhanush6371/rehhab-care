@@ -205,6 +205,7 @@
 @media (max-width: 768px) {
     .process-section {
         padding: 60px 24px 80px;
+        overflow-x: hidden;
     }
 
     .process-header {
@@ -222,6 +223,8 @@
     .process-step {
         gap: 36px;
         margin-bottom: 80px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .step-number-bg {
@@ -244,8 +247,16 @@
         line-height: 1.7;
     }
 
+    .step-image-wrapper {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
     .step-image {
         border-radius: 20px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .step-badge {

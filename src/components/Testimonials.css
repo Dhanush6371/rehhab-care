@@ -292,6 +292,7 @@
 @media (max-width: 768px) {
     .testimonials-section {
         padding: 80px 20px;
+        overflow-x: hidden;
     }
 
     .testimonials-title {
@@ -301,6 +302,9 @@
     .carousel-wrapper {
         flex-direction: column;
         gap: 0;
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
     }
 
     .carousel-nav {
@@ -309,17 +313,35 @@
 
     .carousel-container {
         border-radius: 0;
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
     }
 
     .carousel-track {
         flex-direction: column;
         gap: 30px;
         transform: none !important;
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
     }
 
     .testimonial-card {
         min-width: 100%;
         width: 100%;
+        max-width: 100%;
+    }
+
+    .testimonial-video-wrapper {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .testimonial-thumbnail {
+        width: 100%;
+        max-width: 100%;
     }
 
     .carousel-dots {

@@ -387,15 +387,20 @@
     .stats-section {
         padding: 24px 24px 48px;
         margin-top: 0;
+        overflow-x: hidden;
     }
 
     .stats-cards {
         gap: 16px;
         margin-bottom: 40px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .stat-card {
         padding: 24px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .stat-number {
@@ -412,11 +417,22 @@
 
     .specialist-image {
         height: 160px;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .specialist-image img {
+        width: 100%;
+        max-width: 100%;
     }
 
     .consultation-container {
         padding: 32px 24px;
         border-radius: 20px;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .form-header {
@@ -435,17 +451,33 @@
 
     .consultation-form {
         margin-bottom: 32px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .form-row {
         grid-template-columns: 1fr !important;
         gap: 16px !important;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-group input {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .submit-btn {
         padding: 14px 24px;
         font-size: 14px;
         width: 100%;
+        max-width: 100%;
     }
 
     .consultation-stat-below h3 {
@@ -459,6 +491,13 @@
     .bottom-stats {
         grid-template-columns: repeat(2, 1fr);
         gap: 28px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .bottom-stat-item {
+        width: 100%;
+        max-width: 100%;
     }
 
     .bottom-stat-item h3 {

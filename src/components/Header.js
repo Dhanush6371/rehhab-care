@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 
 const Header = () => {
@@ -7,6 +7,20 @@ const Header = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+    // Prevent body scroll when menu is open
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+
+        // Cleanup on unmount
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isMenuOpen]);
 
     return (
         <header className="header">
@@ -34,11 +48,22 @@ const Header = () => {
                     onClick={toggleMenu}
                     aria-label="Toggle menu"
                 >
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <div className="hamburger-inner">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </button>
             </nav>
+
+            {/* Mobile menu backdrop */}
+            {isMenuOpen && (
+                <div
+                    className="mobile-backdrop"
+                    onClick={toggleMenu}
+                    aria-hidden="true"
+                />
+            )}
         </header>
     );
 };

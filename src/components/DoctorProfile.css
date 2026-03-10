@@ -378,15 +378,30 @@
 @media (max-width: 768px) {
     .doctor-profile-page {
         padding: 20px 16px;
+        overflow-x: hidden;
+    }
+
+    .doctor-profile-container {
+        width: 100%;
+        max-width: 100%;
     }
 
     .doctor-hero {
         padding: 24px;
         gap: 24px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .doctor-hero-image {
+        width: 100%;
+        max-width: 100%;
     }
 
     .doctor-hero-image img {
         height: 320px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .doctor-name {
@@ -399,6 +414,8 @@
 
     .doctor-section {
         padding: 24px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .section-title {
@@ -407,10 +424,19 @@
 
     .expertise-grid {
         grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .expertise-card {
+        width: 100%;
+        max-width: 100%;
     }
 
     .doctor-cta {
         padding: 40px 24px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .doctor-cta h2 {
