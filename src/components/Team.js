@@ -139,6 +139,7 @@ const Team = () => {
                                             src={member.image}
                                             alt={member.name}
                                             className="team-image"
+                                            loading="lazy"
                                             onError={(e) => e.target.src = `https://via.placeholder.com/350x400/1a5f5a/ffffff?text=${member.name.replace(/ /g, '+')}`}
                                         />
                                     </div>

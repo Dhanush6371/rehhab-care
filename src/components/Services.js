@@ -60,6 +60,7 @@ const Services = () => {
                                     <img
                                         src={service.image}
                                         alt={service.title}
+                                        loading="lazy"
                                         onError={(e) => e.target.src = `https://via.placeholder.com/400x500/1a5f5a/ffffff?text=${service.title.replace(/ /g, '+')}`}
                                     />
                                     <div className="service-overlay">

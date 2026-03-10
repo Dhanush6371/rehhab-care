@@ -394,37 +394,37 @@ const Hero = () => {
         neck: {
             title: 'Neck',
             description: 'Neck pain can result from muscle strain, poor posture, or underlying medical conditions, causing discomfort and restricted mobility.',
-            image: '/images/neck_pain.png'
+            image: '/images/neck_pain.webp'
         },
         shoulder: {
             title: 'Shoulder',
             description: 'Shoulder pain affects mobility and can result from rotator cuff injuries, arthritis, or overuse, limiting daily activities.',
-            image: '/images/Shoulder_pain.png'
+            image: '/images/Shoulder_pain.webp'
         },
         elbow: {
             title: 'Elbow',
             description: 'Elbow pain often stems from repetitive strain, tendinitis, or nerve compression, affecting grip strength and arm movement.',
-            image: '/images/elbow.png'
+            image: '/images/elbow.webp'
         },
         wrist: {
             title: 'Wrist',
             description: 'Wrist pain can be caused by carpal tunnel syndrome, arthritis, or repetitive stress injuries, affecting hand function.',
-            image: '/images/wrist.png'
+            image: '/images/wrist.webp'
         },
         lowerBack: {
             title: 'Lower Back',
             description: 'Lower back pain is one of the most common complaints, often caused by muscle strain, disc problems, or poor posture.',
-            image: '/images/lowerback.png'
+            image: '/images/lowerback.webp'
         },
         knee: {
             title: 'Knee',
             description: 'Knee pain is common among athletes and older adults, often resulting from ligament injuries, arthritis, or meniscus tears.',
-            image: '/images/knee.png'
+            image: '/images/knee.webp'
         },
         ankle: {
             title: 'Ankle',
             description: 'Ankle pain typically results from sprains, strains, or arthritis, affecting balance and walking ability.',
-            image: '/images/ankle.png'
+            image: '/images/ankle.webp'
         }
     };
 
@@ -459,72 +459,77 @@ const Hero = () => {
                     <div className="hero-left">
                         <LazySection animation="fade-right">
                             <div className="body-diagram-wrapper">
-                                <img src="/images/stamp.png" alt="Body Diagram" className="body-diagram-image" />
+                                <img
+                                    src="/images/stamp-2.png"
+                                    alt="Body Diagram"
+                                    className="body-diagram-image"
+                                    fetchpriority="high"
+                                />
 
                                 {/* Pain Point Hotspots - Front view (Left figure) */}
-                                <div className="body-part head-front" onClick={() => setActivePainPoint('neck')}>
+                                <div className="body-part head-front" onMouseEnter={() => setActivePainPoint('neck')}>
                                     <div className={`pain-indicator ${activePainPoint === 'neck' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part shoulder-left-front" onClick={() => setActivePainPoint('shoulder')}>
+                                <div className="body-part shoulder-left-front" onMouseEnter={() => setActivePainPoint('shoulder')}>
                                     <div className={`pain-indicator ${activePainPoint === 'shoulder' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part shoulder-right-front" onClick={() => setActivePainPoint('shoulder')}>
+                                <div className="body-part shoulder-right-front" onMouseEnter={() => setActivePainPoint('shoulder')}>
                                     <div className={`pain-indicator ${activePainPoint === 'shoulder' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part elbow-left-front" onClick={() => setActivePainPoint('elbow')}>
+                                <div className="body-part elbow-left-front" onMouseEnter={() => setActivePainPoint('elbow')}>
                                     <div className={`pain-indicator ${activePainPoint === 'elbow' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part elbow-right-front" onClick={() => setActivePainPoint('elbow')}>
+                                <div className="body-part elbow-right-front" onMouseEnter={() => setActivePainPoint('elbow')}>
                                     <div className={`pain-indicator ${activePainPoint === 'elbow' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part wrist-left-front" onClick={() => setActivePainPoint('wrist')}>
+                                <div className="body-part wrist-left-front" onMouseEnter={() => setActivePainPoint('wrist')}>
                                     <div className={`pain-indicator ${activePainPoint === 'wrist' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part wrist-right-front" onClick={() => setActivePainPoint('wrist')}>
+                                <div className="body-part wrist-right-front" onMouseEnter={() => setActivePainPoint('wrist')}>
                                     <div className={`pain-indicator ${activePainPoint === 'wrist' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part knee-left-front" onClick={() => setActivePainPoint('knee')}>
+                                <div className="body-part knee-left-front" onMouseEnter={() => setActivePainPoint('knee')}>
                                     <div className={`pain-indicator ${activePainPoint === 'knee' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part knee-right-front" onClick={() => setActivePainPoint('knee')}>
+                                <div className="body-part knee-right-front" onMouseEnter={() => setActivePainPoint('knee')}>
                                     <div className={`pain-indicator ${activePainPoint === 'knee' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part ankle-left-front" onClick={() => setActivePainPoint('ankle')}>
+                                <div className="body-part ankle-left-front" onMouseEnter={() => setActivePainPoint('ankle')}>
                                     <div className={`pain-indicator ${activePainPoint === 'ankle' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part ankle-right-front" onClick={() => setActivePainPoint('ankle')}>
+                                <div className="body-part ankle-right-front" onMouseEnter={() => setActivePainPoint('ankle')}>
                                     <div className={`pain-indicator ${activePainPoint === 'ankle' ? 'active' : ''}`}></div>
                                 </div>
 
                                 {/* Pain Point Hotspots - Back view (Right figure) */}
-                                <div className="body-part head-back" onClick={() => setActivePainPoint('neck')}>
+                                <div className="body-part head-back" onMouseEnter={() => setActivePainPoint('neck')}>
                                     <div className={`pain-indicator ${activePainPoint === 'neck' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part shoulder-left-back" onClick={() => setActivePainPoint('shoulder')}>
+                                <div className="body-part shoulder-left-back" onMouseEnter={() => setActivePainPoint('shoulder')}>
                                     <div className={`pain-indicator ${activePainPoint === 'shoulder' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part shoulder-right-back" onClick={() => setActivePainPoint('shoulder')}>
+                                <div className="body-part shoulder-right-back" onMouseEnter={() => setActivePainPoint('shoulder')}>
                                     <div className={`pain-indicator ${activePainPoint === 'shoulder' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part lower-back-back" onClick={() => setActivePainPoint('lowerBack')}>
+                                <div className="body-part lower-back-back" onMouseEnter={() => setActivePainPoint('lowerBack')}>
                                     <div className={`pain-indicator ${activePainPoint === 'lowerBack' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part elbow-left-back" onClick={() => setActivePainPoint('elbow')}>
+                                <div className="body-part elbow-left-back" onMouseEnter={() => setActivePainPoint('elbow')}>
                                     <div className={`pain-indicator ${activePainPoint === 'elbow' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part elbow-right-back" onClick={() => setActivePainPoint('elbow')}>
+                                <div className="body-part elbow-right-back" onMouseEnter={() => setActivePainPoint('elbow')}>
                                     <div className={`pain-indicator ${activePainPoint === 'elbow' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part knee-left-back" onClick={() => setActivePainPoint('knee')}>
+                                <div className="body-part knee-left-back" onMouseEnter={() => setActivePainPoint('knee')}>
                                     <div className={`pain-indicator ${activePainPoint === 'knee' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part knee-right-back" onClick={() => setActivePainPoint('knee')}>
+                                <div className="body-part knee-right-back" onMouseEnter={() => setActivePainPoint('knee')}>
                                     <div className={`pain-indicator ${activePainPoint === 'knee' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part ankle-left-back" onClick={() => setActivePainPoint('ankle')}>
+                                <div className="body-part ankle-left-back" onMouseEnter={() => setActivePainPoint('ankle')}>
                                     <div className={`pain-indicator ${activePainPoint === 'ankle' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part ankle-right-back" onClick={() => setActivePainPoint('ankle')}>
+                                <div className="body-part ankle-right-back" onMouseEnter={() => setActivePainPoint('ankle')}>
                                     <div className={`pain-indicator ${activePainPoint === 'ankle' ? 'active' : ''}`}></div>
                                 </div>
                             </div>
@@ -564,7 +569,12 @@ const Hero = () => {
 
                                 {/* Person Image */}
                                 <div className="pain-image" key={`${activePainPoint}-image`}>
-                                    <img src={currentPainPoint.image} alt={`Person with ${currentPainPoint.title.toLowerCase()} pain`} />
+                                    <img
+                                        src={currentPainPoint.image}
+                                        alt={`Person with ${currentPainPoint.title.toLowerCase()} pain`}
+                                        loading={activePainPoint === 'neck' ? 'eager' : 'lazy'}
+                                        fetchpriority={activePainPoint === 'neck' ? 'high' : 'low'}
+                                    />
                                 </div>
                             </div>
                         </LazySection>
@@ -573,9 +583,9 @@ const Hero = () => {
                             {/* Appointment Stats */}
                             <div className="appointment-stats">
                                 <div className="stats-avatars">
-                                    <img src="/images/avatar1.jpg" alt="Patient" />
-                                    <img src="/images/avatar2.jpg" alt="Patient" />
-                                    <img src="/images/avatar3.jpg" alt="Patient" />
+                                    <img src="/images/avatar1.jpg" alt="Patient" loading="eager" />
+                                    <img src="/images/avatar2.jpg" alt="Patient" loading="eager" />
+                                    <img src="/images/avatar3.jpg" alt="Patient" loading="eager" />
                                 </div>
                                 <div className="stats-text">
                                     <h4>5000+ Appointments</h4>

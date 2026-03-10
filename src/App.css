@@ -1,13 +1,98 @@
+/* Global mobile overflow prevention */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
 .App {
     min-height: 100vh;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 /* Remove default margins and ensure seamless sections */
 section {
     margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 /* Ensure LazySection doesn't add extra spacing */
 .lazy-section {
     margin: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Mobile-specific overflow fixes */
+@media (max-width: 768px) {
+    * {
+        max-width: 100vw;
+    }
+
+    .hero-container,
+    .stats-container,
+    .services-container,
+    .why-choose-container,
+    .team-container,
+    .why-better-container,
+    .process-container,
+    .partner-container,
+    .faq-container,
+    .testimonials-container,
+    .appointment-container,
+    .footer-container {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .team-carousel,
+    .testimonials-carousel {
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .team-card,
+    .testimonial-card {
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+
+    /* Prevent any element from exceeding viewport width */
+    div,
+    section,
+    article,
+    main,
+    header,
+    footer,
+    nav {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-card {
+        min-width: calc(100vw - 40px);
+        max-width: calc(100vw - 40px);
+    }
+
+    .testimonial-card {
+        min-width: calc(100vw - 40px);
+        max-width: calc(100vw - 40px);
+    }
 }

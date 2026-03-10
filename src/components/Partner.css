@@ -244,3 +244,62 @@
         font-size: 15px;
     }
 }
+
+@media (max-width: 480px) {
+    .partner-section {
+        padding: 48px 16px;
+    }
+
+    .partner-title {
+        font-size: 28px;
+    }
+
+    .partner-subtitle {
+        font-size: 14px;
+    }
+
+    .requirements-box {
+        padding: 28px 20px;
+    }
+
+    .requirements-title {
+        font-size: 18px;
+    }
+
+    .requirement-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .requirement-text {
+        font-size: 14px;
+    }
+
+    .application-form-wrapper {
+        padding: 28px 20px;
+    }
+
+    .form-intro-title {
+        font-size: 22px;
+    }
+
+    .form-intro-subtitle {
+        font-size: 14px;
+    }
+
+    .form-input,
+    .form-select {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .submit-application-btn {
+        padding: 15px 36px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .form-disclaimer {
+        font-size: 12px;
+    }
+}
