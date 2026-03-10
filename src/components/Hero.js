@@ -451,6 +451,16 @@ const Hero = () => {
                 <div className="bubble"></div>
                 <div className="bubble"></div>
                 <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
             </div>
 
             <div className="hero-container">
