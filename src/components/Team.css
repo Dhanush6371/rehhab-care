@@ -97,7 +97,7 @@
 
 .team-card {
     flex: 0 0 calc((100% - 64px) / 3);
-    min-width: 300px;
+    min-width: 340px;
     background: white;
     border-radius: 24px;
     overflow: hidden;
@@ -326,7 +326,7 @@
 
     .team-card {
         flex: 0 0 calc((100% - 32px) / 2);
-        min-width: 280px;
+        min-width: 320px;
     }
 
     .carousel-arrow {

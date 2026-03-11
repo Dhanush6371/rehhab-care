@@ -1,131 +1,264 @@
 .partner-section {
-    background: #fafafa;
-    padding: 100px 40px;
+    background: linear-gradient(180deg, #f8fafb 0%, #ffffff 100%);
+    padding: 0;
+    min-height: 100vh;
 }
 
-.partner-container {
+/* Hero Section */
+.partner-hero {
+    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
+    padding: 120px 40px 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.partner-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.partner-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.partner-hero-content {
     max-width: 900px;
     margin: 0 auto;
-}
-
-/* Header */
-.partner-header {
     text-align: center;
-    margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
 }
 
 .partner-badge {
-    display: inline-block;
-    font-size: 11px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #1a5f5a;
-    background: #f0f9f8;
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
     padding: 10px 24px;
     border-radius: 30px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
+    backdrop-filter: blur(10px);
 }
 
-.partner-title {
-    font-size: 48px;
-    font-weight: 700;
+.badge-dot {
+    color: #4ade80;
+    font-size: 16px;
+}
+
+.partner-hero-title {
+    font-size: 56px;
+    font-weight: 800;
+    color: white;
+    margin: 0 0 24px 0;
+    line-height: 1.2;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.partner-hero-subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+    margin: 0 0 48px 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 48px;
+}
+
+.hero-stat-item {
+    text-align: center;
+}
+
+.hero-stat-item h3 {
+    font-size: 42px;
+    font-weight: 800;
+    color: white;
+    margin: 0 0 8px 0;
+}
+
+.hero-stat-item p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Container */
+.partner-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: 800;
     color: #1a3a52;
-    margin: 0 0 20px 0;
+    text-align: center;
+    margin: 0 0 56px 0;
     line-height: 1.3;
 }
 
-.partner-subtitle {
-    font-size: 17px;
-    color: #6b7c93;
-    line-height: 1.7;
-    margin: 0;
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
 }
 
-/* Requirements Box */
-.requirements-box {
+.benefit-card {
     background: white;
-    padding: 48px;
+    padding: 40px;
     border-radius: 24px;
-    margin-bottom: 48px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
 }
 
-.requirements-title {
+.benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(26, 95, 90, 0.15);
+    border-color: #1a5f5a;
+}
+
+.benefit-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
     font-size: 22px;
     font-weight: 700;
     color: #1a3a52;
-    margin: 0 0 32px 0;
-    text-align: center;
+    margin: 0 0 12px 0;
+}
+
+.benefit-card p {
+    font-size: 15px;
+    color: #6b7c93;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Requirements Section */
+.requirements-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f0f9f8 0%, #e0f2f1 100%);
+    margin: 0 -40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .requirements-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.requirement-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.requirement-card {
+    background: white;
+    padding: 36px 28px;
+    border-radius: 20px;
     text-align: center;
-    gap: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.requirement-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 32px rgba(26, 95, 90, 0.12);
 }
 
 .requirement-icon {
-    width: 56px;
-    height: 56px;
-    background: #f0f9f8;
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #1a5f5a;
+    color: white;
+    margin: 0 auto 20px;
 }
 
-.requirement-text {
-    font-size: 15px;
-    color: #1a3a52;
-    font-weight: 600;
-    line-height: 1.5;
-}
-
-/* Application Form */
-.application-form-wrapper {
-    background: white;
-    padding: 48px;
-    border-radius: 24px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-}
-
-.form-intro {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.form-intro-title {
-    font-size: 26px;
+.requirement-card h4 {
+    font-size: 18px;
     font-weight: 700;
     color: #1a3a52;
     margin: 0 0 12px 0;
 }
 
-.form-intro-subtitle {
-    font-size: 16px;
+.requirement-card p {
+    font-size: 14px;
     color: #6b7c93;
+    line-height: 1.6;
     margin: 0;
 }
 
+/* Application Section */
+.application-section {
+    padding: 80px 0 100px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.form-subtitle {
+    font-size: 17px;
+    color: #6b7c93;
+    margin: 16px 0 0 0;
+}
+
 .partner-form {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    background: white;
+    padding: 56px;
+    border-radius: 28px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
 }
 
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    gap: 28px;
+    margin-bottom: 28px;
 }
 
 .form-group {
@@ -135,211 +268,256 @@
 }
 
 .form-label {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-    color: #999;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a3a52;
+    letter-spacing: 0.3px;
 }
 
 .form-input {
-    padding: 14px 18px;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
+    padding: 16px 20px;
+    border: 2px solid #e5e7eb;
+    border-radius: 14px;
     font-size: 15px;
     background: #fafafa;
     transition: all 0.3s;
     font-family: inherit;
+    color: #1a3a52;
+}
+
+.form-input::placeholder {
+    color: #9ca3af;
 }
 
 .form-input:focus {
     outline: none;
     border-color: #1a5f5a;
     background: white;
+    box-shadow: 0 0 0 4px rgba(26, 95, 90, 0.1);
 }
 
 .form-select {
     cursor: pointer;
     appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23666' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' stroke='%231a3a52' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: right 18px center;
-    padding-right: 45px;
+    background-position: right 20px center;
+    padding-right: 50px;
 }
 
-.submit-application-btn {
-    background: #1a5f5a;
+.submit-btn {
+    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
     color: white;
-    padding: 17px 48px;
+    padding: 18px 48px;
     border: none;
-    border-radius: 32px;
-    font-size: 15px;
+    border-radius: 50px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
-    margin-top: 16px;
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 }
 
-.submit-application-btn:hover {
-    background: #154d49;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 24px rgba(26, 95, 90, 0.3);
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(26, 95, 90, 0.3);
+}
+
+.submit-btn svg {
+    transition: transform 0.3s;
+}
+
+.submit-btn:hover svg {
+    transform: translateX(4px);
 }
 
 .form-disclaimer {
     font-size: 13px;
-    color: #999;
+    color: #9ca3af;
     text-align: center;
-    margin: 16px 0 0 0;
+    margin: 20px 0 0 0;
     line-height: 1.6;
 }
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .partner-section {
-        padding: 80px 32px;
+    .partner-hero {
+        padding: 100px 32px 60px;
+    }
+
+    .partner-hero-title {
+        font-size: 48px;
+    }
+
+    .hero-stats {
+        gap: 40px;
+    }
+
+    .partner-container {
+        padding: 0 32px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .requirements-section {
+        margin: 0 -32px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     .requirements-grid {
         grid-template-columns: 1fr;
-        gap: 28px;
+        gap: 24px;
+    }
+
+    .partner-form {
+        padding: 44px;
     }
 
     .form-row {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 24px;
     }
 }
 
 @media (max-width: 768px) {
-    .partner-section {
-        padding: 60px 24px;
-        overflow-x: hidden;
+    .partner-hero {
+        padding: 80px 24px 48px;
     }
 
-    .partner-container {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .partner-title {
+    .partner-hero-title {
         font-size: 36px;
     }
 
-    .partner-subtitle {
-        font-size: 15px;
+    .partner-hero-subtitle {
+        font-size: 16px;
     }
 
-    .requirements-box {
-        padding: 36px 28px;
-        width: 100%;
-        max-width: 100%;
+    .hero-stats {
+        flex-direction: column;
+        gap: 32px;
     }
 
-    .requirements-title {
-        font-size: 20px;
-        margin-bottom: 28px;
+    .hero-stat-item h3 {
+        font-size: 36px;
     }
 
-    .requirements-grid {
-        width: 100%;
-        max-width: 100%;
+    .partner-container {
+        padding: 0 24px;
     }
 
-    .application-form-wrapper {
-        padding: 36px 28px;
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
+    .benefits-section,
+    .application-section {
+        padding: 60px 0;
     }
 
-    .form-intro-title {
-        font-size: 24px;
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 40px;
     }
 
-    .form-intro-subtitle {
-        font-size: 15px;
+    .benefit-card {
+        padding: 32px;
+    }
+
+    .requirements-section {
+        padding: 60px 24px;
+        margin: 0 -24px;
     }
 
     .partner-form {
-        width: 100%;
-        max-width: 100%;
+        padding: 36px 28px;
     }
 
-    .form-row {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .form-group {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .form-input,
-    .form-select {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    .submit-application-btn {
-        width: 100%;
-        max-width: 100%;
+    .submit-btn {
+        padding: 16px 40px;
     }
 }
 
 @media (max-width: 480px) {
-    .partner-section {
-        padding: 48px 16px;
+    .partner-hero {
+        padding: 60px 16px 40px;
     }
 
-    .partner-title {
+    .partner-hero-title {
         font-size: 28px;
     }
 
-    .partner-subtitle {
+    .partner-hero-subtitle {
+        font-size: 15px;
+    }
+
+    .hero-stat-item h3 {
+        font-size: 32px;
+    }
+
+    .hero-stat-item p {
+        font-size: 13px;
+    }
+
+    .partner-container {
+        padding: 0 16px;
+    }
+
+    .benefits-section,
+    .application-section {
+        padding: 48px 0;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .benefit-card {
+        padding: 28px 24px;
+    }
+
+    .benefit-icon {
+        font-size: 40px;
+    }
+
+    .benefit-card h3 {
+        font-size: 20px;
+    }
+
+    .benefit-card p {
         font-size: 14px;
     }
 
-    .requirements-box {
-        padding: 28px 20px;
-    }
-
-    .requirements-title {
-        font-size: 18px;
+    .requirements-section {
+        padding: 48px 16px;
+        margin: 0 -16px;
     }
 
     .requirement-icon {
-        width: 48px;
-        height: 48px;
+        width: 64px;
+        height: 64px;
     }
 
-    .requirement-text {
-        font-size: 14px;
+    .requirement-card h4 {
+        font-size: 17px;
     }
 
-    .application-form-wrapper {
+    .partner-form {
         padding: 28px 20px;
     }
 
-    .form-intro-title {
-        font-size: 22px;
-    }
-
-    .form-intro-subtitle {
+    .form-input {
+        padding: 14px 18px;
         font-size: 14px;
     }
 
-    .form-input,
-    .form-select {
-        padding: 12px 16px;
-        font-size: 14px;
-    }
-
-    .submit-application-btn {
+    .submit-btn {
         padding: 15px 36px;
-        font-size: 14px;
-        width: 100%;
+        font-size: 15px;
     }
 
     .form-disclaimer {

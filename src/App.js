@@ -6,7 +6,6 @@ import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Services from './components/Services';
 import WhyBetter from './components/WhyBetter';
-import Process from './components/Process';
 import WhyChoose from './components/WhyChoose';
 import Team from './components/Team';
 import Partner from './components/Partner';
@@ -27,11 +26,20 @@ function HomePage() {
             <WhyChoose />
             <Team />
             <WhyBetter />
-            <Process />
-            <Partner />
             <FAQ />
             <Testimonials />
             <Appointment />
+            <Footer />
+            <WhatsAppFloat />
+        </>
+    );
+}
+
+function PartnerPage() {
+    return (
+        <>
+            <Header />
+            <Partner />
             <Footer />
             <WhatsAppFloat />
         </>
@@ -44,6 +52,7 @@ function App() {
             <div className="App">
                 <Routes>
                     <Route path="/" element={<HomePage />} />
+                    <Route path="/partner" element={<PartnerPage />} />
                     <Route path="/doctor/:id" element={<><DoctorProfile /><WhatsAppFloat /></>} />
                 </Routes>
             </div>

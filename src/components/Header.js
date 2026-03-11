@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -22,13 +24,18 @@ const Header = () => {
         };
     }, [isMenuOpen]);
 
+    // Close menu when route changes
+    useEffect(() => {
+        setIsMenuOpen(false);
+    }, [location]);
+
     return (
         <header className="header">
             <nav className="navbar">
-                <div className="logo">
+                <Link to="/" className="logo">
                     <img src="/images/logo.png" alt="Rebuild Care" fetchpriority="high" />
                     <span>Rebuild Care</span>
-                </div>
+                </Link>
 
                 <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                     <li><a href="#home" onClick={toggleMenu}>HOME</a></li>
@@ -39,7 +46,9 @@ const Header = () => {
                 </ul>
 
                 <div className="nav-buttons">
-                    <button className="btn-secondary">Become A Partner</button>
+                    <Link to="/partner">
+                        <button className="btn-secondary">Become A Partner</button>
+                    </Link>
                     <button className="btn-primary">Book Appointment</button>
                 </div>
 

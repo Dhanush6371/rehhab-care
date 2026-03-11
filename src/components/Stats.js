@@ -38,11 +38,6 @@ const Stats = () => {
                                 <button type="submit" className="submit-btn">Submit</button>
                             </div>
                         </form>
-
-                        <div className="consultation-stat-below">
-                            <h3>200K+</h3>
-                            <p>Cured satisfied patients<br />around the globe</p>
-                        </div>
                     </div>
                 </LazySection>
             </div>

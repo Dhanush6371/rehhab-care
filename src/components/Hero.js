@@ -160,17 +160,7 @@ const Hero = () => {
                             </div>
                         </LazySection>
 
-                        <LazySection animation="fade-up" delay={100}>
-                            {/* Whole-Person Health Section */}
-                            <div className="health-section">
-                                <h3>Whole-Person Health for a Balanced Life</h3>
-                                <div className="health-tags">
-                                    <span className="health-tag tag-yellow">Gain Clarity</span>
-                                    <span className="health-tag tag-pink">Manage Stress</span>
-                                    <span className="health-tag tag-blue">Self-Awareness</span>
-                                </div>
-                            </div>
-                        </LazySection>
+                        
                     </div>
 
                     {/* Right Side - Content */}
