@@ -149,6 +149,13 @@ const Testimonials = () => {
                                         )}
                                     </div>
                                     <div className="testimonial-content">
+                                        <div className="testimonial-stars">
+                                            <span className="star">★</span>
+                                            <span className="star">★</span>
+                                            <span className="star">★</span>
+                                            <span className="star">★</span>
+                                            <span className="star">★</span>
+                                        </div>
                                         <div className="testimonial-avatar-wrapper">
                                             <img
                                                 src={testimonial.avatar}

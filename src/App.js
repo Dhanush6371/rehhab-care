@@ -23,11 +23,11 @@ function HomePage() {
             <Hero />
             <Stats />
             <Services />
-            <WhyChoose />
             <Team />
+            <Testimonials />
+            <WhyChoose />
             <WhyBetter />
             <FAQ />
-            <Testimonials />
             <Appointment />
             <Footer />
             <WhatsAppFloat />

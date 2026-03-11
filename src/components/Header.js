@@ -43,6 +43,13 @@ const Header = () => {
                     <li><a href="#team" onClick={toggleMenu}>TEAM</a></li>
                     <li><a href="#contact" onClick={toggleMenu}>CONTACT</a></li>
                     <li><a href="#blog" onClick={toggleMenu}>BLOG</a></li>
+
+                    <div className="mobile-menu-buttons">
+                        <Link to="/partner" onClick={toggleMenu}>
+                            <button className="mobile-btn-secondary">Become A Partner</button>
+                        </Link>
+                        <button className="mobile-btn-primary" onClick={toggleMenu}>Book Appointment</button>
+                    </div>
                 </ul>
 
                 <div className="nav-buttons">
