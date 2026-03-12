@@ -77,31 +77,31 @@ const Partner = () => {
                 </LazySection>
 
                 <LazySection animation="fade-up" delay={200}>
-                    <div className="application-form-wrapper">
-                        <div className="form-intro">
-                            <h3 className="form-intro-title">Meet these requirements? Great!</h3>
-                            <p className="form-intro-subtitle">How shall we reach you?</p>
+                    <div className="partner-form-wrapper">
+                        <div className="partner-form-intro">
+                            <h3 className="partner-form-intro-title">Meet these requirements? Great!</h3>
+                            <p className="partner-form-intro-subtitle">How shall we reach you?</p>
                         </div>
 
                         <form className="partner-form" onSubmit={handleSubmit}>
-                            <div className="form-row">
-                                <div className="form-group">
-                                    <label className="form-label">First Name*</label>
+                            <div className="partner-form-row">
+                                <div className="partner-form-group">
+                                    <label className="partner-form-label">First Name*</label>
                                     <input
                                         type="text"
                                         name="firstName"
-                                        className="form-input"
+                                        className="partner-form-input"
                                         value={formData.firstName}
                                         onChange={handleChange}
                                         required
                                     />
                                 </div>
-                                <div className="form-group">
-                                    <label className="form-label">Last Name*</label>
+                                <div className="partner-form-group">
+                                    <label className="partner-form-label">Last Name*</label>
                                     <input
                                         type="text"
                                         name="lastName"
-                                        className="form-input"
+                                        className="partner-form-input"
                                         value={formData.lastName}
                                         onChange={handleChange}
                                         required
@@ -109,24 +109,24 @@ const Partner = () => {
                                 </div>
                             </div>
 
-                            <div className="form-row">
-                                <div className="form-group">
-                                    <label className="form-label">Email*</label>
+                            <div className="partner-form-row">
+                                <div className="partner-form-group">
+                                    <label className="partner-form-label">Email*</label>
                                     <input
                                         type="email"
                                         name="email"
-                                        className="form-input"
+                                        className="partner-form-input"
                                         value={formData.email}
                                         onChange={handleChange}
                                         required
                                     />
                                 </div>
-                                <div className="form-group">
-                                    <label className="form-label">Phone Number*</label>
+                                <div className="partner-form-group">
+                                    <label className="partner-form-label">Phone Number*</label>
                                     <input
                                         type="tel"
                                         name="phone"
-                                        className="form-input"
+                                        className="partner-form-input"
                                         value={formData.phone}
                                         onChange={handleChange}
                                         required
@@ -134,23 +134,23 @@ const Partner = () => {
                                 </div>
                             </div>
 
-                            <div className="form-row">
-                                <div className="form-group">
-                                    <label className="form-label">ZIP Code*</label>
+                            <div className="partner-form-row">
+                                <div className="partner-form-group">
+                                    <label className="partner-form-label">ZIP Code*</label>
                                     <input
                                         type="text"
                                         name="zipCode"
-                                        className="form-input"
+                                        className="partner-form-input"
                                         value={formData.zipCode}
                                         onChange={handleChange}
                                         required
                                     />
                                 </div>
-                                <div className="form-group">
-                                    <label className="form-label">Years of Experience as a Licensed PT*</label>
+                                <div className="partner-form-group">
+                                    <label className="partner-form-label">Years of Experience as a Licensed PT*</label>
                                     <select
                                         name="experience"
-                                        className="form-input form-select"
+                                        className="partner-form-input partner-form-select"
                                         value={formData.experience}
                                         onChange={handleChange}
                                         required
@@ -165,11 +165,11 @@ const Partner = () => {
                                 </div>
                             </div>
 
-                            <button type="submit" className="submit-application-btn">
+                            <button type="submit" className="partner-submit-btn">
                                 Submit Application →
                             </button>
 
-                            <p className="form-disclaimer">
+                            <p className="partner-form-disclaimer">
                                 I consent to receive communications regarding my application by email, text, or calls.
                             </p>
                         </form>
