@@ -378,7 +378,6 @@
 @media (max-width: 768px) {
     .doctor-profile-page {
         padding: 20px 16px;
-        overflow-x: hidden;
     }
 
     .doctor-profile-container {

@@ -219,7 +219,6 @@
 @media (max-width: 768px) {
     .appointment-section {
         padding: 60px 24px;
-        overflow-x: hidden;
     }
 
     .appointment-container {
@@ -253,7 +252,6 @@
         padding: 36px 28px;
         width: 100%;
         max-width: 100%;
-        overflow-x: hidden;
     }
 
     .form-card-title {

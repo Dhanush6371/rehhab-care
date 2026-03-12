@@ -121,7 +121,6 @@
 @media (max-width: 768px) {
     .services-section {
         padding: 48px 24px;
-        overflow-x: hidden;
     }
 
     .services-header {

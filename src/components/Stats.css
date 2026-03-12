@@ -387,7 +387,6 @@
     .stats-section {
         padding: 12px 24px 48px;
         margin-top: 0;
-        overflow-x: hidden;
     }
 
     .stats-cards {
@@ -432,7 +431,6 @@
         border-radius: 20px;
         width: 100%;
         max-width: 100%;
-        overflow-x: hidden;
     }
 
     .form-header {

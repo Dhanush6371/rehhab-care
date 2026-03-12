@@ -274,7 +274,6 @@
 @media (max-width: 768px) {
     .testimonials-section {
         padding: 48px 24px;
-        overflow-x: hidden;
     }
 
     .testimonials-title {
@@ -282,13 +281,11 @@
     }
 
     .carousel-wrapper {
-        overflow-x: hidden;
         width: 100%;
         max-width: 100%;
     }
 
     .carousel-container {
-        overflow-x: hidden;
         width: 100%;
         max-width: 100%;
     }
@@ -296,7 +293,6 @@
     .carousel-track {
         grid-template-columns: 1fr;
         gap: 16px;
-        overflow-x: hidden;
         width: 100%;
         max-width: 100%;
     }
