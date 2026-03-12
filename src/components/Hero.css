@@ -849,7 +849,7 @@ body {
     }
 
     .body-diagram-wrapper {
-        max-width: 400px;
+        max-width: 500px;
         width: 100%;
         overflow: hidden;
     }
@@ -858,6 +858,36 @@ body {
         width: 100%;
         max-width: 100%;
         height: auto;
+    }
+
+    /* Smaller pain indicators for mobile */
+    .pain-indicator {
+        width: 12px;
+        height: 12px;
+        border: 2px solid rgba(255, 255, 255, 0.95);
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        touch-action: manipulation;
+    }
+
+    .pain-indicator:hover {
+        transform: scale(1.2);
+    }
+
+    .pain-indicator:active {
+        transform: scale(1.3);
+        box-shadow: 0 4px 16px rgba(255, 107, 0, 0.8);
+        outline: none;
+    }
+
+    .pain-indicator.active {
+        transform: scale(1.15);
+    }
+
+    .body-part {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        touch-action: manipulation;
     }
 
     /* Smaller pain indicators for mobile */
@@ -1026,7 +1056,7 @@ body {
     }
 
     .body-diagram-wrapper {
-        max-width: 350px;
+        max-width: 550px;
         width: 100%;
         margin: 0 auto;
         overflow: hidden;
@@ -1040,8 +1070,8 @@ body {
 
     /* Even smaller pain indicators for small mobile */
     .pain-indicator {
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         border: 2px solid rgba(255, 255, 255, 0.95);
         box-shadow: 0 2px 8px rgba(255, 149, 0, 0.4);
         -webkit-tap-highlight-color: transparent;
@@ -1227,7 +1257,7 @@ body {
     }
 
     .body-diagram-wrapper {
-        max-width: 300px;
+        max-width: 480px;
         width: 100%;
         overflow: hidden;
     }
