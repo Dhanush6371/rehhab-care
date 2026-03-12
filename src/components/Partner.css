@@ -1,270 +1,139 @@
 .partner-section {
-    background: linear-gradient(180deg, #f8fafb 0%, #ffffff 100%);
-    padding: 0;
-    min-height: 100vh;
+    background: #fafafa;
+    padding: 100px 40px;
 }
 
-/* Hero Section */
-.partner-hero {
-    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
-    padding: 120px 40px 80px;
-    position: relative;
-    overflow: hidden;
-}
-
-.partner-hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-    border-radius: 50%;
-}
-
-.partner-hero::after {
-    content: '';
-    position: absolute;
-    bottom: -30%;
-    left: -10%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
-    border-radius: 50%;
-}
-
-.partner-hero-content {
+.partner-container {
     max-width: 900px;
     margin: 0 auto;
+}
+
+/* Header */
+.partner-header {
     text-align: center;
-    position: relative;
-    z-index: 1;
+    margin-bottom: 60px;
 }
 
 .partner-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
+    display: inline-block;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: white;
-    background: rgba(255, 255, 255, 0.15);
+    color: #1a5f5a;
+    background: #f0f9f8;
     padding: 10px 24px;
     border-radius: 30px;
-    margin-bottom: 32px;
-    backdrop-filter: blur(10px);
+    margin-bottom: 24px;
 }
 
-.badge-dot {
-    color: #4ade80;
-    font-size: 16px;
-}
-
-.partner-hero-title {
-    font-size: 56px;
-    font-weight: 800;
-    color: white;
-    margin: 0 0 24px 0;
-    line-height: 1.2;
-}
-
-.gradient-text {
-    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.partner-hero-subtitle {
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.7;
-    margin: 0 0 48px 0;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.hero-stats {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    margin-top: 48px;
-}
-
-.hero-stat-item {
-    text-align: center;
-}
-
-.hero-stat-item h3 {
-    font-size: 42px;
-    font-weight: 800;
-    color: white;
-    margin: 0 0 8px 0;
-}
-
-.hero-stat-item p {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
-    margin: 0;
-    font-weight: 500;
-}
-
-/* Container */
-.partner-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 40px;
-}
-
-/* Benefits Section */
-.benefits-section {
-    padding: 80px 0;
-}
-
-.section-title {
-    font-size: 42px;
-    font-weight: 800;
+.partner-title {
+    font-size: 48px;
+    font-weight: 700;
     color: #1a3a52;
-    text-align: center;
-    margin: 0 0 56px 0;
+    margin: 0 0 20px 0;
     line-height: 1.3;
 }
 
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-}
-
-.benefit-card {
-    background: white;
-    padding: 40px;
-    border-radius: 24px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.benefit-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(26, 95, 90, 0.15);
-    border-color: #1a5f5a;
-}
-
-.benefit-icon {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.benefit-card h3 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #1a3a52;
-    margin: 0 0 12px 0;
-}
-
-.benefit-card p {
-    font-size: 15px;
+.partner-subtitle {
+    font-size: 17px;
     color: #6b7c93;
-    line-height: 1.6;
+    line-height: 1.7;
     margin: 0;
 }
 
-/* Requirements Section */
-.requirements-section {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #f0f9f8 0%, #e0f2f1 100%);
-    margin: 0 -40px;
-    padding-left: 40px;
-    padding-right: 40px;
+/* Requirements Box */
+.requirements-box {
+    background: white;
+    padding: 48px;
+    border-radius: 24px;
+    margin-bottom: 48px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.requirements-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a3a52;
+    margin: 0 0 32px 0;
+    text-align: center;
 }
 
 .requirements-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
-.requirement-card {
-    background: white;
-    padding: 36px 28px;
-    border-radius: 20px;
+.requirement-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    transition: all 0.3s ease;
-}
-
-.requirement-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 32px rgba(26, 95, 90, 0.12);
+    gap: 16px;
 }
 
 .requirement-icon {
-    width: 72px;
-    height: 72px;
-    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
+    width: 56px;
+    height: 56px;
+    background: #f0f9f8;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    margin: 0 auto 20px;
+    color: #1a5f5a;
 }
 
-.requirement-card h4 {
-    font-size: 18px;
+.requirement-text {
+    font-size: 15px;
+    color: #1a3a52;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Application Form */
+.application-form-wrapper {
+    background: white;
+    padding: 50px 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.form-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-intro-title {
+    font-size: 28px;
     font-weight: 700;
     color: #1a3a52;
     margin: 0 0 12px 0;
 }
 
-.requirement-card p {
-    font-size: 14px;
+.form-intro-subtitle {
+    font-size: 16px;
     color: #6b7c93;
-    line-height: 1.6;
     margin: 0;
 }
 
-/* Application Section */
-.application-section {
-    padding: 80px 0 100px;
-}
-
-.form-header {
-    text-align: center;
-    margin-bottom: 56px;
-}
-
-.form-subtitle {
-    font-size: 17px;
-    color: #6b7c93;
-    margin: 16px 0 0 0;
-}
-
 .partner-form {
-    background: white;
-    padding: 56px;
-    border-radius: 28px;
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 28px;
-    margin-bottom: 28px;
+    gap: 16px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .form-label {
@@ -275,249 +144,239 @@
 }
 
 .form-input {
-    padding: 16px 20px;
-    border: 2px solid #e5e7eb;
-    border-radius: 14px;
+    padding: 15px 18px;
+    border: 2px solid #e5e5e5;
+    border-radius: 8px;
     font-size: 15px;
     background: #fafafa;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
     font-family: inherit;
     color: #1a3a52;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.form-input::placeholder {
-    color: #9ca3af;
+.form-input:hover {
+    border-color: #d0d0d0;
+    background: white;
 }
 
 .form-input:focus {
     outline: none;
     border-color: #1a5f5a;
     background: white;
-    box-shadow: 0 0 0 4px rgba(26, 95, 90, 0.1);
+    box-shadow: 0 0 0 3px rgba(26, 95, 90, 0.1);
+}
+
+.form-input::placeholder {
+    color: #999;
 }
 
 .form-select {
     cursor: pointer;
     appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' stroke='%231a3a52' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 7L11 1' stroke='%231a5f5a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: right 20px center;
-    padding-right: 50px;
+    background-position: right 18px center;
 }
 
-.submit-btn {
-    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
+.form-select:hover {
+    border-color: #1a5f5a;
+}
+
+.submit-application-btn {
+    background: #1a5f5a;
     color: white;
-    padding: 18px 48px;
+    padding: 16px 40px;
     border: none;
-    border-radius: 50px;
+    border-radius: 8px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s;
-    margin-top: 24px;
+    transition: all 0.3s ease;
+    margin-top: 12px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
 }
 
-.submit-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 32px rgba(26, 95, 90, 0.3);
+.submit-application-btn:hover {
+    background: #154d49;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(26, 95, 90, 0.25);
 }
 
-.submit-btn svg {
-    transition: transform 0.3s;
-}
-
-.submit-btn:hover svg {
-    transform: translateX(4px);
+.submit-application-btn:active {
+    transform: translateY(0);
 }
 
 .form-disclaimer {
     font-size: 13px;
-    color: #9ca3af;
+    color: #999;
     text-align: center;
-    margin: 20px 0 0 0;
+    margin: 16px 0 0 0;
     line-height: 1.6;
 }
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .partner-hero {
-        padding: 100px 32px 60px;
-    }
-
-    .partner-hero-title {
-        font-size: 48px;
-    }
-
-    .hero-stats {
-        gap: 40px;
-    }
-
-    .partner-container {
-        padding: 0 32px;
-    }
-
-    .benefits-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-
-    .requirements-section {
-        margin: 0 -32px;
-        padding-left: 32px;
-        padding-right: 32px;
+    .partner-section {
+        padding: 80px 32px;
     }
 
     .requirements-grid {
         grid-template-columns: 1fr;
-        gap: 24px;
-    }
-
-    .partner-form {
-        padding: 44px;
+        gap: 28px;
     }
 
     .form-row {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 20px;
     }
 }
 
 @media (max-width: 768px) {
-    .partner-hero {
-        padding: 80px 24px 48px;
-    }
-
-    .partner-hero-title {
-        font-size: 36px;
-    }
-
-    .partner-hero-subtitle {
-        font-size: 16px;
-    }
-
-    .hero-stats {
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    .hero-stat-item h3 {
-        font-size: 36px;
+    .partner-section {
+        padding: 60px 24px;
+        overflow-x: hidden;
     }
 
     .partner-container {
-        padding: 0 24px;
+        width: 100%;
+        max-width: 100%;
     }
 
-    .benefits-section,
-    .application-section {
-        padding: 60px 0;
+    .partner-title {
+        font-size: 36px;
     }
 
-    .section-title {
-        font-size: 32px;
-        margin-bottom: 40px;
+    .partner-subtitle {
+        font-size: 15px;
     }
 
-    .benefit-card {
-        padding: 32px;
+    .requirements-box {
+        padding: 36px 28px;
+        width: 100%;
+        max-width: 100%;
     }
 
-    .requirements-section {
-        padding: 60px 24px;
-        margin: 0 -24px;
+    .requirements-title {
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+
+    .requirements-grid {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .application-form-wrapper {
+        padding: 40px 24px;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .form-intro {
+        margin-bottom: 36px;
+        padding-bottom: 24px;
+    }
+
+    .form-intro-title {
+        font-size: 26px;
+    }
+
+    .form-intro-subtitle {
+        font-size: 15px;
     }
 
     .partner-form {
-        padding: 36px 28px;
+        width: 100%;
+        max-width: 100%;
     }
 
-    .submit-btn {
-        padding: 16px 40px;
+    .form-row {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-input,
+    .form-select {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .submit-application-btn {
+        width: 100%;
+        max-width: 100%;
     }
 }
 
 @media (max-width: 480px) {
-    .partner-hero {
-        padding: 60px 16px 40px;
+    .partner-section {
+        padding: 48px 16px;
     }
 
-    .partner-hero-title {
+    .partner-title {
         font-size: 28px;
     }
 
-    .partner-hero-subtitle {
-        font-size: 15px;
-    }
-
-    .hero-stat-item h3 {
-        font-size: 32px;
-    }
-
-    .hero-stat-item p {
-        font-size: 13px;
-    }
-
-    .partner-container {
-        padding: 0 16px;
-    }
-
-    .benefits-section,
-    .application-section {
-        padding: 48px 0;
-    }
-
-    .section-title {
-        font-size: 28px;
-    }
-
-    .benefit-card {
-        padding: 28px 24px;
-    }
-
-    .benefit-icon {
-        font-size: 40px;
-    }
-
-    .benefit-card h3 {
-        font-size: 20px;
-    }
-
-    .benefit-card p {
+    .partner-subtitle {
         font-size: 14px;
     }
 
-    .requirements-section {
-        padding: 48px 16px;
-        margin: 0 -16px;
-    }
-
-    .requirement-icon {
-        width: 64px;
-        height: 64px;
-    }
-
-    .requirement-card h4 {
-        font-size: 17px;
-    }
-
-    .partner-form {
+    .requirements-box {
         padding: 28px 20px;
     }
 
-    .form-input {
-        padding: 14px 18px;
+    .requirements-title {
+        font-size: 18px;
+    }
+
+    .requirement-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .requirement-text {
         font-size: 14px;
     }
 
-    .submit-btn {
-        padding: 15px 36px;
+    .application-form-wrapper {
+        padding: 32px 20px;
+    }
+
+    .form-intro {
+        margin-bottom: 32px;
+        padding-bottom: 20px;
+    }
+
+    .form-intro-title {
+        font-size: 24px;
+    }
+
+    .form-intro-subtitle {
+        font-size: 14px;
+    }
+
+    .partner-form {
+        gap: 24px;
+    }
+
+    .form-input,
+    .form-select {
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+
+    .submit-application-btn {
+        padding: 16px 36px;
         font-size: 15px;
+        width: 100%;
     }
 
     .form-disclaimer {
