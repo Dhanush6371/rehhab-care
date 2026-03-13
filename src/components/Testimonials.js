@@ -1,95 +1,64 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import './Testimonials.css';
 import LazySection from './LazySection';
 
 const Testimonials = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
     const [playingVideo, setPlayingVideo] = useState(null);
-    const carouselRef = useRef(null);
 
     const testimonials = [
         {
-            name: 'Sarah Thompson',
-            role: 'Marketing Director',
-            image: '/images/team-1.jpg',
-            avatar: '/images/team-1.jpg',
+            name: 'Emily Johnson',
+            avatar: '/images/avatar1.jpg',
+            text: 'Their service was outstanding. They ensured I was comfortable and informed every step of the way. The team was professional, caring, and went above and beyond to meet my needs. I highly recommend their services to anyone looking for quality care.',
+            rating: 5,
+            type: 'text'
+        },
+        {
+            name: 'Michael Roberts',
+            role: 'BUSINESS OWNER',
+            image: '/images/avatar2.jpg',
             videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-            text: 'This product has made my life so much easier. I can\'t imagine going back to the way things were before!',
-            author: 'Sarah Thompson',
             type: 'video'
         },
         {
-            name: 'Emily R.',
-            role: 'Business Owner',
-            image: '/images/team-2.jpg',
-            avatar: '/images/team-2.jpg',
-            text: 'This product has made my life so much easier. I can\'t imagine going back to the way things were before!',
-            author: 'Emily R.',
-            type: 'image'
+            name: 'Olivia Harris',
+            avatar: '/images/avatar3.jpg',
+            text: 'They were attentive and thorough. Their professionalism and kindness made the entire process seamless. From the initial consultation to the follow-up care, everything was handled with expertise and compassion. I felt valued as a patient throughout my journey.',
+            rating: 4,
+            type: 'text'
         },
         {
-            name: 'Michael T.',
-            role: 'Software Engineer',
-            image: '/images/team-3.jpg',
-            avatar: '/images/team-3.jpg',
+            name: 'James Anderson',
+            role: 'SOFTWARE ENGINEER',
+            image: '/images/avatar1.jpg',
             videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-            text: 'I\'ve seen remarkable results since using this service. Highly recommended!',
-            author: 'Michael T.',
             type: 'video'
         },
         {
-            name: 'Sneha Kapoor',
-            role: 'Verified Patient',
-            image: '/images/team-4.jpg',
-            avatar: '/images/team-4.jpg',
-            text: 'Highly recommend Rehabb Care! They genuinely care about long-term wellness and provided me with the tools I needed to stay active.',
-            author: 'Sneha Kapoor',
-            type: 'image'
+            name: 'Daniel Thompson',
+            avatar: '/images/avatar2.jpg',
+            text: 'Their team was exceptional. They listened to my concerns and made sure all my needs were addressed. The personalized approach and attention to detail really set them apart. I experienced significant improvement and couldn\'t be happier with the results.',
+            rating: 5,
+            type: 'text'
         },
         {
-            name: 'Aditi Sharma',
-            role: 'Corporate Professional',
-            image: '/images/team-5.jpg',
-            avatar: '/images/team-5.jpg',
-            videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-            text: 'The staff are professional and caring. My back pain improved drastically in just a few sessions!',
-            author: 'Aditi Sharma',
-            type: 'video'
-        },
-        {
-            name: 'Rajesh Kumar',
-            role: 'Athlete',
-            image: '/images/team-6.jpg',
-            avatar: '/images/team-6.jpg',
-            text: 'Amazing recovery program! Got back to my sport faster than expected.',
-            author: 'Rajesh Kumar',
-            type: 'image'
+            name: 'Sarah Mitchell',
+            avatar: '/images/avatar3.jpg',
+            text: 'Outstanding experience from start to finish. The care and attention to detail were remarkable. Every staff member I encountered was knowledgeable, friendly, and dedicated to providing the best possible service. I would definitely return and recommend them to family and friends.',
+            rating: 5,
+            type: 'text'
         }
     ];
-
-    const itemsPerSlide = 3;
-    const maxSlides = Math.ceil(testimonials.length / itemsPerSlide);
-
-    const nextSlide = () => {
-        setCurrentSlide((prev) => (prev + 1) % maxSlides);
-        setPlayingVideo(null);
-    };
-
-    const prevSlide = () => {
-        setCurrentSlide((prev) => (prev - 1 + maxSlides) % maxSlides);
-        setPlayingVideo(null);
-    };
 
     const handlePlayVideo = (index) => {
         setPlayingVideo(index);
     };
 
-    useEffect(() => {
-        if (carouselRef.current) {
-            const offset = currentSlide * 100;
-            carouselRef.current.style.transform = `translateX(-${offset}%)`;
-        }
-    }, [currentSlide]);
+    const renderStars = (rating) => {
+        return Array.from({ length: 5 }, (_, i) => (
+            <span key={i} className={`star ${i < rating ? 'filled' : 'empty'}`}>★</span>
+        ));
+    };
 
     return (
         <section className="testimonials-section">
@@ -101,104 +70,63 @@ const Testimonials = () => {
                     </div>
                 </LazySection>
 
-                <div className="carousel-wrapper">
-                    <button
-                        className="carousel-nav carousel-nav-left"
-                        onClick={prevSlide}
-                        aria-label="Previous testimonials"
-                    >
-                        &#8249;
-                    </button>
-
-                    <div className="carousel-container">
-                        <div className="carousel-track" ref={carouselRef}>
-                            {testimonials.map((testimonial, index) => (
-                                <div key={index} className="testimonial-card">
-                                    <div className="testimonial-video-wrapper">
-                                        {playingVideo === index && testimonial.type === 'video' ? (
-                                            <iframe
-                                                className="testimonial-video-iframe"
-                                                src={testimonial.videoUrl}
-                                                title={`${testimonial.name} testimonial`}
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                allowFullScreen
-                                            ></iframe>
-                                        ) : (
-                                            <div className="video-thumbnail-wrapper">
-                                                <img
-                                                    src={testimonial.image}
-                                                    alt={testimonial.name}
-                                                    className="testimonial-thumbnail"
-                                                    loading="lazy"
-                                                    onError={(e) => e.target.src = `https://via.placeholder.com/600x400/e8e8e8/666666?text=${testimonial.name.replace(/ /g, '+')}`}
-                                                />
-                                                <div className="video-overlay"></div>
-                                                {testimonial.type === 'video' && (
-                                                    <button
-                                                        className="video-play-button"
-                                                        onClick={() => handlePlayVideo(index)}
-                                                        aria-label={`Play ${testimonial.name} testimonial`}
-                                                    >
-                                                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                                                            <circle cx="32" cy="32" r="32" fill="white" />
-                                                            <path d="M24 20L44 32L24 44V20Z" fill="#1d1d1f" />
-                                                        </svg>
-                                                    </button>
-                                                )}
-                                            </div>
-                                        )}
-                                    </div>
-                                    <div className="testimonial-content">
-                                        <div className="testimonial-stars">
-                                            <span className="star">★</span>
-                                            <span className="star">★</span>
-                                            <span className="star">★</span>
-                                            <span className="star">★</span>
-                                            <span className="star">★</span>
-                                        </div>
-                                        <div className="testimonial-avatar-wrapper">
+                <div className="testimonials-grid">
+                    {testimonials.map((testimonial, index) => (
+                        testimonial.type === 'video' ? (
+                            <div key={index} className="testimonial-video-card">
+                                <div className="testimonial-video-wrapper">
+                                    {playingVideo === index ? (
+                                        <iframe
+                                            className="testimonial-video-iframe"
+                                            src={testimonial.videoUrl}
+                                            title={`${testimonial.name} testimonial`}
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen
+                                        ></iframe>
+                                    ) : (
+                                        <div className="video-thumbnail-wrapper">
                                             <img
-                                                src={testimonial.avatar}
+                                                src={testimonial.image}
                                                 alt={testimonial.name}
-                                                className="testimonial-avatar"
+                                                className="testimonial-thumbnail"
                                                 loading="lazy"
-                                                onError={(e) => e.target.src = `https://via.placeholder.com/80x80/cccccc/666666?text=${testimonial.name.charAt(0)}`}
                                             />
-                                            <div className="testimonial-author-info">
-                                                <h3 className="testimonial-author-name">{testimonial.name}</h3>
-                                                <p className="testimonial-author-role">{testimonial.role}</p>
+                                            <div className="video-overlay"></div>
+                                            <button
+                                                className="video-play-button"
+                                                onClick={() => handlePlayVideo(index)}
+                                                aria-label={`Play ${testimonial.name} testimonial`}
+                                            >
+                                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                                    <circle cx="32" cy="32" r="32" fill="white" fillOpacity="0.95" />
+                                                    <path d="M26 20L42 32L26 44V20Z" fill="#1d1d1f" />
+                                                </svg>
+                                            </button>
+                                            <div className="video-info">
+                                                <div className="video-name">{testimonial.name}</div>
+                                                <div className="video-role">{testimonial.role}</div>
                                             </div>
                                         </div>
-                                        <blockquote className="testimonial-quote">
-                                            &ldquo;{testimonial.text}&rdquo;
-                                        </blockquote>
-                                        <p className="testimonial-attribution">— {testimonial.author}</p>
-                                    </div>
+                                    )}
                                 </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    <button
-                        className="carousel-nav carousel-nav-right"
-                        onClick={nextSlide}
-                        aria-label="Next testimonials"
-                    >
-                        &#8250;
-                    </button>
-                </div>
-
-                <div className="carousel-dots">
-                    {Array.from({ length: maxSlides }).map((_, idx) => (
-                        <button
-                            key={idx}
-                            className={`carousel-dot ${idx === currentSlide ? 'active' : ''}`}
-                            onClick={() => {
-                                setCurrentSlide(idx);
-                                setPlayingVideo(null);
-                            }}
-                            aria-label={`Go to slide ${idx + 1}`}
-                        />
+                            </div>
+                        ) : (
+                            <div key={index} className="testimonial-text-card">
+                                <div className="testimonial-header">
+                                    <img
+                                        src={testimonial.avatar}
+                                        alt={testimonial.name}
+                                        className="testimonial-avatar"
+                                        loading="lazy"
+                                    />
+                                    <h3 className="testimonial-name">{testimonial.name}</h3>
+                                </div>
+                                <p className="testimonial-text">{testimonial.text}</p>
+                                <div className="testimonial-stars">
+                                    {renderStars(testimonial.rating)}
+                                </div>
+                            </div>
+                        )
                     ))}
                 </div>
             </div>
