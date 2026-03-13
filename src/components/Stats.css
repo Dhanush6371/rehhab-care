@@ -1,18 +1,58 @@
 .stats-section {
-    background: #ffff;
-    padding: 0px 40px 80px;
+    background: #f5f5f5;
+    padding: 60px 40px 80px;
     margin: 0;
     position: relative;
     z-index: 3;
 }
 
-/* Top Stats Cards */
-.stats-cards {
+.stats-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a3a52;
+    margin: 0 0 40px 0;
+    text-align: left;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.2;
+}
+
+/* Stats Cards Container */
+.stats-cards-container {
     max-width: 1400px;
     margin: 0 auto 60px;
+    background: white;
+    border-radius: 20px;
+    padding: 48px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.stat-card-item {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.stat-card-item h3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 8px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.stat-card-item p {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #666;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
 }
 
 .stat-card {
@@ -177,11 +217,11 @@
 /* Virtual Consultation */
 .consultation-container {
     max-width: 1400px;
-    margin: 0 auto 60px;
+    margin: 0 auto;
     background: white;
-    border-radius: 24px;
+    border-radius: 20px;
     padding: 48px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .consultation-form-wrapper {
@@ -200,6 +240,7 @@
     font-weight: 700;
     color: #1a1a1a;
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 .rating {
@@ -218,11 +259,13 @@
     font-size: 16px;
     font-weight: 700;
     color: #1a1a1a;
+    font-family: 'Inter', sans-serif;
 }
 
 .reviews {
     font-size: 14px;
     color: #666;
+    font-family: 'Inter', sans-serif;
 }
 
 .consultation-form {
@@ -246,6 +289,7 @@
     font-size: 12px;
     font-weight: 500;
     color: #666;
+    font-family: 'Inter', sans-serif;
 }
 
 .form-group input {
@@ -255,6 +299,7 @@
     font-size: 14px;
     background: #f8f8f8;
     transition: all 0.3s;
+    font-family: 'Inter', sans-serif;
 }
 
 .form-group input:focus {
@@ -264,7 +309,7 @@
 }
 
 .submit-btn {
-    background: #3e5fd5;
+    background: #5865f2;
     color: white;
     padding: 14px 40px;
     border: none;
@@ -275,12 +320,13 @@
     transition: all 0.3s;
     white-space: nowrap;
     height: fit-content;
+    font-family: 'Inter', sans-serif;
 }
 
 .submit-btn:hover {
-    background: #2a439b;
+    background: #4752c4;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(139, 164, 255, 0.4);
+    box-shadow: 0 8px 20px rgba(88, 101, 242, 0.4);
 }
 
 .consultation-stat-below {
@@ -333,14 +379,32 @@
 /* Responsive */
 @media (max-width: 1024px) {
     .stats-section {
-        padding: 16px 32px 60px;
+        padding: 48px 32px 60px;
         margin-top: 0;
     }
 
-    .stats-cards {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .stats-heading {
+        font-size: 42px;
+        margin-bottom: 32px;
+    }
+
+    .stats-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        padding: 40px;
         margin-bottom: 48px;
+    }
+
+    .stat-card-item h3 {
+        font-size: 42px;
+    }
+
+    .stat-card-item p {
+        font-size: 11px;
+    }
+
+    .form-header h2 {
+        font-size: 32px;
     }
 
     .stat-card {
@@ -385,15 +449,34 @@
 
 @media (max-width: 768px) {
     .stats-section {
-        padding: 12px 24px 48px;
+        padding: 40px 24px 48px;
         margin-top: 0;
     }
 
-    .stats-cards {
-        gap: 16px;
+    .stats-heading {
+        font-size: 36px;
+        margin-bottom: 28px;
+    }
+
+    .stats-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+        padding: 32px 24px;
         margin-bottom: 40px;
         width: 100%;
         max-width: 100%;
+    }
+
+    .stat-card-item h3 {
+        font-size: 36px;
+    }
+
+    .stat-card-item p {
+        font-size: 10px;
+    }
+
+    .form-header h2 {
+        font-size: 28px;
     }
 
     .stat-card {
@@ -509,13 +592,33 @@
 
 @media (max-width: 480px) {
     .stats-section {
-        padding: 8px 16px 40px;
+        padding: 32px 16px 40px;
         margin-top: 0;
     }
 
-    .stats-cards {
-        gap: 12px;
+    .stats-heading {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .stats-cards-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 24px 16px;
         margin-bottom: 32px;
+    }
+
+    .stat-card-item h3 {
+        font-size: 32px;
+    }
+
+    .stat-card-item p {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .form-header h2 {
+        font-size: 24px;
     }
 
     .stat-card {

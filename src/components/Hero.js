@@ -83,6 +83,7 @@ const Hero = () => {
                     {/* Left Side - Body Diagram */}
                     <div className="hero-left">
                         <LazySection animation="fade-right">
+                            <h2 className="hero-heading">Where Does It Hurt?</h2>
                             <div className="body-diagram-wrapper">
                                 <img
                                     src="/images/stamp-2.png"
@@ -160,7 +161,7 @@ const Hero = () => {
                             </div>
                         </LazySection>
 
-                        
+
                     </div>
 
                     {/* Right Side - Content */}
@@ -172,14 +173,11 @@ const Hero = () => {
                                     <h2>{currentPainPoint.title}</h2>
                                     <p>{currentPainPoint.description}</p>
 
-                                    {/* CTA Buttons */}
-                                    <div className="cta-buttons">
-                                        <button className="btn-book" onClick={handleBookCall}>Book a Call</button>
-                                        <button className="btn-watch">
-                                            <span className="play-icon">▶</span>
-                                            Watch Video
-                                        </button>
-                                    </div>
+                                    {/* CTA Button */}
+                                    <button className="btn-book" onClick={handleBookCall}>
+                                        Book Free Consultation
+                                        <span className="arrow-icon">→</span>
+                                    </button>
                                 </div>
 
                                 {/* Person Image */}

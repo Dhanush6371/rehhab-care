@@ -6,39 +6,45 @@ const Services = () => {
     const services = [
         {
             id: 1,
-            category: 'Rehabilitation',
-            title: 'Knee & Ankle Care',
-            image: '/images/knee-care.jpg'
+            title: 'Sports Rehabilitation',
+            description: 'Comprehensive recovery programs for athletes, from injury to peak performance.',
+            icon: '📈',
+            iconBg: '#d4f4dd'
         },
         {
             id: 2,
-            category: 'Sports',
-            title: 'Shoulder & Elbow Rehab',
-            image: '/images/shoulder-rehab.jpg'
+            title: 'Neurological Rehab',
+            description: 'Specialized therapy for stroke, Parkinson\'s, and other neurological conditions.',
+            icon: '🧠',
+            iconBg: '#2d3e50'
         },
         {
             id: 3,
-            category: 'Geriatric',
-            title: 'Geriatric Physiotherapy',
-            image: '/images/geriatric.jpg'
+            title: 'Orthopedic Care',
+            description: 'Treatment for fractures, joint replacements, and musculoskeletal disorders.',
+            icon: '🦴',
+            iconBg: '#d4f4dd'
         },
         {
             id: 4,
-            category: 'Sports',
-            title: 'Post-Operative Rehabilitation',
-            image: '/images/post-operative.jpg'
+            title: 'Cardiac Rehabilitation',
+            description: 'Guided exercise and lifestyle programs for heart health recovery.',
+            icon: '❤️',
+            iconBg: '#2d3e50'
         },
         {
             id: 5,
-            category: 'Specialist',
-            title: 'Specialist Consultation',
-            image: '/images/specialist.jpg'
+            title: 'Post-Surgical Rehab',
+            description: 'Structured recovery programs to restore function after surgery.',
+            icon: '🔄',
+            iconBg: '#d4f4dd'
         },
         {
             id: 6,
-            category: 'FAQ',
-            title: 'Expert Medical Guidance',
-            image: '/images/faq-doctor.jpg'
+            title: 'Pediatric Physio',
+            description: 'Child-friendly therapy for developmental and physical challenges.',
+            icon: '⏱️',
+            iconBg: '#2d3e50'
         }
     ];
 
@@ -47,8 +53,9 @@ const Services = () => {
             <div className="services-container">
                 <LazySection animation="fade-up">
                     <div className="services-header">
-                        <h2>Specialized Treatments for <span className="italic">Your Recovery</span></h2>
-                        <p>Evidence-based physiotherapy tailored to your unique needs, using state-of-the-art techniques.</p>
+                        <p className="services-label">OUR SERVICES</p>
+                        <h2>Comprehensive <span className="highlight">Rehab</span> Programs</h2>
+                        <p className="services-description">From sports injuries to post-surgical recovery, our expert team provides personalized care to help you regain mobility and live pain-free.</p>
                     </div>
                 </LazySection>
 
@@ -56,18 +63,14 @@ const Services = () => {
                     {services.map((service, index) => (
                         <LazySection key={service.id} animation="fade-up" delay={index * 100}>
                             <div className="service-card">
-                                <div className="service-image">
-                                    <img
-                                        src={service.image}
-                                        alt={service.title}
-                                        loading="lazy"
-                                        onError={(e) => e.target.src = `https://via.placeholder.com/400x500/1a5f5a/ffffff?text=${service.title.replace(/ /g, '+')}`}
-                                    />
-                                    <div className="service-overlay">
-                                        <span className="service-category">{service.category}</span>
-                                        <h3 className="service-title">{service.title}</h3>
-                                    </div>
+                                <div className="service-icon" style={{ backgroundColor: service.iconBg }}>
+                                    <span>{service.icon}</span>
                                 </div>
+                                <h3 className="service-title">{service.title}</h3>
+                                <p className="service-description">{service.description}</p>
+                                <button className="learn-more" onClick={() => console.log(`Learn more about ${service.title}`)}>
+                                    Learn More <span className="arrow">→</span>
+                                </button>
                             </div>
                         </LazySection>
                     ))}

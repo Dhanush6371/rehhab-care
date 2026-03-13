@@ -13,8 +13,17 @@
 
 /* Header */
 .testimonials-header {
-    text-align: center;
     margin-bottom: 60px;
+}
+
+.testimonials-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #999;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+    font-family: 'Inter', sans-serif;
 }
 
 .testimonials-badge {
@@ -33,10 +42,18 @@
 .testimonials-title {
     font-size: 48px;
     font-weight: 700;
-    color: #1a202c;
-    margin: 12px 0 0 0;
+    color: #1a3a52;
+    margin: 0;
     line-height: 1.2;
     letter-spacing: -1px;
+    font-family: 'Inter', sans-serif;
+}
+
+.testimonials-title .highlight {
+    background: #d4f4dd;
+    color: #1a3a52;
+    padding: 4px 16px;
+    border-radius: 8px;
 }
 
 /* Grid Layout */

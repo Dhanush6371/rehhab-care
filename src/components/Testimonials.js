@@ -65,8 +65,8 @@ const Testimonials = () => {
             <div className="testimonials-container">
                 <LazySection animation="fade-up">
                     <div className="testimonials-header">
-                        <h2 className="testimonials-title">Testimonials</h2>
-                        <span className="testimonials-badge">CLIENT REVIEWS</span>
+                        <p className="testimonials-label">TESTIMONIALS</p>
+                        <h2 className="testimonials-title">Stories of <span className="highlight">Recovery</span></h2>
                     </div>
                 </LazySection>
 

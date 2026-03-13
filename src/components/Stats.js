@@ -5,15 +5,39 @@ import LazySection from './LazySection';
 const Stats = () => {
     return (
         <section className="stats-section">
-            {/* Top Stats Cards */}
+            {/* Heading */}
+            <LazySection animation="fade-up" delay={0}>
+                <h2 className="stats-heading">You're not alone!</h2>
+            </LazySection>
 
+            {/* Stats Cards */}
+            <LazySection animation="fade-up" delay={100}>
+                <div className="stats-cards-container">
+                    <div className="stat-card-item">
+                        <h3>100+</h3>
+                        <p>TREATMENTS OFFERED</p>
+                    </div>
+                    <div className="stat-card-item">
+                        <h3>50+</h3>
+                        <p>CERTIFIED THERAPISTS</p>
+                    </div>
+                    <div className="stat-card-item">
+                        <h3>2000+</h3>
+                        <p>SATISFIED CLIENTS</p>
+                    </div>
+                    <div className="stat-card-item">
+                        <h3>300+</h3>
+                        <p>UNIQUE WELLNESS</p>
+                    </div>
+                </div>
+            </LazySection>
 
             {/* Virtual Consultation Form */}
             <div className="consultation-container">
-                <LazySection animation="fade-up" delay={0}>
+                <LazySection animation="fade-up" delay={200}>
                     <div className="consultation-form-wrapper">
                         <div className="form-header">
-                            <h2>Virtual Consultation</h2>
+                            <h2>Get a Free Assessment</h2>
                             <div className="rating">
                                 <span className="stars">⭐⭐⭐⭐⭐</span>
                                 <span className="rating-text">5.0</span>
@@ -38,34 +62,6 @@ const Stats = () => {
                                 <button type="submit" className="submit-btn">Submit</button>
                             </div>
                         </form>
-                    </div>
-                </LazySection>
-            </div>
-
-            {/* Bottom Stats */}
-            <div className="bottom-stats">
-                <LazySection animation="fade-up" delay={0}>
-                    <div className="bottom-stat-item">
-                        <h3>100+</h3>
-                        <p>TREATMENTS OFFERED</p>
-                    </div>
-                </LazySection>
-                <LazySection animation="fade-up" delay={100}>
-                    <div className="bottom-stat-item">
-                        <h3>50+</h3>
-                        <p>CERTIFIED THERAPISTS</p>
-                    </div>
-                </LazySection>
-                <LazySection animation="fade-up" delay={200}>
-                    <div className="bottom-stat-item">
-                        <h3>2000+</h3>
-                        <p>SATISFIED CLIENTS</p>
-                    </div>
-                </LazySection>
-                <LazySection animation="fade-up" delay={300}>
-                    <div className="bottom-stat-item">
-                        <h3>300+</h3>
-                        <p>UNIQUE WELLNESS</p>
                     </div>
                 </LazySection>
             </div>

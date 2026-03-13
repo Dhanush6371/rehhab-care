@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './Team.css';
 import LazySection from './LazySection';
 
@@ -108,11 +108,15 @@ const Team = () => {
             <div className="team-container">
                 <LazySection animation="fade-up">
                     <div className="team-header">
-                        <div className="team-badge">● OUR SPECIALISTS</div>
-                        <h2 className="team-title">Meet our dedicated and experienced team</h2>
-                        <p className="team-subtitle">
-                            Helping you regain strength, mobility, and confidence with personalized care from world-class experts.
-                        </p>
+                        <div className="team-header-left">
+                            <p className="team-label">OUR TEAM</p>
+                            <h2 className="team-title">Meet Your <span className="highlight">Recovery</span> Partners</h2>
+                        </div>
+                        <div className="team-header-right">
+                            <p className="team-subtitle">
+                                Our team of certified physiotherapists brings decades of combined experience to help you achieve your recovery goals.
+                            </p>
+                        </div>
                     </div>
                 </LazySection>
 
@@ -178,6 +182,20 @@ const Team = () => {
                         ›
                     </button>
                 </div>
+
+                {/* Join Team Section */}
+                <LazySection animation="fade-up" delay={200}>
+                    <div className="join-team-section">
+                        <div className="join-team-content">
+                            <h3 className="join-team-title">Join Our Growing Team</h3>
+                            <p className="join-team-text">Are you a passionate physiotherapist? We're always looking for talented professionals.</p>
+                        </div>
+                        <Link to="/partner">
+
+                            <button className="apply-now-btn">Apply Now</button>
+                        </Link>
+                    </div>
+                </LazySection>
             </div>
         </section>
     );
