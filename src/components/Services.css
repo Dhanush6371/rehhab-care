@@ -16,38 +16,39 @@
 }
 
 .services-label {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
-    letter-spacing: 2px;
-    color: #999;
+    letter-spacing: 2.5px;
+    color: #a8b3c1;
     text-transform: uppercase;
-    margin: 0 0 16px 0;
-    font-family: 'Inter', sans-serif;
+    margin: 0 0 12px 0;
+    font-family: 'Arial', sans-serif;
 }
 
 .services-header h2 {
     font-size: 48px;
-    font-weight: 700;
-    color: #1a3a52;
+    font-weight: 900;
+    color: #1e3a5f;
     margin: 0 0 20px 0;
-    line-height: 1.2;
-    font-family: 'Inter', sans-serif;
+    line-height: 1.3;
+    font-family: 'Arial Black', 'Arial Bold', sans-serif;
 }
 
 .services-header h2 .highlight {
-    background: #d4f4dd;
-    padding: 4px 16px;
-    border-radius: 8px;
-    color: #1a3a52;
+    background: #2c4a6b;
+    padding: 6px 20px;
+    border-radius: 10px;
+    color: #b8f5cd;
+    font-weight: 900;
 }
 
 .services-description {
-    font-size: 16px;
-    color: #6b7c93;
+    font-size: 15px;
+    color: #8a95a5;
     line-height: 1.7;
     max-width: 700px;
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Services Grid */
@@ -143,6 +144,10 @@
         padding: 60px 60px;
     }
 
+    .services-header h2 {
+        font-size: 42px;
+    }
+
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
@@ -151,20 +156,33 @@
 
 @media (max-width: 768px) {
     .services-section {
-        padding: 48px 40px;
+        padding: 48px 24px;
     }
 
     .services-header {
         margin-bottom: 40px;
     }
 
+    .services-label {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
     .services-header h2 {
-        font-size: 36px;
+        font-size: 32px;
         margin-bottom: 16px;
+        line-height: 1.3;
+    }
+
+    .services-header h2 .highlight {
+        padding: 4px 16px;
+        border-radius: 8px;
+        display: inline-block;
     }
 
     .services-description {
-        font-size: 15px;
+        font-size: 14px;
+        line-height: 1.6;
     }
 
     .services-grid {
@@ -197,19 +215,37 @@
 
 @media (max-width: 480px) {
     .services-section {
-        padding: 40px 24px;
+        padding: 40px 20px;
+    }
+
+    .services-header {
+        margin-bottom: 32px;
+    }
+
+    .services-label {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+        margin-bottom: 10px;
     }
 
     .services-header h2 {
         font-size: 28px;
+        line-height: 1.4;
+    }
+
+    .services-header h2 .highlight {
+        padding: 4px 14px;
+        border-radius: 7px;
     }
 
     .services-description {
-        font-size: 14px;
+        font-size: 13px;
+        line-height: 1.6;
     }
 
     .service-card {
-        padding: 20px 16px;
+        padding: 24px 18px;
+        min-height: auto;
     }
 
     .service-icon {

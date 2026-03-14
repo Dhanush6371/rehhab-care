@@ -24,19 +24,19 @@
 .section-label {
     font-size: 12px;
     font-weight: 600;
-    letter-spacing: 2px;
-    color: #9fb3c8;
+    letter-spacing: 2.5px;
+    color: #7fb89a;
     text-transform: uppercase;
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .section-title {
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 56px;
+    font-weight: 900;
     margin: 0;
-    line-height: 1.2;
-    font-family: 'Inter', sans-serif;
+    line-height: 1.3;
+    font-family: 'Arial Black', 'Arial Bold', sans-serif;
 }
 
 .section-title .title-normal {
@@ -44,10 +44,7 @@
 }
 
 .section-title .highlight {
-    background: #d4f4dd;
-    color: #1a3a52;
-    padding: 4px 16px;
-    border-radius: 8px;
+    color: #b8f5cd;
 }
 
 .section-description {
@@ -461,19 +458,22 @@
 
 @media (max-width: 768px) {
     .why-better-section {
-        padding: 48px 40px;
+        padding: 48px 24px;
     }
 
     .section-label {
-        font-size: 11px;
+        font-size: 10px;
+        letter-spacing: 2px;
     }
 
     .section-title {
-        font-size: 36px;
+        font-size: 32px;
+        line-height: 1.3;
     }
 
     .section-description {
-        font-size: 15px;
+        font-size: 14px;
+        line-height: 1.6;
     }
 
     .action-buttons {
@@ -531,15 +531,22 @@
 
 @media (max-width: 480px) {
     .why-better-section {
-        padding: 40px 24px;
+        padding: 40px 20px;
+    }
+
+    .section-label {
+        font-size: 9px;
+        letter-spacing: 1.5px;
     }
 
     .section-title {
         font-size: 28px;
+        line-height: 1.4;
     }
 
     .section-description {
-        font-size: 14px;
+        font-size: 13px;
+        line-height: 1.6;
     }
 
     .book-visit-btn {
