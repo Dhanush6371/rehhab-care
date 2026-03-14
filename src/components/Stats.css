@@ -20,16 +20,22 @@
 }
 
 /* Stats Cards Container */
-.stats-cards-container {
+.stats-combined-container {
     max-width: 1400px;
-    margin: 0 auto 60px;
+    margin: 0 auto;
     background: white;
     border-radius: 20px;
-    padding: 32px 48px;
+    padding: 32px 48px 48px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.stats-cards-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 40px;
 }
 
 .stat-card-item {
@@ -53,6 +59,11 @@
     margin: 0;
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
+}
+
+/* Consultation Form Section */
+.consultation-form-section {
+    width: 100%;
 }
 
 .stat-card {
@@ -222,6 +233,7 @@
     border-radius: 20px;
     padding: 48px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: none;
 }
 
 .consultation-form-wrapper {
@@ -388,11 +400,15 @@
         margin-bottom: 32px;
     }
 
-    .stats-cards-container {
+    .stats-combined-container {
+        padding: 32px 40px 40px;
+    }
+
+    .stats-cards-row {
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
-        padding: 40px;
-        margin-bottom: 48px;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
     }
 
     .stat-card-item h3 {
@@ -413,14 +429,6 @@
 
     .stat-number {
         font-size: 42px;
-    }
-
-    .consultation-container {
-        padding: 40px;
-    }
-
-    .form-header h2 {
-        font-size: 32px;
     }
 
     .form-row {
@@ -458,13 +466,15 @@
         margin-bottom: 28px;
     }
 
-    .stats-cards-container {
+    .stats-combined-container {
+        padding: 24px 20px 32px;
+    }
+
+    .stats-cards-row {
         grid-template-columns: repeat(2, 1fr);
         gap: 28px;
-        padding: 32px 24px;
-        margin-bottom: 40px;
-        width: 100%;
-        max-width: 100%;
+        padding-bottom: 28px;
+        margin-bottom: 28px;
     }
 
     .stat-card-item h3 {
@@ -473,47 +483,6 @@
 
     .stat-card-item p {
         font-size: 10px;
-    }
-
-    .form-header h2 {
-        font-size: 28px;
-    }
-
-    .stat-card {
-        padding: 24px;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .stat-number {
-        font-size: 36px;
-    }
-
-    .stat-label {
-        font-size: 11px;
-    }
-
-    .stat-description {
-        font-size: 13px;
-    }
-
-    .specialist-image {
-        height: 160px;
-        width: 100%;
-        max-width: 100%;
-        overflow: hidden;
-    }
-
-    .specialist-image img {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .consultation-container {
-        padding: 32px 24px;
-        border-radius: 20px;
-        width: 100%;
-        max-width: 100%;
     }
 
     .form-header {
@@ -531,34 +500,38 @@
     }
 
     .consultation-form {
-        margin-bottom: 32px;
-        width: 100%;
-        max-width: 100%;
+        margin-bottom: 0;
     }
 
     .form-row {
         grid-template-columns: 1fr !important;
         gap: 16px !important;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .form-group {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .form-group input {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
     }
 
     .submit-btn {
         padding: 14px 24px;
         font-size: 14px;
         width: 100%;
-        max-width: 100%;
+    }
+
+    .stat-card {
+        padding: 24px;
+    }
+
+    .stat-number {
+        font-size: 36px;
+    }
+
+    .stat-label {
+        font-size: 11px;
+    }
+
+    .stat-description {
+        font-size: 13px;
+    }
+
+    .specialist-image {
+        height: 160px;
     }
 
     .consultation-stat-below h3 {
@@ -572,13 +545,6 @@
     .bottom-stats {
         grid-template-columns: repeat(2, 1fr);
         gap: 28px;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .bottom-stat-item {
-        width: 100%;
-        max-width: 100%;
     }
 
     .bottom-stat-item h3 {

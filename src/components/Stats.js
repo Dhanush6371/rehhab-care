@@ -10,32 +10,31 @@ const Stats = () => {
                 <h2 className="stats-heading">You're not alone!</h2>
             </LazySection>
 
-            {/* Stats Cards */}
+            {/* Combined Stats and Form Container */}
             <LazySection animation="fade-up" delay={100}>
-                <div className="stats-cards-container">
-                    <div className="stat-card-item">
-                        <h3>100+</h3>
-                        <p>TREATMENTS OFFERED</p>
+                <div className="stats-combined-container">
+                    {/* Stats Cards */}
+                    <div className="stats-cards-row">
+                        <div className="stat-card-item">
+                            <h3>100+</h3>
+                            <p>TREATMENTS OFFERED</p>
+                        </div>
+                        <div className="stat-card-item">
+                            <h3>50+</h3>
+                            <p>CERTIFIED THERAPISTS</p>
+                        </div>
+                        <div className="stat-card-item">
+                            <h3>2000+</h3>
+                            <p>SATISFIED CLIENTS</p>
+                        </div>
+                        <div className="stat-card-item">
+                            <h3>300+</h3>
+                            <p>UNIQUE WELLNESS</p>
+                        </div>
                     </div>
-                    <div className="stat-card-item">
-                        <h3>50+</h3>
-                        <p>CERTIFIED THERAPISTS</p>
-                    </div>
-                    <div className="stat-card-item">
-                        <h3>2000+</h3>
-                        <p>SATISFIED CLIENTS</p>
-                    </div>
-                    <div className="stat-card-item">
-                        <h3>300+</h3>
-                        <p>UNIQUE WELLNESS</p>
-                    </div>
-                </div>
-            </LazySection>
 
-            {/* Virtual Consultation Form */}
-            <div className="consultation-container">
-                <LazySection animation="fade-up" delay={200}>
-                    <div className="consultation-form-wrapper">
+                    {/* Virtual Consultation Form */}
+                    <div className="consultation-form-section">
                         <div className="form-header">
                             <h2>Get a Free Assessment</h2>
                             <div className="rating">
@@ -63,8 +62,8 @@ const Stats = () => {
                             </div>
                         </form>
                     </div>
-                </LazySection>
-            </div>
+                </div>
+            </LazySection>
         </section>
     );
 };
