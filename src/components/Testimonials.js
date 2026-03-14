@@ -66,7 +66,6 @@ const Testimonials = () => {
     ];
 
     const itemsPerPage = 6;
-    const totalPages = Math.ceil(testimonials.length / itemsPerPage);
 
     const handlePlayVideo = (index) => {
         setPlayingVideo(index);
