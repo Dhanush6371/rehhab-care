@@ -110,12 +110,16 @@
     display: flex;
     gap: 32px;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-behavior: smooth;
     padding: 20px 0;
     scrollbar-width: none;
     /* Firefox */
     -ms-overflow-style: none;
     /* IE/Edge */
+    overscroll-behavior-x: none;
+    overscroll-behavior-y: auto;
+    -webkit-overflow-scrolling: auto;
 }
 
 .team-carousel::-webkit-scrollbar {

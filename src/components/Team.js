@@ -98,6 +98,24 @@ const Team = () => {
         }
     };
 
+    // Prevent carousel from trapping vertical page scroll
+    React.useEffect(() => {
+        const container = carouselRef.current;
+        if (!container) return;
+
+        const onWheel = (e) => {
+            // If the scroll is mostly vertical, let the page scroll instead
+            if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+                e.preventDefault();
+                // Manually scroll the page
+                window.scrollBy(0, e.deltaY);
+            }
+        };
+
+        container.addEventListener('wheel', onWheel, { passive: false });
+        return () => container.removeEventListener('wheel', onWheel);
+    }, []);
+
     const isAtStart = scrollPosition <= 0;
     const isAtEnd = carouselRef.current
         ? scrollPosition >= carouselRef.current.scrollWidth - carouselRef.current.clientWidth - 10

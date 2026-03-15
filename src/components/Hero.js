@@ -93,69 +93,69 @@ const Hero = () => {
                                 />
 
                                 {/* Pain Point Hotspots - Front view (Left figure) */}
-                                <div className="body-part head-front" onMouseEnter={() => setActivePainPoint('neck')}>
+                                <div className="body-part head-front" onMouseEnter={() => setActivePainPoint('neck')} onTouchStart={() => setActivePainPoint('neck')} onClick={() => setActivePainPoint('neck')}>
                                     <div className={`pain-indicator ${activePainPoint === 'neck' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part shoulder-left-front" onMouseEnter={() => setActivePainPoint('shoulder')}>
+                                <div className="body-part shoulder-left-front" onMouseEnter={() => setActivePainPoint('shoulder')} onTouchStart={() => setActivePainPoint('shoulder')} onClick={() => setActivePainPoint('shoulder')}>
                                     <div className={`pain-indicator ${activePainPoint === 'shoulder' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part shoulder-right-front" onMouseEnter={() => setActivePainPoint('shoulder')}>
+                                <div className="body-part shoulder-right-front" onMouseEnter={() => setActivePainPoint('shoulder')} onTouchStart={() => setActivePainPoint('shoulder')} onClick={() => setActivePainPoint('shoulder')}>
                                     <div className={`pain-indicator ${activePainPoint === 'shoulder' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part elbow-left-front" onMouseEnter={() => setActivePainPoint('elbow')}>
+                                <div className="body-part elbow-left-front" onMouseEnter={() => setActivePainPoint('elbow')} onTouchStart={() => setActivePainPoint('elbow')} onClick={() => setActivePainPoint('elbow')}>
                                     <div className={`pain-indicator ${activePainPoint === 'elbow' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part elbow-right-front" onMouseEnter={() => setActivePainPoint('elbow')}>
+                                <div className="body-part elbow-right-front" onMouseEnter={() => setActivePainPoint('elbow')} onTouchStart={() => setActivePainPoint('elbow')} onClick={() => setActivePainPoint('elbow')}>
                                     <div className={`pain-indicator ${activePainPoint === 'elbow' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part wrist-left-front" onMouseEnter={() => setActivePainPoint('wrist')}>
+                                <div className="body-part wrist-left-front" onMouseEnter={() => setActivePainPoint('wrist')} onTouchStart={() => setActivePainPoint('wrist')} onClick={() => setActivePainPoint('wrist')}>
                                     <div className={`pain-indicator ${activePainPoint === 'wrist' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part wrist-right-front" onMouseEnter={() => setActivePainPoint('wrist')}>
+                                <div className="body-part wrist-right-front" onMouseEnter={() => setActivePainPoint('wrist')} onTouchStart={() => setActivePainPoint('wrist')} onClick={() => setActivePainPoint('wrist')}>
                                     <div className={`pain-indicator ${activePainPoint === 'wrist' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part knee-left-front" onMouseEnter={() => setActivePainPoint('knee')}>
+                                <div className="body-part knee-left-front" onMouseEnter={() => setActivePainPoint('knee')} onTouchStart={() => setActivePainPoint('knee')} onClick={() => setActivePainPoint('knee')}>
                                     <div className={`pain-indicator ${activePainPoint === 'knee' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part knee-right-front" onMouseEnter={() => setActivePainPoint('knee')}>
+                                <div className="body-part knee-right-front" onMouseEnter={() => setActivePainPoint('knee')} onTouchStart={() => setActivePainPoint('knee')} onClick={() => setActivePainPoint('knee')}>
                                     <div className={`pain-indicator ${activePainPoint === 'knee' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part ankle-left-front" onMouseEnter={() => setActivePainPoint('ankle')}>
+                                <div className="body-part ankle-left-front" onMouseEnter={() => setActivePainPoint('ankle')} onTouchStart={() => setActivePainPoint('ankle')} onClick={() => setActivePainPoint('ankle')}>
                                     <div className={`pain-indicator ${activePainPoint === 'ankle' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part ankle-right-front" onMouseEnter={() => setActivePainPoint('ankle')}>
+                                <div className="body-part ankle-right-front" onMouseEnter={() => setActivePainPoint('ankle')} onTouchStart={() => setActivePainPoint('ankle')} onClick={() => setActivePainPoint('ankle')}>
                                     <div className={`pain-indicator ${activePainPoint === 'ankle' ? 'active' : ''}`}></div>
                                 </div>
 
                                 {/* Pain Point Hotspots - Back view (Right figure) */}
-                                <div className="body-part head-back" onMouseEnter={() => setActivePainPoint('neck')}>
+                                <div className="body-part head-back" onMouseEnter={() => setActivePainPoint('neck')} onTouchStart={() => setActivePainPoint('neck')} onClick={() => setActivePainPoint('neck')}>
                                     <div className={`pain-indicator ${activePainPoint === 'neck' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part shoulder-left-back" onMouseEnter={() => setActivePainPoint('shoulder')}>
+                                <div className="body-part shoulder-left-back" onMouseEnter={() => setActivePainPoint('shoulder')} onTouchStart={() => setActivePainPoint('shoulder')} onClick={() => setActivePainPoint('shoulder')}>
                                     <div className={`pain-indicator ${activePainPoint === 'shoulder' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part shoulder-right-back" onMouseEnter={() => setActivePainPoint('shoulder')}>
+                                <div className="body-part shoulder-right-back" onMouseEnter={() => setActivePainPoint('shoulder')} onTouchStart={() => setActivePainPoint('shoulder')} onClick={() => setActivePainPoint('shoulder')}>
                                     <div className={`pain-indicator ${activePainPoint === 'shoulder' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part lower-back-back" onMouseEnter={() => setActivePainPoint('lowerBack')}>
+                                <div className="body-part lower-back-back" onMouseEnter={() => setActivePainPoint('lowerBack')} onTouchStart={() => setActivePainPoint('lowerBack')} onClick={() => setActivePainPoint('lowerBack')}>
                                     <div className={`pain-indicator ${activePainPoint === 'lowerBack' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part elbow-left-back" onMouseEnter={() => setActivePainPoint('elbow')}>
+                                <div className="body-part elbow-left-back" onMouseEnter={() => setActivePainPoint('elbow')} onTouchStart={() => setActivePainPoint('elbow')} onClick={() => setActivePainPoint('elbow')}>
                                     <div className={`pain-indicator ${activePainPoint === 'elbow' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part elbow-right-back" onMouseEnter={() => setActivePainPoint('elbow')}>
+                                <div className="body-part elbow-right-back" onMouseEnter={() => setActivePainPoint('elbow')} onTouchStart={() => setActivePainPoint('elbow')} onClick={() => setActivePainPoint('elbow')}>
                                     <div className={`pain-indicator ${activePainPoint === 'elbow' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part knee-left-back" onMouseEnter={() => setActivePainPoint('knee')}>
+                                <div className="body-part knee-left-back" onMouseEnter={() => setActivePainPoint('knee')} onTouchStart={() => setActivePainPoint('knee')} onClick={() => setActivePainPoint('knee')}>
                                     <div className={`pain-indicator ${activePainPoint === 'knee' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part knee-right-back" onMouseEnter={() => setActivePainPoint('knee')}>
+                                <div className="body-part knee-right-back" onMouseEnter={() => setActivePainPoint('knee')} onTouchStart={() => setActivePainPoint('knee')} onClick={() => setActivePainPoint('knee')}>
                                     <div className={`pain-indicator ${activePainPoint === 'knee' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part ankle-left-back" onMouseEnter={() => setActivePainPoint('ankle')}>
+                                <div className="body-part ankle-left-back" onMouseEnter={() => setActivePainPoint('ankle')} onTouchStart={() => setActivePainPoint('ankle')} onClick={() => setActivePainPoint('ankle')}>
                                     <div className={`pain-indicator ${activePainPoint === 'ankle' ? 'active' : ''}`}></div>
                                 </div>
-                                <div className="body-part ankle-right-back" onMouseEnter={() => setActivePainPoint('ankle')}>
+                                <div className="body-part ankle-right-back" onMouseEnter={() => setActivePainPoint('ankle')} onTouchStart={() => setActivePainPoint('ankle')} onClick={() => setActivePainPoint('ankle')}>
                                     <div className={`pain-indicator ${activePainPoint === 'ankle' ? 'active' : ''}`}></div>
                                 </div>
                             </div>
