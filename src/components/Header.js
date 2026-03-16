@@ -29,6 +29,14 @@ const Header = () => {
         setIsMenuOpen(false);
     }, [location]);
 
+    const handleBookAppointment = () => {
+        const appointmentSection = document.querySelector('.appointment-section');
+        if (appointmentSection) {
+            appointmentSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        setIsMenuOpen(false);
+    };
+
     return (
         <header className="header">
             <nav className="navbar">
@@ -48,7 +56,7 @@ const Header = () => {
                         <Link to="/partner" onClick={toggleMenu}>
                             <button className="mobile-btn-secondary">Become A Partner</button>
                         </Link>
-                        <button className="mobile-btn-primary" onClick={toggleMenu}>Book Appointment</button>
+                        <button className="mobile-btn-primary" onClick={handleBookAppointment}>Book Appointment</button>
                     </div>
                 </ul>
 
@@ -56,7 +64,7 @@ const Header = () => {
                     <Link to="/partner">
                         <button className="btn-secondary">Become A Partner</button>
                     </Link>
-                    <button className="btn-primary">Book Appointment</button>
+                    <button className="btn-primary" onClick={handleBookAppointment}>Book Appointment</button>
                 </div>
 
                 <button

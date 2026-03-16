@@ -46,10 +46,10 @@ const Hero = () => {
     const currentPainPoint = painPointData[activePainPoint];
 
     const handleBookCall = () => {
-        const phoneNumber = '919653148777';
-        const message = 'Hello! I would like to book an appointment.';
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.open(url, '_blank');
+        const appointmentSection = document.querySelector('.appointment-section');
+        if (appointmentSection) {
+            appointmentSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
     };
 
     return (
