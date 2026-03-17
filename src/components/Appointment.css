@@ -289,3 +289,44 @@
         max-width: 100%;
     }
 }
+
+/* Status Messages */
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: 1px solid #c3e6cb;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: 1px solid #f5c6cb;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.submit-appointment-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.submit-appointment-btn:disabled:hover {
+    background: #ccc;
+    transform: none;
+    box-shadow: none;
+}

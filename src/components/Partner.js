@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Partner.css';
 import LazySection from './LazySection';
+import { submitPartner } from '../config/googleSheets';
 
 const Partner = () => {
     const [formData, setFormData] = useState({
@@ -12,6 +13,12 @@ const Partner = () => {
         experience: ''
     });
 
+    const [submitStatus, setSubmitStatus] = useState({
+        loading: false,
+        success: false,
+        error: null
+    });
+
     const handleChange = (e) => {
         setFormData({
             ...formData,
@@ -19,10 +26,37 @@ const Partner = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
-        // Handle form submission
+        setSubmitStatus({ loading: true, success: false, error: null });
+
+        try {
+            await submitPartner(formData);
+
+            setSubmitStatus({ loading: false, success: true, error: null });
+
+            // Reset form
+            setFormData({
+                firstName: '',
+                lastName: '',
+                email: '',
+                phone: '',
+                zipCode: '',
+                experience: ''
+            });
+
+            // Clear success message after 5 seconds
+            setTimeout(() => {
+                setSubmitStatus({ loading: false, success: false, error: null });
+            }, 5000);
+
+        } catch (error) {
+            setSubmitStatus({
+                loading: false,
+                success: false,
+                error: 'Failed to submit application. Please try again.'
+            });
+        }
     };
 
     return (
@@ -84,6 +118,18 @@ const Partner = () => {
                         </div>
 
                         <form className="partner-form" onSubmit={handleSubmit}>
+                            {submitStatus.success && (
+                                <div className="success-message">
+                                    ✓ Application submitted successfully! We'll contact you soon.
+                                </div>
+                            )}
+
+                            {submitStatus.error && (
+                                <div className="error-message">
+                                    ✗ {submitStatus.error}
+                                </div>
+                            )}
+
                             <div className="partner-form-row">
                                 <div className="partner-form-group">
                                     <label className="partner-form-label">First Name*</label>
@@ -165,8 +211,12 @@ const Partner = () => {
                                 </div>
                             </div>
 
-                            <button type="submit" className="partner-submit-btn">
-                                Submit Application →
+                            <button
+                                type="submit"
+                                className="partner-submit-btn"
+                                disabled={submitStatus.loading}
+                            >
+                                {submitStatus.loading ? 'Submitting...' : 'Submit Application →'}
                             </button>
 
                             <p className="partner-form-disclaimer">

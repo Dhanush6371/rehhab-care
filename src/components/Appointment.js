@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Appointment.css';
 import LazySection from './LazySection';
+import { submitAppointment } from '../config/googleSheets';
 
 const Appointment = () => {
     const [formData, setFormData] = useState({
@@ -13,6 +14,12 @@ const Appointment = () => {
         message: ''
     });
 
+    const [submitStatus, setSubmitStatus] = useState({
+        loading: false,
+        success: false,
+        error: null
+    });
+
     const handleChange = (e) => {
         setFormData({
             ...formData,
@@ -20,10 +27,38 @@ const Appointment = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Appointment submitted:', formData);
-        // Handle form submission
+        setSubmitStatus({ loading: true, success: false, error: null });
+
+        try {
+            await submitAppointment(formData);
+
+            setSubmitStatus({ loading: false, success: true, error: null });
+
+            // Reset form after successful submission
+            setFormData({
+                fullName: '',
+                phone: '',
+                email: '',
+                service: '',
+                dateTime: '',
+                pincode: '',
+                message: ''
+            });
+
+            // Clear success message after 5 seconds
+            setTimeout(() => {
+                setSubmitStatus({ loading: false, success: false, error: null });
+            }, 5000);
+
+        } catch (error) {
+            setSubmitStatus({
+                loading: false,
+                success: false,
+                error: 'Failed to submit appointment. Please try again.'
+            });
+        }
     };
 
     return (
@@ -161,12 +196,30 @@ const Appointment = () => {
                                 ></textarea>
                             </div>
 
-                            <button type="submit" className="submit-appointment-btn">
-                                Submit
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                </svg>
+                            {submitStatus.success && (
+                                <div className="success-message">
+                                    ✓ Appointment submitted successfully! We'll contact you soon.
+                                </div>
+                            )}
+
+                            {submitStatus.error && (
+                                <div className="error-message">
+                                    ✗ {submitStatus.error}
+                                </div>
+                            )}
+
+                            <button
+                                type="submit"
+                                className="submit-appointment-btn"
+                                disabled={submitStatus.loading}
+                            >
+                                {submitStatus.loading ? 'Submitting...' : 'Submit'}
+                                {!submitStatus.loading && (
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                )}
                             </button>
                         </form>
                     </div>
