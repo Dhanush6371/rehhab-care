@@ -8,37 +8,42 @@ const Hero = () => {
     const painPointData = {
         neck: {
             title: 'Neck',
-            description: 'Neck pain can result from muscle strain, poor posture, or underlying medical conditions, causing discomfort and restricted mobility.',
+            description: "We've treated 1,000+ neck pain cases - right at home.",
             image: '/images/neck_pain.webp'
         },
         shoulder: {
             title: 'Shoulder',
-            description: 'Shoulder pain affects mobility and can result from rotator cuff injuries, arthritis, or overuse, limiting daily activities.',
+            description: '1,500+ patients have been put back on their feet with our care.',
             image: '/images/Shoulder_pain.webp'
         },
         elbow: {
             title: 'Elbow',
-            description: 'Elbow pain often stems from repetitive strain, tendinitis, or nerve compression, affecting grip strength and arm movement.',
+            description: 'Most elbow pain cases improve in under 5 sessions. We can do it for you too.',
             image: '/images/elbow.webp'
         },
         wrist: {
             title: 'Wrist',
-            description: 'Wrist pain can be caused by carpal tunnel syndrome, arthritis, or repetitive stress injuries, affecting hand function.',
+            description: 'Our patients are back to daily tasks in 2 weeks. You can too.',
             image: '/images/wrist.webp'
         },
         lowerBack: {
             title: 'Lower Back',
-            description: 'Lower back pain is one of the most common complaints, often caused by muscle strain, disc problems, or poor posture.',
+            description: '2,000+ families trust us for back pain recovery at home.',
             image: '/images/lowerback.webp'
+        },
+        hip: {
+            title: 'Hip',
+            description: '600+ have regained walking confidence with our structured rehab.',
+            image: '/images/female.webp'
         },
         knee: {
             title: 'Knee',
-            description: 'Knee pain is common among athletes and older adults, often resulting from ligament injuries, arthritis, or meniscus tears.',
+            description: '8 out of 10 knee pain patients improve without needing surgery.',
             image: '/images/knee.webp'
         },
         ankle: {
             title: 'Ankle',
-            description: 'Ankle pain typically results from sprains, strains, or arthritis, affecting balance and walking ability.',
+            description: '500+ patients have been put back on their feet with our care.',
             image: '/images/ankle.webp'
         }
     };
@@ -201,8 +206,8 @@ const Hero = () => {
                                     <img src="/images/avatar3.jpg" alt="Patient" loading="eager" />
                                 </div>
                                 <div className="stats-text">
-                                    <h4>5000+ Appointments</h4>
-                                    <p>Patients booked already</p>
+                                    <h4>10,000+ Appointments Completed</h4>
+                                    <p>Trusted by patients across Hyderabad</p>
                                 </div>
                             </div>
                         </LazySection>

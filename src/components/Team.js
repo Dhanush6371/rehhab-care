@@ -10,70 +10,64 @@ const Team = () => {
 
     const teamMembers = [
         {
-            name: 'Dr. Mark Davis',
-            role: 'Sports Medicine Specialist',
-            experience: '15+ YEARS EXP.',
+            name: 'Dr. M. Mallikarjuna (PT)',
+            role: 'Senior Orthopedic & Neuro Physiotherapist',
+            experience: '5+ YEARS EXP.',
             image: '/images/team-1.jpg',
-            specializations: ['Sports Injury', 'Back Pain', 'Neck Pain', '+2'],
-            id: 'mark-davis',
-            education: 'MD, Sports Medicine',
-            about: 'Dr. Mark Davis is a renowned sports medicine specialist with over 15 years of experience treating professional athletes and active individuals.',
-            expertise: ['Sports Injury Rehabilitation', 'Back Pain Management', 'Neck Pain Treatment', 'Athletic Performance', 'Post-Surgery Recovery']
+            specializations: ['Post-Surgery Rehab', 'Neuro Rehab', 'Back & Neck Pain', '+3'],
+            id: 'mallikarjuna',
+            education: 'MPT (Orthopedics) – Manipal University',
+            about: 'Dr. M. Mallikarjuna is a skilled orthopedic and neuro physiotherapist with over 5 years of clinical experience in rehabilitation. He specializes in post-operative recovery, neurological rehabilitation, and pain management using a structured, evidence-based approach. With experience at Apollo Hospitals and advanced rehabilitation centers, he combines manual therapy with modern techniques to deliver effective, measurable recovery outcomes for patients.',
+            expertise: ['Post-Surgery Rehabilitation', 'Stroke & Neuro Rehabilitation', 'Back & Neck Pain Management', 'Knee & Joint Pain', 'Paralysis & Mobility Recovery', 'Balance & Functional Training'],
+            achievements: [
+                'Successfully treated 3000+ patients across orthopedic and neuro conditions',
+                'Former Consultant at UR Life (Apollo Hospitals initiative)',
+                'Recognized as Employee of the Month – Wellness Co (March 2024)',
+                'Awarded "Rehabilitation Excellence" – Wellness Co Annual Summit',
+                'Experience in robotic-assisted and AI-supported rehabilitation'
+            ],
+            availability: 'Mon – Sat',
+            languages: ['English', 'Telugu', 'Hindi']
         },
         {
-            name: 'Dr. Priya Sharma',
-            role: 'Lead Physiotherapist',
+            name: 'Nanda Kumar Raju Dandu (PT)',
+            role: 'Senior Physiotherapist',
             experience: '10+ YEARS EXP.',
             image: '/images/team-2.jpg',
-            specializations: ['Back Pain', 'Neck Pain', 'Knee Pain/Surgery', '+3'],
-            id: 'priya-sharma',
-            education: 'MPTh, Orthopedics',
-            about: 'Dr. Priya Sharma specializes in orthopedic physiotherapy with a focus on post-surgical rehabilitation and chronic pain management.',
-            expertise: ['Back Pain Treatment', 'Neck Pain Relief', 'Knee Surgery Rehabilitation', 'Manual Therapy', 'Chronic Pain Management', 'Postural Correction']
+            specializations: ['Back & Neck Pain', 'Neuro Rehab', 'Joint Pain', '+3'],
+            id: 'nanda-kumar',
+            education: 'BPT – Mother Theresa Institute of Health Sciences',
+            about: 'Nanda Kumar is an experienced physiotherapist with over a decade of clinical practice in hospital and rehabilitation settings. He specializes in managing musculoskeletal, neurological, and cardiopulmonary conditions through personalized treatment plans and hands-on therapy. He focuses on improving mobility, reducing pain, and guiding patients and families with structured home-based rehabilitation programs for long-term recovery.',
+            expertise: ['Back & Neck Pain Management', 'Stroke & Neuro Rehabilitation', 'Joint Pain & Mobility Issues', 'Post-Surgery Recovery', 'Elderly Physiotherapy Care', 'Manual Therapy & Pain Relief'],
+            achievements: [
+                '10+ years of experience in hospital-based physiotherapy practice',
+                'Senior Physiotherapist at Naveen Hospitals (2014–2025)',
+                'Extensive experience in orthopedic, neurological, and cardiopulmonary conditions',
+                'Expertise in manual therapy, therapeutic exercises, and rehabilitation planning',
+                'Strong focus on patient education and home care programs'
+            ],
+            availability: 'Mon – Sat | 8:00 AM – 7:00 PM',
+            languages: ['English', 'Telugu', 'Tamil', 'Hindi']
         },
         {
-            name: 'Dr. Leo Vance',
-            role: 'Orthopedic Surgeon',
-            experience: '18+ YEARS EXP.',
+            name: 'Dr. Durreshahewar (PT)',
+            role: 'Consultant Physiotherapist',
+            experience: '5+ YEARS EXP.',
             image: '/images/team-3.jpg',
-            specializations: ['Shoulder Pain', 'Back Pain', 'Knee Pain', '+1'],
-            id: 'leo-vance',
-            education: 'MS Orthopedics, FRCS',
-            about: 'Dr. Leo Vance is an experienced orthopedic surgeon specializing in joint replacement and sports injury surgeries.',
-            expertise: ['Shoulder Pain Treatment', 'Back Pain Surgery', 'Knee Replacement', 'Joint Reconstruction', 'Arthroscopic Surgery']
-        },
-        {
-            name: 'Dr. Anya Sharma',
-            role: 'Neurologist',
-            experience: '12+ YEARS EXP.',
-            image: '/images/team-4.jpg',
-            specializations: ['Neck Pain', 'Back Pain', 'Headaches', '+2'],
-            id: 'anya-sharma',
-            education: 'MD Neurology, DM',
-            about: 'Dr. Anya Sharma is a skilled neurologist focusing on neurological pain management and rehabilitation.',
-            expertise: ['Neck Pain Treatment', 'Back Pain Management', 'Headache & Migraine', 'Nerve Pain', 'Neurological Rehabilitation']
-        },
-        {
-            name: 'Dr. James Wilson',
-            role: 'Senior Physical Therapist',
-            experience: '20+ YEARS EXP.',
-            image: '/images/team-5.jpg',
-            specializations: ['Post-Surgery', 'Sports Injury', 'Back Pain', '+4'],
-            id: 'james-wilson',
-            education: 'DPT, CSCS',
-            about: 'Dr. James Wilson brings two decades of experience in physical therapy, specializing in post-operative care and sports rehabilitation.',
-            expertise: ['Post-Surgery Rehabilitation', 'Sports Injury Recovery', 'Back Pain Treatment', 'Strength Training', 'Mobility Enhancement', 'Geriatric Care', 'Balance Training']
-        },
-        {
-            name: 'Dr. Sarah Miller',
-            role: 'Pediatric Physiotherapist',
-            experience: '8+ YEARS EXP.',
-            image: '/images/team-6.jpg',
-            specializations: ['Pediatric Care', 'Posture', 'Development', '+1'],
-            id: 'sarah-miller',
-            education: 'MPTh Pediatrics',
-            about: 'Dr. Sarah Miller specializes in pediatric physiotherapy, helping children achieve optimal physical development and function.',
-            expertise: ['Pediatric Care', 'Postural Correction', 'Developmental Delays', 'Cerebral Palsy', 'Sports Injuries in Children']
+            specializations: ['ICU & Critical Care', 'Neuro Rehab', 'Cardiac Rehab', '+3'],
+            id: 'durreshahewar',
+            education: 'BPT – Navodaya College of Physiotherapy, Raichur',
+            about: 'Dr. Durreshahewar is a consultant physiotherapist with strong experience across ICU care, neurological rehabilitation, and cardiopulmonary recovery. She has worked extensively with critical care patients, including stroke, spinal cord injury, and post-surgical recovery cases. Her approach combines advanced clinical techniques with structured rehabilitation plans to help patients regain mobility, strength, and independence safely.',
+            expertise: ['Stroke & Neuro Rehabilitation', 'ICU & Critical Care Physiotherapy', 'Cardiac & Pulmonary Rehabilitation', 'Post-Surgery Recovery', 'Spinal Cord Injury Rehabilitation', 'Elderly & Home-Based Physiotherapy'],
+            achievements: [
+                'Consultant Physiotherapist under NCD Program at Gulbarga Institute of Medical Sciences',
+                'Extensive ICU exposure including Respiratory ICU & Medical ICU',
+                'Experience across neurology, neurosurgery, cardiology, and post-operative rehabilitation',
+                'Certified in BLS (American Heart Association)',
+                'Trained in Myofascial Release, Dry Needling, and Cupping Therapy'
+            ],
+            availability: 'Mon – Sat | 9:00 AM – 6:00 PM',
+            languages: ['English', 'Hindi', 'Kannada', 'Urdu']
         }
     ];
 
