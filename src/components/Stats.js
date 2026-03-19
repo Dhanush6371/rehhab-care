@@ -6,7 +6,7 @@ import { submitConsultation } from '../config/api';
 const Stats = () => {
     const [formData, setFormData] = useState({
         name: '',
-        doctor: '',
+        phone: '',
         location: ''
     });
 
@@ -35,7 +35,7 @@ const Stats = () => {
             // Reset form
             setFormData({
                 name: '',
-                doctor: '',
+                phone: '',
                 location: ''
             });
 
@@ -65,20 +65,20 @@ const Stats = () => {
                     {/* Stats Cards */}
                     <div className="stats-cards-row">
                         <div className="stat-card-item">
-                            <h3>100+</h3>
-                            <p>TREATMENTS OFFERED</p>
-                        </div>
-                        <div className="stat-card-item">
-                            <h3>50+</h3>
-                            <p>CERTIFIED THERAPISTS</p>
-                        </div>
-                        <div className="stat-card-item">
-                            <h3>2000+</h3>
-                            <p>SATISFIED CLIENTS</p>
-                        </div>
-                        <div className="stat-card-item">
                             <h3>300+</h3>
-                            <p>UNIQUE WELLNESS</p>
+                            <p>CERTIFIED PHYSIOTHERAPISTS</p>
+                        </div>
+                        <div className="stat-card-item">
+                            <h3>7,000+</h3>
+                            <p>FAMILIES SERVED</p>
+                        </div>
+                        <div className="stat-card-item">
+                            <h3>10,000+</h3>
+                            <p>APPOINTMENTS COMPLETED</p>
+                        </div>
+                        <div className="stat-card-item">
+                            <h3>1,00,000+</h3>
+                            <p>CUMULATIVE SESSIONS COMPLETED</p>
                         </div>
                     </div>
 
@@ -88,8 +88,8 @@ const Stats = () => {
                             <h2>Get a Free Assessment</h2>
                             <div className="rating">
                                 <span className="stars">⭐⭐⭐⭐⭐</span>
-                                <span className="rating-text">5.0</span>
-                                <span className="reviews">(980 Reviews)</span>
+                                <span className="rating-text">4.9</span>
+                                <span className="reviews">(1400+ Reviews)</span>
                             </div>
                         </div>
 
@@ -119,12 +119,12 @@ const Stats = () => {
                                     />
                                 </div>
                                 <div className="form-group">
-                                    <label>Doctor</label>
+                                    <label>Phone Number</label>
                                     <input
-                                        type="text"
-                                        name="doctor"
-                                        placeholder="Dr Maria Cleven"
-                                        value={formData.doctor}
+                                        type="tel"
+                                        name="phone"
+                                        placeholder="+91 XXX XXX XXXX"
+                                        value={formData.phone}
                                         onChange={handleChange}
                                         required
                                     />

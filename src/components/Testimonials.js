@@ -3,73 +3,96 @@ import './Testimonials.css';
 import LazySection from './LazySection';
 
 const Testimonials = () => {
-    const [playingVideo, setPlayingVideo] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const testimonials = [
         {
-            name: 'Emily Johnson',
+            name: 'Ratna Kalra',
             avatar: '/images/avatar1.jpg',
-            text: 'Their service was outstanding. They ensured I was comfortable and informed every step of the way. The team was professional, caring, and went above and beyond to meet my needs. I highly recommend their services to anyone looking for quality care.',
+            text: 'I came walking from the hospital after suffering from transmylites. To gain strength I engaged physiotherapists but due to their carelessness I am on bed again. Then I came across Rehabb Care. They have sent very senior physiotherapist and we are on our way to progression in almost four weeks.',
             rating: 5,
             type: 'text'
         },
         {
-            name: 'Michael Roberts',
-            role: 'BUSINESS OWNER',
-            image: '/images/avatar2.jpg',
-            videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-            type: 'video'
+            name: 'Koti Sunkula',
+            avatar: '/images/avatar2.jpg',
+            text: 'Rehabb Care helped me recover from a knee injury. The attention to detail and individualized care are unmatched. Highly recommend!',
+            rating: 5,
+            type: 'text'
         },
         {
-            name: 'Olivia Harris',
+            name: 'Narayan Rathi',
             avatar: '/images/avatar3.jpg',
-            text: 'They were attentive and thorough. Their professionalism and kindness made the entire process seamless. From the initial consultation to the follow-up care, everything was handled with expertise and compassion. I felt valued as a patient throughout my journey.',
+            text: 'Very experienced and very cool minded Physiotherapist. He is very nice person and treatment is very good.',
+            rating: 5,
+            type: 'text'
+        },
+        {
+            name: 'Najma Begum',
+            avatar: '/images/avatar1.jpg',
+            text: 'Good recovery for our father\'s Paralysis case.',
+            rating: 5,
+            type: 'text'
+        },
+        {
+            name: 'Ravi Kumar',
+            avatar: '/images/avatar2.jpg',
+            text: 'We tried 2–3 physios before this but didn\'t see much improvement. With Rehabb Care, within 10–12 sessions itself we started noticing real change. The therapist was very consistent and explained everything clearly.',
+            rating: 5,
+            type: 'text'
+        },
+        {
+            name: 'Shabana Khan',
+            avatar: '/images/avatar3.jpg',
+            text: 'My mother had a stroke and we were really worried about her recovery. The physio assigned by Rehabb Care was very patient and knew exactly what to do. She is now able to sit and walk with support.',
+            rating: 5,
+            type: 'text'
+        },
+        {
+            name: 'Sandeep Reddy',
+            avatar: '/images/avatar1.jpg',
+            text: 'I had severe lower back pain due to long sitting hours. They didn\'t just treat the pain but also corrected my posture and habits. Feeling much better now.',
+            rating: 5,
+            type: 'text'
+        },
+        {
+            name: 'Prakash Verma',
+            avatar: '/images/avatar2.jpg',
+            text: 'We took home physiotherapy for my father after knee surgery. Initially we were not sure, but the progress in 3 weeks gave us confidence. Good service overall.',
             rating: 4,
             type: 'text'
         },
         {
-            name: 'James Anderson',
-            role: 'SOFTWARE ENGINEER',
-            image: '/images/avatar1.jpg',
-            videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-            type: 'video'
-        },
-        {
-            name: 'Daniel Thompson',
-            avatar: '/images/avatar2.jpg',
-            text: 'Their team was exceptional. They listened to my concerns and made sure all my needs were addressed. The personalized approach and attention to detail really set them apart. I experienced significant improvement and couldn\'t be happier with the results.',
-            rating: 5,
-            type: 'text'
-        },
-        {
-            name: 'Sarah Mitchell',
+            name: 'Lakshmi Devi',
             avatar: '/images/avatar3.jpg',
-            text: 'Outstanding experience from start to finish. The care and attention to detail were remarkable. Every staff member I encountered was knowledgeable, friendly, and dedicated to providing the best possible service. I would definitely return and recommend them to family and friends.',
+            text: 'The physio was very calm and handled my grandmother very patiently. At this age, that matters more than anything.',
             rating: 5,
             type: 'text'
         },
         {
-            name: 'Robert Chen',
+            name: 'Neha Agarwal',
             avatar: '/images/avatar1.jpg',
-            text: 'The level of care I received was truly exceptional. From my first appointment to my final session, the staff showed genuine concern for my wellbeing. Their modern approach combined with traditional care methods made all the difference in my recovery journey.',
+            text: 'I booked just for trial but continued because of the improvement I saw. The therapist also guided on what to do daily, which helped a lot.',
             rating: 5,
             type: 'text'
         },
         {
-            name: 'Jessica Williams',
-            role: 'MARKETING DIRECTOR',
-            image: '/images/avatar2.jpg',
-            videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-            type: 'video'
+            name: 'Anitha Reddy, Nallagandla',
+            avatar: '/images/avatar2.jpg',
+            text: 'We stay in Nallagandla and took physiotherapy for my father who has age-related mobility issues. The physio was very gentle and didn\'t rush anything. Slowly, his walking and balance have improved. Happy with the support we are getting.',
+            rating: 5,
+            type: 'text'
+        },
+        {
+            name: 'Sameer Ahmed, Old City',
+            avatar: '/images/avatar3.jpg',
+            text: 'We are from Old City and were struggling to find a good physio for my uncle\'s paralysis recovery. After starting sessions with Rehabb Care, we finally saw steady improvement. The therapist was very patient and knew how to handle such cases. We are hopeful now.',
+            rating: 5,
+            type: 'text'
         }
     ];
 
     const itemsPerPage = 6;
-
-    const handlePlayVideo = (index) => {
-        setPlayingVideo(index);
-    };
 
     const handlePrevious = () => {
         setCurrentIndex((prev) => Math.max(0, prev - itemsPerPage));
@@ -120,45 +143,7 @@ const Testimonials = () => {
                 <div className="testimonials-grid">
                     {visibleTestimonials.map((testimonial, index) => {
                         const actualIndex = currentIndex + index;
-                        return testimonial.type === 'video' ? (
-                            <div key={actualIndex} className="testimonial-video-card">
-                                <div className="testimonial-video-wrapper">
-                                    {playingVideo === actualIndex ? (
-                                        <iframe
-                                            className="testimonial-video-iframe"
-                                            src={testimonial.videoUrl}
-                                            title={`${testimonial.name} testimonial`}
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowFullScreen
-                                        ></iframe>
-                                    ) : (
-                                        <div className="video-thumbnail-wrapper">
-                                            <img
-                                                src={testimonial.image}
-                                                alt={testimonial.name}
-                                                className="testimonial-thumbnail"
-                                                loading="lazy"
-                                            />
-                                            <div className="video-overlay"></div>
-                                            <button
-                                                className="video-play-button"
-                                                onClick={() => handlePlayVideo(actualIndex)}
-                                                aria-label={`Play ${testimonial.name} testimonial`}
-                                            >
-                                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                                                    <circle cx="32" cy="32" r="32" fill="white" fillOpacity="0.95" />
-                                                    <path d="M26 20L42 32L26 44V20Z" fill="#1d1d1f" />
-                                                </svg>
-                                            </button>
-                                            <div className="video-info">
-                                                <div className="video-name">{testimonial.name}</div>
-                                                <div className="video-role">{testimonial.role}</div>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-                        ) : (
+                        return (
                             <div key={actualIndex} className="testimonial-text-card">
                                 <div className="testimonial-header">
                                     <img
