@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Partner.css';
 import LazySection from './LazySection';
-import { submitPartner } from '../config/googleSheets';
+import { submitPartner } from '../config/api';
 
 const Partner = () => {
     const [formData, setFormData] = useState({

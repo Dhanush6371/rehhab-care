@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Stats.css';
 import LazySection from './LazySection';
-import { submitConsultation } from '../config/googleSheets';
+import { submitConsultation } from '../config/api';
 
 const Stats = () => {
     const [formData, setFormData] = useState({

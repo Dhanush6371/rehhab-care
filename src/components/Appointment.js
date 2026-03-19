@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Appointment.css';
 import LazySection from './LazySection';
-import { submitAppointment } from '../config/googleSheets';
+import { submitAppointment } from '../config/api';
 
 const Appointment = () => {
     const [formData, setFormData] = useState({
