@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const location = useLocation();
+    const navigate = useNavigate();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -31,8 +32,8 @@ const Header = () => {
 
     const handleBookAppointment = () => {
         if (location.pathname !== '/') {
-            // Navigate to home page with hash
-            window.location.href = '/#appointment';
+            // Navigate to home page with state
+            navigate('/', { state: { scrollToAppointment: true } });
         } else {
             const appointmentSection = document.querySelector('.appointment-section');
             if (appointmentSection) {
@@ -42,11 +43,18 @@ const Header = () => {
         setIsMenuOpen(false);
     };
 
-    const handleNavClick = (hash) => {
+    const handleNavClick = (e, sectionId) => {
+        e.preventDefault();
         setIsMenuOpen(false);
+
         if (location.pathname !== '/') {
-            // Navigate to home page with hash
-            window.location.href = `/${hash}`;
+            // Navigate to home page first, then scroll
+            navigate('/', { state: { scrollToSection: sectionId } });
+        } else {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         }
     };
 
@@ -59,11 +67,11 @@ const Header = () => {
                 </Link>
 
                 <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-                    <li><a href="#home" onClick={() => handleNavClick('#home')}>HOME</a></li>
-                    <li><a href="#services" onClick={() => handleNavClick('#services')}>SERVICES</a></li>
-                    <li><a href="#team" onClick={() => handleNavClick('#team')}>TEAM</a></li>
-                    <li><a href="#contact" onClick={() => handleNavClick('#contact')}>CONTACT</a></li>
-                    <li><a href="#blog" onClick={() => handleNavClick('#blog')}>BLOG</a></li>
+                    <li><a href="/" onClick={(e) => handleNavClick(e, 'home')}>HOME</a></li>
+                    <li><a href="/#services" onClick={(e) => handleNavClick(e, 'services')}>SERVICES</a></li>
+                    <li><a href="/#team" onClick={(e) => handleNavClick(e, 'team')}>TEAM</a></li>
+                    <li><a href="/#contact" onClick={(e) => handleNavClick(e, 'contact')}>CONTACT</a></li>
+                    <li><a href="/#contact" onClick={(e) => handleNavClick(e, 'contact')}>BLOG</a></li>
 
                     <div className="mobile-menu-buttons">
                         <Link to="/partner" onClick={toggleMenu}>

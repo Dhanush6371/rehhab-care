@@ -58,7 +58,7 @@ const Hero = () => {
     };
 
     return (
-        <section className="hero">
+        <section className="hero" id="home">
             {/* Animated Bubble Background */}
             <div className="bubble-background">
                 <div className="bubble"></div>
@@ -119,8 +119,8 @@ const Hero = () => {
                                 <div className="body-part wrist-right-front" onMouseEnter={() => setActivePainPoint('wrist')} onTouchStart={() => setActivePainPoint('wrist')} onClick={() => setActivePainPoint('wrist')}>
                                     <div className={`pain-indicator ${activePainPoint === 'wrist' ? 'active' : ''}`}></div>
                                 </div>
-                                
-                                
+
+
                                 <div className="body-part knee-left-front" onMouseEnter={() => setActivePainPoint('knee')} onTouchStart={() => setActivePainPoint('knee')} onClick={() => setActivePainPoint('knee')}>
                                     <div className={`pain-indicator ${activePainPoint === 'knee' ? 'active' : ''}`}></div>
                                 </div>

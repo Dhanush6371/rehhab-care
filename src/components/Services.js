@@ -1,5 +1,6 @@
 import './Services.css';
 import LazySection from './LazySection';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
     const services = [
@@ -7,42 +8,48 @@ const Services = () => {
             id: 1,
             category: 'Pain Management',
             title: 'Back & Neck Pain Physiotherapy',
-            image: '/images/neck_pain.webp'
+            image: '/images/neck_pain.webp',
+            link: '/services/back-neck-pain'
         },
         {
             id: 2,
             category: 'Joint Care',
             title: 'Knee & Ankle Pain Physiotherapy',
-            image: '/images/knee.webp'
+            image: '/images/knee.webp',
+            link: '/services/knee-ankle-pain'
         },
         {
             id: 3,
             category: 'Rehabilitation',
             title: 'Shoulder & Elbow Rehabilitation',
-            image: '/images/Shoulder_pain.webp'
+            image: '/images/Shoulder_pain.webp',
+            link: '/services/shoulder-elbow-pain'
         },
         {
             id: 4,
             category: 'Geriatric Care',
             title: 'Geriatric Physiotherapy',
-            image: '/images/geriatric.jpg'
+            image: '/images/geriatric.jpg',
+            link: '/services/geriatric-care'
         },
         {
             id: 5,
             category: 'Post-Surgery',
             title: 'Post-Surgery Rehabilitation',
-            image: '/images/post-operative.jpg'
+            image: '/images/post-operative.jpg',
+            link: '/services/post-surgery'
         },
         {
             id: 6,
             category: 'Recovery',
             title: 'Post-Operative Rehabilitation',
-            image: '/images/post-operative.jpg'
+            image: '/images/post-operative.jpg',
+            link: '/services/post-operative'
         }
     ];
 
     return (
-        <section className="services-section">
+        <section className="services-section" id="services">
             <div className="services-container">
                 <LazySection animation="fade-up">
                     <div className="services-header">
@@ -55,20 +62,39 @@ const Services = () => {
                 <div className="services-grid">
                     {services.map((service, index) => (
                         <LazySection key={service.id} animation="fade-up" delay={index * 100}>
-                            <div className="service-card">
-                                <div className="service-image">
-                                    <img
-                                        src={service.image}
-                                        alt={service.title}
-                                        loading="lazy"
-                                        onError={(e) => e.target.src = `https://via.placeholder.com/400x500/1a5f5a/ffffff?text=${service.title.replace(/ /g, '+')}`}
-                                    />
-                                    <div className="service-overlay">
-                                        <span className="service-category">{service.category}</span>
-                                        <h3 className="service-title">{service.title}</h3>
+                            {service.link ? (
+                                <Link to={service.link} className="service-card-link">
+                                    <div className="service-card">
+                                        <div className="service-image">
+                                            <img
+                                                src={service.image}
+                                                alt={service.title}
+                                                loading="lazy"
+                                                onError={(e) => e.target.src = `https://via.placeholder.com/400x500/1a5f5a/ffffff?text=${service.title.replace(/ /g, '+')}`}
+                                            />
+                                            <div className="service-overlay">
+                                                <span className="service-category">{service.category}</span>
+                                                <h3 className="service-title">{service.title}</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ) : (
+                                <div className="service-card">
+                                    <div className="service-image">
+                                        <img
+                                            src={service.image}
+                                            alt={service.title}
+                                            loading="lazy"
+                                            onError={(e) => e.target.src = `https://via.placeholder.com/400x500/1a5f5a/ffffff?text=${service.title.replace(/ /g, '+')}`}
+                                        />
+                                        <div className="service-overlay">
+                                            <span className="service-category">{service.category}</span>
+                                            <h3 className="service-title">{service.title}</h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            )}
                         </LazySection>
                     ))}
                 </div>

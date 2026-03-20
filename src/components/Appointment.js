@@ -62,7 +62,7 @@ const Appointment = () => {
     };
 
     return (
-        <section className="appointment-section">
+        <section className="appointment-section" id="contact">
             <div className="appointment-container">
                 <LazySection animation="fade-right">
                     <div className="appointment-content">

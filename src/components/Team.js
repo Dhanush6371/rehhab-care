@@ -116,7 +116,7 @@ const Team = () => {
         : false;
 
     return (
-        <section className="team-section">
+        <section className="team-section" id="team">
             <div className="team-container">
                 <LazySection animation="fade-up">
                     <div className="team-header">
