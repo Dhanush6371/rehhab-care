@@ -131,14 +131,24 @@ const Stats = () => {
                                 </div>
                                 <div className="form-group">
                                     <label>Location</label>
-                                    <input
-                                        type="text"
+                                    <select
                                         name="location"
-                                        placeholder="Amsterdam"
                                         value={formData.location}
                                         onChange={handleChange}
                                         required
-                                    />
+                                    >
+                                        <option value="">Select Location</option>
+                                        <option value="Mumbai">Mumbai</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Bangalore">Bangalore</option>
+                                        <option value="Hyderabad">Hyderabad</option>
+                                        <option value="Chennai">Chennai</option>
+                                        <option value="Kolkata">Kolkata</option>
+                                        <option value="Pune">Pune</option>
+                                        <option value="Ahmedabad">Ahmedabad</option>
+                                        <option value="Jaipur">Jaipur</option>
+                                        <option value="Lucknow">Lucknow</option>
+                                    </select>
                                 </div>
                                 <button
                                     type="submit"

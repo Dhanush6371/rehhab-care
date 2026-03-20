@@ -427,6 +427,10 @@ body {
     left: 39%;
 }
 
+
+
+
+
 .body-part.knee-left-front {
     top: 63%;
     left: 18%;
@@ -467,6 +471,16 @@ body {
 .body-part.lower-back-back {
     top: 40%;
     right: 22.5%;
+}
+
+.body-part.hip-left-back {
+    top: 48%;
+    right: 27%;
+}
+
+.body-part.hip-right-back {
+    top: 48%;
+    right: 17%;
 }
 
 .body-part.elbow-left-back {
