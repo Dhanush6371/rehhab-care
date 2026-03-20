@@ -15,6 +15,9 @@ import Appointment from './components/Appointment';
 import Footer from './components/Footer';
 import DoctorProfile from './components/DoctorProfile';
 import WhatsAppFloat from './components/WhatsAppFloat';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfUse from './components/TermsOfUse';
+import PrivacyPractices from './components/PrivacyPractices';
 
 function HomePage() {
     return (
@@ -46,6 +49,39 @@ function PartnerPage() {
     );
 }
 
+function PrivacyPolicyPage() {
+    return (
+        <>
+            <Header />
+            <PrivacyPolicy />
+            <Footer />
+            <WhatsAppFloat />
+        </>
+    );
+}
+
+function TermsOfUsePage() {
+    return (
+        <>
+            <Header />
+            <TermsOfUse />
+            <Footer />
+            <WhatsAppFloat />
+        </>
+    );
+}
+
+function PrivacyPracticesPage() {
+    return (
+        <>
+            <Header />
+            <PrivacyPractices />
+            <Footer />
+            <WhatsAppFloat />
+        </>
+    );
+}
+
 function App() {
     return (
         <Router>
@@ -53,6 +89,9 @@ function App() {
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/partner" element={<PartnerPage />} />
+                    <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+                    <Route path="/terms-of-use" element={<TermsOfUsePage />} />
+                    <Route path="/privacy-practices" element={<PrivacyPracticesPage />} />
                     <Route path="/doctor/:id" element={<><DoctorProfile /><WhatsAppFloat /></>} />
                 </Routes>
             </div>

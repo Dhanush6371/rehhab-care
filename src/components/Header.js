@@ -30,11 +30,24 @@ const Header = () => {
     }, [location]);
 
     const handleBookAppointment = () => {
-        const appointmentSection = document.querySelector('.appointment-section');
-        if (appointmentSection) {
-            appointmentSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (location.pathname !== '/') {
+            // Navigate to home page with hash
+            window.location.href = '/#appointment';
+        } else {
+            const appointmentSection = document.querySelector('.appointment-section');
+            if (appointmentSection) {
+                appointmentSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         }
         setIsMenuOpen(false);
+    };
+
+    const handleNavClick = (hash) => {
+        setIsMenuOpen(false);
+        if (location.pathname !== '/') {
+            // Navigate to home page with hash
+            window.location.href = `/${hash}`;
+        }
     };
 
     return (
@@ -46,11 +59,11 @@ const Header = () => {
                 </Link>
 
                 <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-                    <li><a href="#home" onClick={toggleMenu}>HOME</a></li>
-                    <li><a href="#services" onClick={toggleMenu}>SERVICES</a></li>
-                    <li><a href="#team" onClick={toggleMenu}>TEAM</a></li>
-                    <li><a href="#contact" onClick={toggleMenu}>CONTACT</a></li>
-                    <li><a href="#blog" onClick={toggleMenu}>BLOG</a></li>
+                    <li><a href="#home" onClick={() => handleNavClick('#home')}>HOME</a></li>
+                    <li><a href="#services" onClick={() => handleNavClick('#services')}>SERVICES</a></li>
+                    <li><a href="#team" onClick={() => handleNavClick('#team')}>TEAM</a></li>
+                    <li><a href="#contact" onClick={() => handleNavClick('#contact')}>CONTACT</a></li>
+                    <li><a href="#blog" onClick={() => handleNavClick('#blog')}>BLOG</a></li>
 
                     <div className="mobile-menu-buttons">
                         <Link to="/partner" onClick={toggleMenu}>

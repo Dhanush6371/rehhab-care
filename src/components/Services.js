@@ -5,39 +5,39 @@ const Services = () => {
     const services = [
         {
             id: 1,
-            category: 'Rehabilitation',
-            title: 'Knee & Ankle Care',
-            image: '/images/knee-care.jpg'
+            category: 'Pain Management',
+            title: 'Back & Neck Pain Physiotherapy',
+            image: '/images/neck_pain.webp'
         },
         {
             id: 2,
-            category: 'Sports',
-            title: 'Shoulder & Elbow Rehab',
-            image: '/images/shoulder-rehab.jpg'
+            category: 'Joint Care',
+            title: 'Knee & Ankle Pain Physiotherapy',
+            image: '/images/knee.webp'
         },
         {
             id: 3,
-            category: 'Geriatric',
+            category: 'Rehabilitation',
+            title: 'Shoulder & Elbow Rehabilitation',
+            image: '/images/Shoulder_pain.webp'
+        },
+        {
+            id: 4,
+            category: 'Geriatric Care',
             title: 'Geriatric Physiotherapy',
             image: '/images/geriatric.jpg'
         },
         {
-            id: 4,
-            category: 'Sports',
-            title: 'Post-Operative Rehabilitation',
+            id: 5,
+            category: 'Post-Surgery',
+            title: 'Post-Surgery Rehabilitation',
             image: '/images/post-operative.jpg'
         },
         {
-            id: 5,
-            category: 'Specialist',
-            title: 'Specialist Consultation',
-            image: '/images/specialist.jpg'
-        },
-        {
             id: 6,
-            category: 'FAQ',
-            title: 'Expert Medical Guidance',
-            image: '/images/faq-doctor.jpg'
+            category: 'Recovery',
+            title: 'Post-Operative Rehabilitation',
+            image: '/images/post-operative.jpg'
         }
     ];
 

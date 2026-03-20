@@ -1,0 +1,220 @@
+.privacy-practices {
+    min-height: 100vh;
+    background: #f8f9fa;
+    padding: 100px 20px 60px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.practices-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 60px;
+    border-top: 4px solid #11998e;
+}
+
+.practices-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.practices-header h1 {
+    font-size: 2.5rem;
+    color: #212529;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.practices-subtitle {
+    font-size: 1.125rem;
+    color: #6c757d;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.practices-meta {
+    font-size: 0.875rem;
+    color: #868e96;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 24px;
+}
+
+.practices-notice {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 16px 24px;
+    margin-top: 24px;
+    border-radius: 8px;
+}
+
+.practices-notice p {
+    margin: 0;
+    color: #856404;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.practices-commitment {
+    background: #e8f5e9;
+    padding: 32px;
+    border-radius: 12px;
+    margin-bottom: 48px;
+    border-left: 4px solid #11998e;
+}
+
+.practices-commitment h2 {
+    color: #212529;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.practices-commitment p {
+    color: #495057;
+    line-height: 1.75;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.practices-section {
+    margin-bottom: 48px;
+}
+
+.practices-section h2 {
+    font-size: 1.75rem;
+    color: #212529;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.3px;
+}
+
+.practices-section h3 {
+    font-size: 1.25rem;
+    color: #495057;
+    margin-top: 28px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.practices-section p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #495057;
+    margin-bottom: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.practices-section ul {
+    margin: 20px 0;
+    padding-left: 24px;
+}
+
+.practices-section ul li {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #495057;
+    margin-bottom: 12px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    padding-left: 8px;
+}
+
+.practices-section ul li::marker {
+    color: #11998e;
+}
+
+.practices-section ul li strong {
+    color: #212529;
+    font-weight: 600;
+}
+
+.practices-contact {
+    background: #f8f9fa;
+    padding: 32px;
+    border-radius: 12px;
+    border-left: 4px solid #11998e;
+    margin-top: 48px;
+}
+
+.practices-contact h2 {
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #495057;
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-details strong {
+    color: #212529;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .privacy-practices {
+        padding: 80px 16px 40px;
+    }
+
+    .practices-container {
+        padding: 40px 24px;
+        border-radius: 12px;
+    }
+
+    .practices-header h1 {
+        font-size: 2rem;
+    }
+
+    .practices-subtitle {
+        font-size: 1rem;
+    }
+
+    .practices-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .practices-section h3 {
+        font-size: 1.125rem;
+    }
+
+    .practices-section p,
+    .practices-section ul li {
+        font-size: 0.9375rem;
+    }
+
+    .practices-commitment p {
+        font-size: 0.9375rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .practices-container {
+        padding: 32px 20px;
+    }
+
+    .practices-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .practices-section h2 {
+        font-size: 1.375rem;
+    }
+}

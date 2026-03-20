@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -98,9 +99,9 @@ const Footer = () => {
                         <h3 className="footer-column-title">Legal & Practices</h3>
                         <ul className="footer-links">
                             <li><a href="#accessibility">Accessibility Options</a></li>
-                            <li><a href="#terms">Terms of Use</a></li>
-                            <li><a href="#privacy-practices">Notice of Privacy Practices</a></li>
-                            <li><a href="#privacy-policy">Privacy Policy</a></li>
+                            <li><Link to="/terms-of-use">Terms of Use</Link></li>
+                            <li><Link to="/privacy-practices">Notice of Privacy Practices</Link></li>
+                            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -109,8 +110,8 @@ const Footer = () => {
                 <div className="footer-bottom">
                     <p className="footer-copyright">© 2025 Rehab Care. All rights reserved.</p>
                     <div className="footer-legal">
-                        <a href="#privacy">Privacy Policy</a>
-                        <a href="#terms">Terms of Service</a>
+                        <Link to="/privacy-policy">Privacy Policy</Link>
+                        <Link to="/terms-of-use">Terms of Service</Link>
                     </div>
                     <button className="scroll-top-btn" onClick={scrollToTop} aria-label="Scroll to top">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
