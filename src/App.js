@@ -24,6 +24,7 @@ import ShoulderElbowService from './services/ShoulderElbowService';
 import GeriatricService from './services/GeriatricService';
 import PostSurgeryService from './services/PostSurgeryService';
 import PostOperativeService from './services/PostOperativeService';
+import ScrollToTop from './components/ScrollToTop';
 
 function HomePage() {
     return (
@@ -157,6 +158,7 @@ function PostOperativeServicePage() {
 function App() {
     return (
         <Router>
+            <ScrollToTop />
             <div className="App">
                 <Routes>
                     <Route path="/" element={<HomePage />} />
