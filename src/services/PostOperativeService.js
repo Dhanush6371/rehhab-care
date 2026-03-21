@@ -124,8 +124,14 @@ const PostOperativeService = () => {
                         </div>
                     </div>
                     <div className="po-hero-buttons">
-                        <button className="po-btn-primary">Book Free Consultation</button>
-                        <button className="po-btn-secondary">Talk to a Physiotherapist</button>
+                        <a
+                            href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Post-Operative%20Care."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="po-btn-primary"
+                        >
+                            Book Free Consultation
+                        </a>
                     </div>
                 </div>
             </section>
@@ -317,8 +323,14 @@ const PostOperativeService = () => {
                             Post-operative recovery is not the time to figure things out on your own. Let our experienced physiotherapists guide you — safely, effectively, at home.
                         </p>
                         <div className="po-cta-buttons">
-                            <button className="po-btn-primary">Book Free Consultation</button>
-                            <button className="po-btn-secondary">Talk to a Physiotherapist</button>
+                            <a
+                                href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Post-Operative%20Care."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="po-btn-primary"
+                            >
+                                Book Free Consultation
+                            </a>
                         </div>
                     </LazySection>
                 </div>

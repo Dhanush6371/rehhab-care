@@ -125,8 +125,14 @@ const BackNeckService = () => {
                         </div>
                     </div>
                     <div className="bn-hero-buttons">
-                        <button className="bn-btn-primary">Book Free Consultation</button>
-                        <button className="bn-btn-secondary">Talk to a Physiotherapist</button>
+                        <a
+                            href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Back%20%26%20Neck%20Pain."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bn-btn-primary"
+                        >
+                            Book Free Consultation
+                        </a>
                     </div>
                 </div>
             </section>
@@ -319,8 +325,14 @@ const BackNeckService = () => {
                             physiotherapy, the faster you recover.
                         </p>
                         <div className="bn-cta-buttons">
-                            <button className="bn-btn-primary">Book Free Consultation</button>
-                            <button className="bn-btn-secondary">Talk to a Physiotherapist</button>
+                            <a
+                                href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Back%20%26%20Neck%20Pain."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bn-btn-primary"
+                            >
+                                Book Free Consultation
+                            </a>
                         </div>
                     </LazySection>
                 </div>

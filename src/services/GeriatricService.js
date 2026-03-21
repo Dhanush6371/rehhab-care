@@ -124,8 +124,14 @@ const GeriatricService = () => {
                         </div>
                     </div>
                     <div className="gs-hero-buttons">
-                        <button className="gs-btn-primary">Book Free Consultation</button>
-                        <button className="gs-btn-secondary">Talk to a Physiotherapist</button>
+                        <a
+                            href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Geriatric%20Care."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="gs-btn-primary"
+                        >
+                            Book Free Consultation
+                        </a>
                     </div>
                 </div>
             </section>
@@ -317,8 +323,14 @@ const GeriatricService = () => {
                             Your parents deserve to age with dignity and independence. Our geriatric physiotherapy brings expert care to their doorstep — gently and safely.
                         </p>
                         <div className="gs-cta-buttons">
-                            <button className="gs-btn-primary">Book Free Consultation</button>
-                            <button className="gs-btn-secondary">Talk to a Physiotherapist</button>
+                            <a
+                                href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Geriatric%20Care."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="gs-btn-primary"
+                            >
+                                Book Free Consultation
+                            </a>
                         </div>
                     </LazySection>
                 </div>

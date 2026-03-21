@@ -124,8 +124,14 @@ const ShoulderElbowService = () => {
                         </div>
                     </div>
                     <div className="se-hero-buttons">
-                        <button className="se-btn-primary">Book Free Consultation</button>
-                        <button className="se-btn-secondary">Talk to a Physiotherapist</button>
+                        <a
+                            href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Shoulder%20%26%20Elbow%20Pain."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="se-btn-primary"
+                        >
+                            Book Free Consultation
+                        </a>
                     </div>
                 </div>
             </section>
@@ -317,8 +323,14 @@ const ShoulderElbowService = () => {
                             Shoulder and elbow problems get worse when ignored. Start physiotherapy early — and recover fully, at home.
                         </p>
                         <div className="se-cta-buttons">
-                            <button className="se-btn-primary">Book Free Consultation</button>
-                            <button className="se-btn-secondary">Talk to a Physiotherapist</button>
+                            <a
+                                href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Shoulder%20%26%20Elbow%20Pain."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="se-btn-primary"
+                            >
+                                Book Free Consultation
+                            </a>
                         </div>
                     </LazySection>
                 </div>

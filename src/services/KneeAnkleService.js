@@ -119,8 +119,14 @@ const KneeAnkleService = () => {
                         </div>
                     </div>
                     <div className="ka-hero-buttons">
-                        <button className="ka-btn-primary">Book Free Consultation</button>
-                        <button className="ka-btn-secondary">Talk to a Physiotherapist</button>
+                        <a
+                            href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Knee%20%26%20Ankle%20Pain."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="ka-btn-primary"
+                        >
+                            Book Free Consultation
+                        </a>
                     </div>
                 </div>
             </section>
@@ -312,8 +318,14 @@ const KneeAnkleService = () => {
                             Don't wait for the pain to get worse. The right physio at the right time can save your knee — and your quality of life.
                         </p>
                         <div className="ka-cta-buttons">
-                            <button className="ka-btn-primary">Book Free Consultation</button>
-                            <button className="ka-btn-secondary">Talk to a Physiotherapist</button>
+                            <a
+                                href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Knee%20%26%20Ankle%20Pain."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="ka-btn-primary"
+                            >
+                                Book Free Consultation
+                            </a>
                         </div>
                     </LazySection>
                 </div>

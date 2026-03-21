@@ -124,8 +124,14 @@ const PostSurgeryService = () => {
                         </div>
                     </div>
                     <div className="ps-hero-buttons">
-                        <button className="ps-btn-primary">Book Free Consultation</button>
-                        <button className="ps-btn-secondary">Talk to a Physiotherapist</button>
+                        <a
+                            href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Post-Surgery%20Recovery."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="ps-btn-primary"
+                        >
+                            Book Free Consultation
+                        </a>
                     </div>
                 </div>
             </section>
@@ -317,8 +323,14 @@ const PostSurgeryService = () => {
                             Surgery is just the first step. The right rehabilitation determines how well — and how fast — you truly recover. Start early. Recover better.
                         </p>
                         <div className="ps-cta-buttons">
-                            <button className="ps-btn-primary">Book Free Consultation</button>
-                            <button className="ps-btn-secondary">Talk to a Physiotherapist</button>
+                            <a
+                                href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Post-Surgery%20Recovery."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="ps-btn-primary"
+                            >
+                                Book Free Consultation
+                            </a>
                         </div>
                     </LazySection>
                 </div>
