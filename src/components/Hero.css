@@ -621,16 +621,16 @@ body {
 }
 
 .btn-book {
-    background: #1e3a5f;
-    color: white;
+    background: #CAFF8D;
+    color: #103F5F;
     padding: 18px 36px;
     border-radius: 50px;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 600;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(30, 58, 95, 0.2);
+    box-shadow: 0 4px 12px rgba(202, 255, 141, 0.3);
     letter-spacing: 0.3px;
     display: inline-flex;
     align-items: center;
@@ -640,9 +640,9 @@ body {
 }
 
 .btn-book:hover {
-    background: #152d47;
+    background: #b8e67a;
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(30, 58, 95, 0.3);
+    box-shadow: 0 6px 16px rgba(202, 255, 141, 0.4);
 }
 
 .btn-book:active {

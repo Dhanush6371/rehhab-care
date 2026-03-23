@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+:root {
+    /* Brand Colors */
+    --color-primary-blue: #103F5F;
+    --color-vibrant-green: #CAFF8D;
+    --color-night-forest: #FEFAF6;
+    --color-white: #FFFFFF;
+    --color-grey: #545454;
+
+    /* RGB Values for transparency */
+    --rgb-primary-blue: 16, 63, 95;
+    --rgb-vibrant-green: 202, 255, 141;
+    --rgb-night-forest: 254, 250, 246;
+    --rgb-grey: 84, 84, 84;
+
+    /* Semantic Colors */
+    --color-text-primary: #1a3a52;
+    --color-text-secondary: #6b7c93;
+    --color-background-primary: #FFFFFF;
+    --color-background-secondary: #FEFAF6;
+    --color-border: rgba(16, 63, 95, 0.1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +30,7 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: #f5f5f5;
+    background-color: var(--color-night-forest);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

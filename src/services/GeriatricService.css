@@ -8,7 +8,7 @@
 
 /* Hero Section */
 .gs-hero {
-    background: #1a5f5a;
+    background: #103F5F;
     color: white;
     padding: 140px 20px 100px;
     text-align: left;
@@ -75,7 +75,7 @@
 }
 
 .gs-stat-icon {
-    color: #4ade80;
+    color: #CAFF8D;
     font-weight: 700;
     font-size: 18px;
 }
@@ -88,8 +88,8 @@
 }
 
 .gs-btn-primary {
-    background: #4ade80;
-    color: #1a5f5a;
+    background: #CAFF8D;
+    color: #103F5F;
     padding: 15px 38px;
     border: none;
     border-radius: 8px;
@@ -97,13 +97,13 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(74, 222, 128, 0.3);
+    box-shadow: 0 2px 8px rgba(202, 255, 141, 0.3);
 }
 
 .gs-btn-primary:hover {
-    background: #3bc76a;
+    background: #b8e67a;
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(74, 222, 128, 0.4);
+    box-shadow: 0 6px 16px rgba(202, 255, 141, 0.4);
 }
 
 .gs-btn-secondary {
@@ -127,7 +127,7 @@
 /* Stats Bar */
 .gs-stats-bar {
     background: white;
-    border-bottom: 3px solid #4ade80;
+    border-bottom: 3px solid #CAFF8D;
     padding: 50px 20px;
 }
 
@@ -143,7 +143,7 @@
 .gs-stat h3 {
     font-size: 40px;
     font-weight: 700;
-    color: #1a5f5a;
+    color: #103F5F;
     margin-bottom: 10px;
     letter-spacing: -0.5px;
 }
@@ -172,7 +172,7 @@
     margin: 0 auto;
     background: white;
     padding: 55px 70px;
-    border-left: 5px solid #1a5f5a;
+    border-left: 5px solid #103F5F;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     border-radius: 2px;
 }
@@ -205,7 +205,7 @@
 .gs-check-icon {
     width: 24px;
     height: 24px;
-    background: #1a5f5a;
+    background: #103F5F;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -218,7 +218,7 @@
 }
 
 .gs-reassurance {
-    color: #1a5f5a;
+    color: #103F5F;
     font-size: 16px;
     font-style: italic;
     line-height: 1.7;
@@ -236,15 +236,15 @@
     max-width: 100%;
     margin: 0;
     padding: 40px 120px;
-    background: #d1f4e8;
+    background: #E8F7E0;
     border-radius: 0;
-    border-left: 5px solid #1a5f5a;
+    border-left: 5px solid #103F5F;
 }
 
 .gs-info-content p {
     font-size: 16px;
     line-height: 1.8;
-    color: #1a5f5a;
+    color: #103F5F;
     margin: 0 auto;
     max-width: 1400px;
     font-weight: 400;
@@ -263,7 +263,7 @@
 }
 
 .gs-section-label {
-    color: #4ade80;
+    color: #CAFF8D;
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
@@ -274,7 +274,7 @@
 .gs-section-heading {
     font-size: 38px;
     font-weight: 700;
-    color: #1a5f5a;
+    color: #103F5F;
     margin-bottom: 28px;
     line-height: 1.3;
     letter-spacing: -0.5px;
@@ -318,7 +318,7 @@
 }
 
 .gs-sign-icon {
-    color: #4ade80;
+    color: #CAFF8D;
     font-size: 22px;
     flex-shrink: 0;
     margin-top: 2px;
@@ -354,7 +354,7 @@
 }
 
 .gs-treatment-card:hover {
-    border-color: #4ade80;
+    border-color: #CAFF8D;
     box-shadow: 0 6px 16px rgba(74, 222, 128, 0.18);
     transform: translateY(-2px);
 }
@@ -391,7 +391,7 @@
 }
 
 .gs-trust-icon {
-    color: #4ade80;
+    color: #CAFF8D;
     font-weight: 700;
     font-size: 22px;
     flex-shrink: 0;
@@ -426,7 +426,7 @@
 .gs-step-number {
     width: 54px;
     height: 54px;
-    background: #1a5f5a;
+    background: #103F5F;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -456,7 +456,7 @@
 /* Testimonials */
 .gs-testimonials {
     padding: 60px 20px;
-    background: #1a5f5a;
+    background: #103F5F;
     color: white;
 }
 
@@ -504,7 +504,7 @@
 
 /* Final Stats */
 .gs-final-stats {
-    background: linear-gradient(to right, #4ade80, #22c55e);
+    background: linear-gradient(to right, #CAFF8D, #22c55e);
     padding: 60px 20px;
 }
 
@@ -587,7 +587,7 @@
 }
 
 .gs-cta .gs-btn-primary {
-    background: #1a5f5a;
+    background: #103F5F;
     color: white;
     padding: 15px 38px;
     border: none;
@@ -600,16 +600,16 @@
 }
 
 .gs-cta .gs-btn-primary:hover {
-    background: #154a46;
+    background: #0d3349;
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(26, 95, 90, 0.4);
+    box-shadow: 0 6px 16px rgba(16, 63, 95, 0.4);
 }
 
 .gs-cta .gs-btn-secondary {
     background: transparent;
-    color: #1a5f5a;
+    color: #103F5F;
     padding: 13px 38px;
-    border: 2px solid #1a5f5a;
+    border: 2px solid #103F5F;
     border-radius: 50px;
     font-size: 15px;
     font-weight: 600;
@@ -618,7 +618,7 @@
 }
 
 .gs-cta .gs-btn-secondary:hover {
-    background: rgba(26, 95, 90, 0.05);
+    background: rgba(16, 63, 95, 0.05);
     transform: translateY(-2px);
 }
 
