@@ -18,6 +18,7 @@ import WhatsAppFloat from './components/WhatsAppFloat';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfUse from './components/TermsOfUse';
 import PrivacyPractices from './components/PrivacyPractices';
+import FAQPage from './components/FAQPage';
 import BackNeckService from './services/BackNeckService';
 import KneeAnkleService from './services/KneeAnkleService';
 import ShoulderElbowService from './services/ShoulderElbowService';
@@ -155,6 +156,17 @@ function PostOperativeServicePage() {
     );
 }
 
+function FAQPageRoute() {
+    return (
+        <>
+            <Header />
+            <FAQPage />
+            <Footer />
+            <WhatsAppFloat />
+        </>
+    );
+}
+
 function App() {
     return (
         <Router>
@@ -172,6 +184,7 @@ function App() {
                     <Route path="/services/geriatric-care" element={<GeriatricServicePage />} />
                     <Route path="/services/post-surgery" element={<PostSurgeryServicePage />} />
                     <Route path="/services/post-operative" element={<PostOperativeServicePage />} />
+                    <Route path="/faq" element={<FAQPageRoute />} />
                     <Route path="/doctor/:id" element={<><DoctorProfile /><WhatsAppFloat /></>} />
                 </Routes>
             </div>

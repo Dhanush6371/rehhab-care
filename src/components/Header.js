@@ -71,7 +71,7 @@ const Header = () => {
                     <li><a href="/#services" onClick={(e) => handleNavClick(e, 'services')}>SERVICES</a></li>
                     <li><a href="/#team" onClick={(e) => handleNavClick(e, 'team')}>TEAM</a></li>
                     <li><a href="/#contact" onClick={(e) => handleNavClick(e, 'contact')}>CONTACT</a></li>
-                    <li><a href="/#contact" onClick={(e) => handleNavClick(e, 'contact')}>BLOG</a></li>
+                    <li><Link to="/faq">FAQ</Link></li>
 
                     <div className="mobile-menu-buttons">
                         <Link to="/partner" onClick={toggleMenu}>
