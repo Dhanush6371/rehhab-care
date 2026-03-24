@@ -55,7 +55,7 @@ const FAQ = () => {
                         <div className="faq-image-wrapper">
                             <div className="faq-image-card">
                                 <img
-                                    src="/images/female.webp"
+                                    src="/images/FAQ.png"
                                     alt="Doctor with question"
                                     className="faq-image"
                                     loading="lazy"

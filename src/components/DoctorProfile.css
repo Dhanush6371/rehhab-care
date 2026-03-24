@@ -75,7 +75,7 @@
     bottom: 20px;
     left: 20px;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-    color: var(--color-bg-primary);
+    color: #34d399;
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 12px;
@@ -133,7 +133,7 @@
 .appointment-btn {
     padding: 16px 36px;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-    color: var(--color-bg-primary);
+    color: #34d399;
     border: none;
     border-radius: 30px;
     font-size: 16px;
@@ -336,7 +336,7 @@
 .doctor-not-found button {
     padding: 14px 32px;
     background: var(--color-primary);
-    color: var(--color-bg-primary);
+    color: #34d399;
     border: none;
     border-radius: 25px;
     font-size: 16px;

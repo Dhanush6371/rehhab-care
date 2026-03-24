@@ -1,5 +1,5 @@
 .appointment-section {
-    background: linear-gradient(135deg, var(--color-secondary-dark) 0%, var(--color-text-primary) 100%);
+    background: var(--color-bg-secondary);
     padding: 100px 40px;
     position: relative;
     overflow: hidden;
@@ -16,25 +16,25 @@
 
 /* Left Content */
 .appointment-content {
-    color: var(--color-bg-primary);
+    color: var(--color-text-primary);
 }
 
 .appointment-title {
     font-size: 52px;
     font-weight: 700;
-    color: var(--color-bg-primary);
+    color: var(--color-text-primary);
     margin: 0 0 24px 0;
     line-height: 1.2;
 }
 
 .appointment-title .italic {
     font-style: italic;
-    color: var(--color-text-beige);
+    color: var(--color-primary);
 }
 
 .appointment-description {
     font-size: 17px;
-    color: var(--overlay-white-text);
+    color: var(--color-text-secondary);
     line-height: 1.7;
     margin: 0 0 56px 0;
 }
@@ -57,8 +57,8 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: var(--overlay-white-bg);
-    border: 2px solid var(--overlay-white-bg-border);
+    background: var(--color-primary);
+    border: 2px solid var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,13 +71,13 @@
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: var(--overlay-white-border-strong);
+    color: var(--color-text-secondary);
 }
 
 .step-line {
     flex: 1;
     height: 2px;
-    background: var(--overlay-white-border);
+    background: var(--color-border-light);
     margin: 0 -20px;
     margin-bottom: 40px;
 }
@@ -87,7 +87,7 @@
     background: var(--color-bg-primary);
     padding: 48px;
     border-radius: 28px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .form-card-title {
@@ -127,7 +127,7 @@
     border: 1px solid var(--color-border-light);
     border-radius: 12px;
     font-size: 15px;
-    background: var(--color-bg-tertiary);
+    background: var(--color-bg-gray-lighter);
     transition: all 0.3s;
     font-family: inherit;
 }
@@ -156,7 +156,7 @@
     border: 1px solid var(--color-border-light);
     border-radius: 12px;
     font-size: 15px;
-    background: var(--color-bg-tertiary);
+    background: var(--color-bg-gray-lighter);
     transition: all 0.3s;
     font-family: inherit;
     resize: vertical;
@@ -175,7 +175,7 @@
 
 .submit-appointment-btn {
     background: var(--color-primary);
-    color: var(--color-bg-primary);
+    color: #34d399;
     padding: 17px 48px;
     border: none;
     border-radius: 32px;

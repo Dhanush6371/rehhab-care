@@ -66,6 +66,10 @@ const DoctorProfile = () => {
 
     const doctor = doctors[id];
 
+    const handleAppointmentClick = () => {
+        navigate('/', { state: { scrollTo: 'appointment' } });
+    };
+
     if (!doctor) {
         return (
             <div className="doctor-not-found">
@@ -102,7 +106,7 @@ const DoctorProfile = () => {
                                     <span>{doctor.languages.join(', ')}</span>
                                 </div>
                             </div>
-                            <button className="appointment-btn">
+                            <button className="appointment-btn" onClick={handleAppointmentClick}>
                                 Book Appointment
                                 <span className="btn-arrow">→</span>
                             </button>
@@ -149,7 +153,7 @@ const DoctorProfile = () => {
                     <div className="doctor-cta">
                         <h2>Ready to start your recovery journey?</h2>
                         <p>Book a consultation with {doctor.name.split(' ')[1]} today</p>
-                        <button className="cta-btn">
+                        <button className="cta-btn" onClick={handleAppointmentClick}>
                             Schedule Consultation
                             <span className="btn-arrow">→</span>
                         </button>

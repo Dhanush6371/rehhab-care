@@ -343,7 +343,7 @@
 
 .submit-btn {
     background: var(--color-primary);
-    color: var(--color-bg-primary);
+    color: #34d399;
     padding: 14px 40px;
     border: none;
     border-radius: 50px;
