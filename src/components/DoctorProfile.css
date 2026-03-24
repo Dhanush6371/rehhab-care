@@ -1,18 +1,18 @@
 .doctor-profile-page {
     min-height: 100vh;
-    background: linear-gradient(135deg, #f8fffe 0%, #e8f5f4 100%);
+    background: linear-gradient(135deg, #f8fffe 0%, var(--color-bg-teal-lighter) 100%);
     padding: 40px 20px;
     position: relative;
 }
 
 .back-btn {
-    background: white;
-    border: 2px solid #e0e0e0;
+    background: var(--color-bg-primary);
+    border: 2px solid var(--color-border-light);
     padding: 12px 24px;
     border-radius: 25px;
     font-size: 14px;
     font-weight: 600;
-    color: #1a3a52;
+    color: var(--color-text-primary);
     cursor: pointer;
     transition: all 0.3s ease;
     margin-bottom: 30px;
@@ -23,9 +23,9 @@
 }
 
 .back-btn:hover {
-    background: #1a5f5a;
-    color: white;
-    border-color: #1a5f5a;
+    background: var(--color-primary);
+    color: var(--color-bg-primary);
+    border-color: var(--color-primary);
     transform: translateX(-4px);
 }
 
@@ -36,7 +36,7 @@
 
 /* Hero Section */
 .doctor-hero {
-    background: white;
+    background: var(--color-bg-primary);
     border-radius: 32px;
     padding: 60px;
     display: grid;
@@ -55,7 +55,7 @@
     left: 0;
     right: 0;
     height: 6px;
-    background: linear-gradient(90deg, #1a5f5a 0%, #26a69a 100%);
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
 }
 
 .doctor-hero-image {
@@ -74,8 +74,8 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    color: var(--color-bg-primary);
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 12px;
@@ -93,21 +93,21 @@
 .doctor-name {
     font-size: 48px;
     font-weight: 700;
-    color: #1a3a52;
+    color: var(--color-text-primary);
     margin: 0 0 12px 0;
     line-height: 1.2;
 }
 
 .doctor-role {
     font-size: 22px;
-    color: #1a5f5a;
+    color: var(--color-primary);
     font-weight: 600;
     margin: 0 0 8px 0;
 }
 
 .doctor-education {
     font-size: 16px;
-    color: #6b7c93;
+    color: var(--color-text-secondary);
     margin: 0 0 32px 0;
 }
 
@@ -123,7 +123,7 @@
     align-items: center;
     gap: 12px;
     font-size: 15px;
-    color: #1a3a52;
+    color: var(--color-text-primary);
 }
 
 .meta-icon {
@@ -132,8 +132,8 @@
 
 .appointment-btn {
     padding: 16px 36px;
-    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    color: var(--color-bg-primary);
     border: none;
     border-radius: 30px;
     font-size: 16px;
@@ -163,7 +163,7 @@
 
 /* Sections */
 .doctor-section {
-    background: white;
+    background: var(--color-bg-primary);
     border-radius: 24px;
     padding: 48px;
     margin-bottom: 32px;
@@ -173,7 +173,7 @@
 .section-title {
     font-size: 32px;
     font-weight: 700;
-    color: #1a3a52;
+    color: var(--color-text-primary);
     margin: 0 0 24px 0;
     position: relative;
     padding-bottom: 16px;
@@ -186,14 +186,14 @@
     left: 0;
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, #1a5f5a 0%, #26a69a 100%);
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
     border-radius: 2px;
 }
 
 .doctor-about {
     font-size: 17px;
     line-height: 1.8;
-    color: #6b7c93;
+    color: var(--color-text-secondary);
     margin: 0;
 }
 
@@ -205,7 +205,7 @@
 }
 
 .expertise-card {
-    background: linear-gradient(135deg, #f0f9f8 0%, #e0f2f1 100%);
+    background: linear-gradient(135deg, var(--color-bg-teal-light) 0%, var(--color-bg-teal-lighter) 100%);
     padding: 20px 24px;
     border-radius: 16px;
     display: flex;
@@ -213,7 +213,7 @@
     gap: 12px;
     font-size: 15px;
     font-weight: 500;
-    color: #1a3a52;
+    color: var(--color-text-primary);
     transition: all 0.3s ease;
     border: 1px solid rgba(26, 95, 90, 0.1);
 }
@@ -226,8 +226,8 @@
 .expertise-icon {
     width: 28px;
     height: 28px;
-    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    color: var(--color-bg-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -247,9 +247,9 @@
 .achievement-item {
     font-size: 16px;
     line-height: 1.8;
-    color: #6b7c93;
+    color: var(--color-text-secondary);
     padding: 16px 0;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--color-border-light);
     display: flex;
     align-items: flex-start;
     gap: 16px;
@@ -260,7 +260,7 @@
 }
 
 .achievement-bullet {
-    color: #1a5f5a;
+    color: var(--color-primary);
     font-size: 20px;
     line-height: 1;
     flex-shrink: 0;
@@ -268,11 +268,11 @@
 
 /* CTA Section */
 .doctor-cta {
-    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
     border-radius: 24px;
     padding: 60px;
     text-align: center;
-    color: white;
+    color: var(--color-bg-primary);
     box-shadow: 0 12px 40px rgba(26, 95, 90, 0.3);
 }
 
@@ -290,8 +290,8 @@
 
 .cta-btn {
     padding: 16px 40px;
-    background: white;
-    color: #1a5f5a;
+    background: var(--color-bg-primary);
+    color: var(--color-primary);
     border: none;
     border-radius: 30px;
     font-size: 16px;
@@ -330,13 +330,13 @@
 
 .doctor-not-found h2 {
     font-size: 32px;
-    color: #1a3a52;
+    color: var(--color-text-primary);
 }
 
 .doctor-not-found button {
     padding: 14px 32px;
-    background: #1a5f5a;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-bg-primary);
     border: none;
     border-radius: 25px;
     font-size: 16px;

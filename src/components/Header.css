@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     padding: 20px 40px;
-    background: white;
+    background: var(--color-bg-primary);
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
     border-bottom: 1px solid rgba(26, 95, 90, 0.08);
     z-index: 900;
@@ -46,7 +46,7 @@
 .logo span {
     font-size: 20px;
     font-weight: 700;
-    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -71,7 +71,7 @@
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-    color: #4a5568;
+    color: var(--color-text-light);
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.2px;
@@ -87,13 +87,13 @@
     left: 20px;
     right: 20px;
     height: 2px;
-    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #1a5f5a;
+    color: var(--color-primary);
     background: rgba(26, 95, 90, 0.05);
 }
 
@@ -129,9 +129,9 @@ button {
 }
 
 .btn-secondary {
-    background: linear-gradient(135deg, #f0f9f8 0%, #e0f2f1 100%);
-    color: #1a5f5a;
-    border: 2px solid #1a5f5a;
+    background: linear-gradient(135deg, var(--color-bg-teal-light) 0%, var(--color-bg-teal-lighter) 100%);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
     position: relative;
     overflow: hidden;
 }
@@ -143,14 +143,14 @@ button {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
     transition: left 0.3s ease;
     z-index: -1;
 }
 
 .btn-secondary:hover {
-    color: white;
-    border-color: #1a5f5a;
+    color: var(--color-bg-primary);
+    border-color: var(--color-primary);
 }
 
 .btn-secondary:hover::before {
@@ -158,8 +158,8 @@ button {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    color: var(--color-bg-primary);
     box-shadow: 0 4px 12px rgba(26, 95, 90, 0.25);
     position: relative;
     overflow: hidden;
@@ -218,7 +218,7 @@ button {
     display: block;
     width: 28px;
     height: 2px;
-    background: #1a5f5a;
+    background: var(--color-primary);
     transition: all 0.3s ease;
 }
 
@@ -310,7 +310,7 @@ button {
         right: 0;
         width: 100%;
         max-height: calc(100vh - 80px);
-        background: white;
+        background: var(--color-bg-primary);
         flex-direction: column;
         padding: 100px 32px 40px;
         gap: 8px;
@@ -318,7 +318,7 @@ button {
         transition: top 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         z-index: 920;
         overflow-y: auto;
-        border-bottom: 3px solid #1a5f5a;
+        border-bottom: 3px solid var(--color-primary);
     }
 
     .nav-links.active {
@@ -362,7 +362,7 @@ button {
     .nav-links a {
         font-size: 17px;
         font-weight: 600;
-        color: #1a3a52;
+        color: var(--color-text-primary);
         padding: 16px 20px;
         border-radius: 12px;
         width: 100%;
@@ -376,9 +376,9 @@ button {
     }
 
     .nav-links a:hover {
-        color: #1a5f5a;
-        background: linear-gradient(135deg, #f0f9f8 0%, #e0f2f1 100%);
-        border-color: #1a5f5a;
+        color: var(--color-primary);
+        background: linear-gradient(135deg, var(--color-bg-teal-light) 0%, var(--color-bg-teal-lighter) 100%);
+        border-color: var(--color-primary);
     }
 
     /* Mobile Menu Buttons */
@@ -388,7 +388,7 @@ button {
         gap: 12px;
         margin-top: 24px;
         padding-top: 24px;
-        border-top: 2px solid #e5e7eb;
+        border-top: 2px solid var(--color-bg-neutral);
         width: 100%;
     }
 
@@ -411,19 +411,19 @@ button {
     }
 
     .mobile-btn-secondary {
-        background: linear-gradient(135deg, #f0f9f8 0%, #e0f2f1 100%);
-        color: #1a5f5a;
-        border: 2px solid #1a5f5a;
+        background: linear-gradient(135deg, var(--color-bg-teal-light) 0%, var(--color-bg-teal-lighter) 100%);
+        color: var(--color-primary);
+        border: 2px solid var(--color-primary);
     }
 
     .mobile-btn-secondary:hover {
-        background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
-        color: white;
+        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+        color: var(--color-bg-primary);
     }
 
     .mobile-btn-primary {
-        background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
-        color: white;
+        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+        color: var(--color-bg-primary);
         box-shadow: 0 4px 12px rgba(26, 95, 90, 0.25);
     }
 

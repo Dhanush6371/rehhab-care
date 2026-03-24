@@ -1,5 +1,5 @@
 .partner-section {
-    background: #fafafa;
+    background: var(--color-bg-tertiary);
     padding: 100px 40px;
 }
 
@@ -19,8 +19,8 @@
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #1a5f5a;
-    background: #f0f9f8;
+    color: var(--color-primary);
+    background: var(--color-bg-teal-light);
     padding: 10px 24px;
     border-radius: 30px;
     margin-bottom: 24px;
@@ -29,21 +29,21 @@
 .partner-title {
     font-size: 48px;
     font-weight: 700;
-    color: #1a3a52;
+    color: var(--color-text-primary);
     margin: 0 0 20px 0;
     line-height: 1.3;
 }
 
 .partner-subtitle {
     font-size: 17px;
-    color: #6b7c93;
+    color: var(--color-text-secondary);
     line-height: 1.7;
     margin: 0;
 }
 
 /* Requirements Box */
 .requirements-box {
-    background: white;
+    background: var(--color-bg-primary);
     padding: 48px;
     border-radius: 24px;
     margin-bottom: 48px;
@@ -53,7 +53,7 @@
 .requirements-title {
     font-size: 22px;
     font-weight: 700;
-    color: #1a3a52;
+    color: var(--color-text-primary);
     margin: 0 0 32px 0;
     text-align: center;
 }
@@ -75,17 +75,17 @@
 .requirement-icon {
     width: 56px;
     height: 56px;
-    background: #f0f9f8;
+    background: var(--color-bg-teal-light);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #1a5f5a;
+    color: var(--color-primary);
 }
 
 .requirement-text {
     font-size: 15px;
-    color: #1a3a52;
+    color: var(--color-text-primary);
     font-weight: 600;
     line-height: 1.5;
 }
@@ -97,7 +97,7 @@
    ============================================= */
 
 .partner-section .partner-form-wrapper {
-    background: white;
+    background: var(--color-bg-primary);
     padding: 56px 48px;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
@@ -114,13 +114,13 @@
 .partner-section .partner-form-intro-title {
     font-size: 28px;
     font-weight: 700;
-    color: #1a3a52;
+    color: var(--color-text-primary);
     margin: 0 0 12px 0;
 }
 
 .partner-section .partner-form-intro-subtitle {
     font-size: 16px;
-    color: #6b7c93;
+    color: var(--color-text-secondary);
     margin: 0;
 }
 
@@ -156,7 +156,7 @@
 .partner-section .partner-form-label {
     font-size: 14px;
     font-weight: 600;
-    color: #6b7c93;
+    color: var(--color-text-secondary);
     letter-spacing: 0.3px;
     margin-bottom: 2px;
     max-width: none !important;
@@ -165,13 +165,13 @@
 
 .partner-section .partner-form-input {
     padding: 16px 20px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid var(--color-bg-neutral);
     border-radius: 10px;
     font-size: 15px;
     background: #f8f8f8;
     transition: all 0.3s ease;
     font-family: inherit;
-    color: #1a3a52;
+    color: var(--color-text-primary);
     width: 100% !important;
     max-width: none !important;
     box-sizing: border-box !important;
@@ -180,19 +180,19 @@
 }
 
 .partner-section .partner-form-input:hover {
-    border-color: #d0d0d0;
-    background: white;
+    border-color: var(--color-border-light);
+    background: var(--color-bg-primary);
 }
 
 .partner-section .partner-form-input:focus {
     outline: none;
-    border-color: #1a5f5a;
-    background: white;
+    border-color: var(--color-primary);
+    background: var(--color-bg-primary);
     box-shadow: 0 0 0 3px rgba(26, 95, 90, 0.1);
 }
 
 .partner-section .partner-form-input::placeholder {
-    color: #999;
+    color: var(--color-text-muted);
 }
 
 .partner-section .partner-form-select {
@@ -206,12 +206,12 @@
 }
 
 .partner-section .partner-form-select:hover {
-    border-color: #1a5f5a;
+    border-color: var(--color-primary);
 }
 
 .partner-section .partner-submit-btn {
-    background: #1a5f5a;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-bg-primary);
     padding: 18px 40px;
     border: none;
     border-radius: 10px;
@@ -225,7 +225,7 @@
 }
 
 .partner-section .partner-submit-btn:hover {
-    background: #154d49;
+    background: var(--color-primary-dark);
     transform: translateY(-1px);
     box-shadow: 0 6px 20px rgba(26, 95, 90, 0.25);
 }
@@ -236,7 +236,7 @@
 
 .partner-section .partner-form-disclaimer {
     font-size: 13px;
-    color: #999;
+    color: var(--color-text-muted);
     text-align: center;
     margin: 16px 0 0 0;
     line-height: 1.6;

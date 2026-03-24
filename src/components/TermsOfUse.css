@@ -1,6 +1,6 @@
 .terms-of-use {
     min-height: 100vh;
-    background: #f8f9fa;
+    background: var(--color-bg-gray-lighter);
     padding: 100px 20px 60px;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
@@ -8,7 +8,7 @@
 .terms-container {
     max-width: 1000px;
     margin: 0 auto;
-    background: white;
+    background: var(--color-bg-primary);
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     padding: 60px;
@@ -19,12 +19,12 @@
     text-align: center;
     margin-bottom: 50px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #e9ecef;
+    border-bottom: 1px solid var(--color-border-gray);
 }
 
 .terms-header h1 {
     font-size: 2.5rem;
-    color: #212529;
+    color: var(--color-text-primary);
     margin-bottom: 16px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
@@ -33,7 +33,7 @@
 
 .terms-subtitle {
     font-size: 1.125rem;
-    color: #6c757d;
+    color: var(--color-text-secondary);
     margin-bottom: 12px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
@@ -41,7 +41,7 @@
 
 .terms-meta {
     font-size: 0.875rem;
-    color: #868e96;
+    color: var(--color-text-muted);
     font-family: 'Inter', sans-serif;
 }
 
@@ -51,7 +51,7 @@
 
 .terms-section h2 {
     font-size: 1.75rem;
-    color: #212529;
+    color: var(--color-text-primary);
     margin-bottom: 20px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
@@ -60,7 +60,7 @@
 
 .terms-section h3 {
     font-size: 1.25rem;
-    color: #495057;
+    color: var(--color-text-medium);
     margin-top: 28px;
     margin-bottom: 16px;
     font-weight: 600;
@@ -70,7 +70,7 @@
 .terms-section p {
     font-size: 1rem;
     line-height: 1.75;
-    color: #495057;
+    color: var(--color-text-medium);
     margin-bottom: 16px;
     font-family: 'Inter', sans-serif;
 }
@@ -83,7 +83,7 @@
 .terms-section ul li {
     font-size: 1rem;
     line-height: 1.75;
-    color: #495057;
+    color: var(--color-text-medium);
     margin-bottom: 12px;
     font-family: 'Inter', sans-serif;
     position: relative;
@@ -95,12 +95,12 @@
 }
 
 .terms-section ul li strong {
-    color: #212529;
+    color: var(--color-text-primary);
     font-weight: 600;
 }
 
 .terms-contact {
-    background: #f8f9fa;
+    background: var(--color-bg-gray-lighter);
     padding: 32px;
     border-radius: 12px;
     border-left: 4px solid #667eea;
@@ -108,7 +108,7 @@
 }
 
 .terms-contact h2 {
-    color: #212529;
+    color: var(--color-text-primary);
     margin-bottom: 20px;
 }
 
@@ -119,12 +119,12 @@
 .contact-details p {
     margin-bottom: 10px;
     font-size: 1rem;
-    color: #495057;
+    color: var(--color-text-medium);
     font-family: 'Inter', sans-serif;
 }
 
 .contact-details strong {
-    color: #212529;
+    color: var(--color-text-primary);
     font-weight: 600;
 }
 

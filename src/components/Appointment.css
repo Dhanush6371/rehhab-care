@@ -1,5 +1,5 @@
 .appointment-section {
-    background: linear-gradient(135deg, #2c4a5e 0%, #1a3a52 100%);
+    background: linear-gradient(135deg, var(--color-secondary-dark) 0%, var(--color-text-primary) 100%);
     padding: 100px 40px;
     position: relative;
     overflow: hidden;
@@ -16,13 +16,13 @@
 
 /* Left Content */
 .appointment-content {
-    color: white;
+    color: var(--color-bg-primary);
 }
 
 .appointment-title {
     font-size: 52px;
     font-weight: 700;
-    color: white;
+    color: var(--color-bg-primary);
     margin: 0 0 24px 0;
     line-height: 1.2;
 }
@@ -64,7 +64,7 @@
     justify-content: center;
     font-size: 20px;
     font-weight: 700;
-    color: white;
+    color: var(--color-bg-primary);
 }
 
 .step-label {
@@ -84,7 +84,7 @@
 
 /* Right Form Card */
 .appointment-form-card {
-    background: white;
+    background: var(--color-bg-primary);
     padding: 48px;
     border-radius: 28px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -93,7 +93,7 @@
 .form-card-title {
     font-size: 28px;
     font-weight: 700;
-    color: #1a3a52;
+    color: var(--color-text-primary);
     margin: 0 0 32px 0;
 }
 
@@ -119,23 +119,23 @@
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 1.2px;
-    color: #999;
+    color: var(--color-text-muted);
 }
 
 .form-input {
     padding: 14px 18px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--color-border-light);
     border-radius: 12px;
     font-size: 15px;
-    background: #fafafa;
+    background: var(--color-bg-tertiary);
     transition: all 0.3s;
     font-family: inherit;
 }
 
 .form-input:focus {
     outline: none;
-    border-color: #1a5f5a;
-    background: white;
+    border-color: var(--color-primary);
+    background: var(--color-bg-primary);
 }
 
 .form-input::placeholder {
@@ -153,10 +153,10 @@
 
 .form-textarea {
     padding: 14px 18px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--color-border-light);
     border-radius: 12px;
     font-size: 15px;
-    background: #fafafa;
+    background: var(--color-bg-tertiary);
     transition: all 0.3s;
     font-family: inherit;
     resize: vertical;
@@ -165,8 +165,8 @@
 
 .form-textarea:focus {
     outline: none;
-    border-color: #1a5f5a;
-    background: white;
+    border-color: var(--color-primary);
+    background: var(--color-bg-primary);
 }
 
 .form-textarea::placeholder {
@@ -174,8 +174,8 @@
 }
 
 .submit-appointment-btn {
-    background: #1a5f5a;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-bg-primary);
     padding: 17px 48px;
     border: none;
     border-radius: 32px;
@@ -191,7 +191,7 @@
 }
 
 .submit-appointment-btn:hover {
-    background: #154d49;
+    background: var(--color-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 10px 24px rgba(26, 95, 90, 0.3);
 }

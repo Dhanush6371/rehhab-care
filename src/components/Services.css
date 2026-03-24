@@ -1,5 +1,5 @@
 .services-section {
-    background: white;
+    background: var(--color-bg-primary);
     padding: 80px 80px;
     margin: 0;
 }
@@ -18,7 +18,7 @@
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 2.5px;
-    color: #b0b0b0;
+    color: var(--color-text-muted);
     text-transform: uppercase;
     margin: 0 0 16px 0;
     font-family: 'Arial', sans-serif;
@@ -27,7 +27,7 @@
 .services-header h2 {
     font-size: 52px;
     font-weight: 900;
-    color: #1e3a5f;
+    color: var(--color-secondary-darker);
     margin: 0 0 20px 0;
     line-height: 1.2;
     font-family: 'Arial Black', 'Arial Bold', sans-serif;
@@ -35,17 +35,17 @@
 }
 
 .services-header h2 .highlight {
-    background: #2c4a6b;
+    background: var(--color-secondary-dark);
     padding: 6px 20px;
     border-radius: 10px;
-    color: #b8f5cd;
+    color: var(--color-highlight-green);
     font-weight: 900;
     display: inline-block;
 }
 
 .services-header h2 .italic {
     font-style: italic;
-    color: #1a5f5a;
+    color: var(--color-primary);
 }
 
 .services-description {
@@ -59,7 +59,7 @@
 
 .services-header p {
     font-size: 16px;
-    color: #666;
+    color: var(--color-text-secondary);
     line-height: 1.6;
     max-width: 600px;
     margin: 0;
@@ -111,7 +111,7 @@
     right: 0;
     padding: 24px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
-    color: white;
+    color: var(--color-bg-primary);
 }
 
 .service-category {
@@ -127,7 +127,7 @@
 .service-title {
     font-size: 24px;
     font-weight: 700;
-    color: white;
+    color: var(--color-bg-primary);
     margin: 0;
     line-height: 1.3;
 }

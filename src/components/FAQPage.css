@@ -7,7 +7,7 @@
 .faq-page {
     font-family: var(--font-sans);
     min-height: 100vh;
-    background: linear-gradient(to bottom, #E1F5EE 0%, #ffffff 300px);
+    background: linear-gradient(to bottom, #E1F5EE 0%, var(--color-bg-primary) 300px);
 }
 
 .topbar {
@@ -21,7 +21,7 @@
 .topbar-logo {
     font-size: 14px;
     font-weight: 500;
-    color: #fff;
+    color: var(--color-bg-primary);
     letter-spacing: 0.02em;
 }
 
@@ -80,7 +80,7 @@
 .search-wrap {
     display: flex;
     align-items: center;
-    background: #fff;
+    background: var(--color-bg-primary);
     border: 2px solid #5DCAA5;
     border-radius: 12px;
     padding: 0 16px;
@@ -136,7 +136,7 @@
     border-radius: 24px;
     border: 1.5px solid #5DCAA5;
     color: #0F6E56;
-    background: #fff;
+    background: var(--color-bg-primary);
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
@@ -151,7 +151,7 @@
 
 .pill.active {
     background: linear-gradient(135deg, #0F6E56 0%, #1D9E75 100%);
-    color: #fff;
+    color: var(--color-bg-primary);
     border-color: #0F6E56;
     box-shadow: 0 4px 12px rgba(15, 110, 86, 0.25);
 }
@@ -205,7 +205,7 @@
 }
 
 .q-card {
-    background: #fff;
+    background: var(--color-bg-primary);
     border: 2px solid #E8F6F1;
     border-radius: 16px;
     padding: 1.25rem 1.5rem;
@@ -222,7 +222,7 @@
 
 .q-card.open {
     border-color: #1D9E75;
-    background: linear-gradient(to bottom, #fff 0%, #F8FCFB 100%);
+    background: linear-gradient(to bottom, var(--color-bg-primary) 0%, #F8FCFB 100%);
     box-shadow: 0 8px 24px rgba(15, 110, 86, 0.15);
     transform: translateY(-2px);
 }
@@ -236,7 +236,7 @@
 .q-num {
     font-size: 11px;
     font-weight: 600;
-    color: #fff;
+    color: var(--color-bg-primary);
     min-width: 24px;
     height: 24px;
     display: flex;
@@ -342,7 +342,7 @@
 .bottom-cta-left p:first-child {
     font-size: 18px;
     font-weight: 600;
-    color: #fff;
+    color: var(--color-bg-primary);
     margin-bottom: 6px;
 }
 
@@ -356,7 +356,7 @@
     font-weight: 600;
     padding: 12px 28px;
     border-radius: 12px;
-    background: #fff;
+    background: var(--color-bg-primary);
     color: #0F6E56;
     border: none;
     cursor: pointer;
@@ -381,7 +381,7 @@
 }
 
 .stat {
-    background: #fff;
+    background: var(--color-bg-primary);
     border: 2px solid #E8F6F1;
     border-radius: 16px;
     padding: 1.5rem 1rem;
@@ -408,7 +408,7 @@
 
 .stat-label {
     font-size: 11px;
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary, var(--color-text-muted));
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-weight: 600;
@@ -485,7 +485,7 @@
 }
 
 .quick-link-card {
-    background: #fff;
+    background: var(--color-bg-primary);
     border: 2px solid #E8F6F1;
     border-radius: 16px;
     padding: 1.5rem 1rem;
@@ -518,7 +518,7 @@
 .no-results {
     text-align: center;
     padding: 3rem 2rem;
-    color: #666;
+    color: var(--color-text-secondary);
 }
 
 .no-results-icon {
@@ -535,7 +535,7 @@
 
 .no-results p {
     font-size: 14px;
-    color: #666;
+    color: var(--color-text-secondary);
 }
 
 @media (max-width: 768px) {
@@ -564,7 +564,7 @@
     width: 50px;
     height: 50px;
     background: linear-gradient(135deg, #0F6E56 0%, #1D9E75 100%);
-    color: #fff;
+    color: var(--color-bg-primary);
     border: none;
     border-radius: 50%;
     cursor: pointer;

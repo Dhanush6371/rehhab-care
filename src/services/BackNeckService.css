@@ -8,8 +8,8 @@
 
 /* Hero Section */
 .bn-hero {
-    background: #1a5f5a;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-bg-primary);
     padding: 140px 20px 100px;
     text-align: left;
     position: relative;
@@ -42,11 +42,11 @@
 }
 
 .bn-hero-title .normal-text {
-    color: white;
+    color: var(--color-bg-primary);
 }
 
 .highlight-text {
-    color: #7dd3ae;
+    color: var(--color-accent-green-light);
 }
 
 .bn-hero-subtitle {
@@ -75,7 +75,7 @@
 }
 
 .bn-stat-icon {
-    color: #4ade80;
+    color: var(--color-accent-green);
     font-weight: 700;
     font-size: 18px;
 }
@@ -88,8 +88,8 @@
 }
 
 .bn-btn-primary {
-    background: #4ade80;
-    color: #1a5f5a;
+    background: var(--color-accent-green);
+    color: var(--color-primary);
     padding: 15px 38px;
     border: none;
     border-radius: 8px;
@@ -101,14 +101,14 @@
 }
 
 .bn-btn-primary:hover {
-    background: #3bc76a;
+    background: var(--color-accent-green-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(74, 222, 128, 0.4);
 }
 
 .bn-btn-secondary {
     background: transparent;
-    color: white;
+    color: var(--color-bg-primary);
     padding: 13px 38px;
     border: 2px solid rgba(255, 255, 255, 0.7);
     border-radius: 8px;
@@ -126,8 +126,8 @@
 
 /* Stats Bar */
 .bn-stats-bar {
-    background: white;
-    border-bottom: 3px solid #4ade80;
+    background: var(--color-bg-primary);
+    border-bottom: 3px solid var(--color-accent-green);
     padding: 50px 20px;
 }
 
@@ -143,14 +143,14 @@
 .bn-stat h3 {
     font-size: 40px;
     font-weight: 700;
-    color: #1a5f5a;
+    color: var(--color-primary);
     margin-bottom: 10px;
     letter-spacing: -0.5px;
 }
 
 .bn-stat p {
     font-size: 14px;
-    color: #6b7280;
+    color: var(--color-text-lighter);
     font-weight: 400;
 }
 
@@ -164,15 +164,15 @@
 /* Symptoms Section */
 .bn-symptoms {
     padding: 90px 20px;
-    background: #f3f4f6;
+    background: var(--color-bg-gray);
 }
 
 .bn-symptoms-content {
     max-width: 1300px;
     margin: 0 auto;
-    background: white;
+    background: var(--color-bg-primary);
     padding: 55px 70px;
-    border-left: 5px solid #1a5f5a;
+    border-left: 5px solid var(--color-primary);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     border-radius: 2px;
 }
@@ -180,7 +180,7 @@
 .bn-section-title {
     font-size: 30px;
     font-weight: 700;
-    color: #1f2937;
+    color: var(--color-text-dark);
     margin-bottom: 35px;
     letter-spacing: -0.3px;
 }
@@ -197,7 +197,7 @@
     gap: 18px;
     padding: 16px 0;
     font-size: 16px;
-    color: #374151;
+    color: var(--color-text-medium);
     line-height: 1.7;
     font-weight: 400;
 }
@@ -205,8 +205,8 @@
 .bn-check-icon {
     width: 24px;
     height: 24px;
-    background: #1a5f5a;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-bg-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -218,7 +218,7 @@
 }
 
 .bn-reassurance {
-    color: #1a5f5a;
+    color: var(--color-primary);
     font-size: 16px;
     font-style: italic;
     line-height: 1.7;
@@ -228,7 +228,7 @@
 /* Info Box */
 .bn-info-box {
     padding: 0 0 70px;
-    background: #f3f4f6;
+    background: var(--color-bg-gray);
 }
 
 .bn-info-content {
@@ -236,15 +236,15 @@
     max-width: 100%;
     margin: 0;
     padding: 40px 120px;
-    background: #d1f4e8;
+    background: var(--color-bg-green-tint);
     border-radius: 0;
-    border-left: 5px solid #1a5f5a;
+    border-left: 5px solid var(--color-primary);
 }
 
 .bn-info-content p {
     font-size: 16px;
     line-height: 1.8;
-    color: #1a5f5a;
+    color: var(--color-primary);
     margin: 0 auto;
     max-width: 1400px;
     font-weight: 400;
@@ -259,11 +259,11 @@
 /* Understanding Section */
 .bn-understanding {
     padding: 90px 20px;
-    background: white;
+    background: var(--color-bg-primary);
 }
 
 .bn-section-label {
-    color: #4ade80;
+    color: var(--color-accent-green);
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
@@ -274,7 +274,7 @@
 .bn-section-heading {
     font-size: 38px;
     font-weight: 700;
-    color: #1a5f5a;
+    color: var(--color-primary);
     margin-bottom: 28px;
     line-height: 1.3;
     letter-spacing: -0.5px;
@@ -283,7 +283,7 @@
 .bn-section-description {
     font-size: 16px;
     line-height: 1.8;
-    color: #4b5563;
+    color: var(--color-text-light);
     max-width: 950px;
     font-weight: 400;
 }
@@ -291,7 +291,7 @@
 /* Common Signs */
 .bn-common-signs {
     padding: 90px 20px;
-    background: #f9fafb;
+    background: var(--color-bg-gray-light);
 }
 
 .bn-signs-grid {
@@ -318,7 +318,7 @@
 }
 
 .bn-sign-icon {
-    color: #4ade80;
+    color: var(--color-accent-green);
     font-size: 22px;
     flex-shrink: 0;
     margin-top: 2px;
@@ -326,7 +326,7 @@
 
 .bn-sign-card p {
     font-size: 15px;
-    color: #374151;
+    color: var(--color-text-medium);
     line-height: 1.7;
     margin: 0;
     font-weight: 400;
@@ -335,7 +335,7 @@
 /* Treatment Approach */
 .bn-treatment {
     padding: 90px 20px;
-    background: white;
+    background: var(--color-bg-primary);
 }
 
 .bn-treatment-grid {
@@ -347,21 +347,21 @@
 
 .bn-treatment-card {
     padding: 32px 35px;
-    background: #f9fafb;
-    border: 1px solid #e5e7eb;
+    background: var(--color-bg-gray-light);
+    border: 1px solid var(--color-bg-neutral);
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
 .bn-treatment-card:hover {
-    border-color: #4ade80;
+    border-color: var(--color-accent-green);
     box-shadow: 0 6px 16px rgba(74, 222, 128, 0.18);
     transform: translateY(-2px);
 }
 
 .bn-treatment-card p {
     font-size: 15px;
-    color: #1f2937;
+    color: var(--color-text-dark);
     line-height: 1.7;
     margin: 0;
     font-weight: 500;
@@ -370,7 +370,7 @@
 /* Why Trust */
 .bn-why-trust {
     padding: 90px 20px;
-    background: #f0fdf4;
+    background: var(--color-bg-green-light);
 }
 
 .bn-trust-list {
@@ -383,7 +383,7 @@
     align-items: flex-start;
     gap: 18px;
     padding: 22px 0;
-    border-bottom: 1px solid #d1fae5;
+    border-bottom: 1px solid var(--color-bg-green-border);
 }
 
 .bn-trust-item:last-child {
@@ -391,7 +391,7 @@
 }
 
 .bn-trust-icon {
-    color: #4ade80;
+    color: var(--color-accent-green);
     font-weight: 700;
     font-size: 22px;
     flex-shrink: 0;
@@ -400,7 +400,7 @@
 
 .bn-trust-item p {
     font-size: 16px;
-    color: #1f2937;
+    color: var(--color-text-dark);
     line-height: 1.7;
     margin: 0;
     font-weight: 400;
@@ -409,7 +409,7 @@
 /* Recovery Journey */
 .bn-recovery {
     padding: 90px 20px;
-    background: white;
+    background: var(--color-bg-primary);
 }
 
 .bn-recovery-steps {
@@ -426,8 +426,8 @@
 .bn-step-number {
     width: 54px;
     height: 54px;
-    background: #1a5f5a;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-bg-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -440,14 +440,14 @@
 .bn-step-content h3 {
     font-size: 21px;
     font-weight: 700;
-    color: #1f2937;
+    color: var(--color-text-dark);
     margin-bottom: 12px;
     letter-spacing: -0.2px;
 }
 
 .bn-step-content p {
     font-size: 15px;
-    color: #6b7280;
+    color: var(--color-text-lighter);
     line-height: 1.7;
     margin: 0;
     font-weight: 400;
@@ -456,8 +456,8 @@
 /* Testimonials */
 .bn-testimonials {
     padding: 60px 20px;
-    background: #1a5f5a;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-bg-primary);
 }
 
 .bn-testimonials-heading {
@@ -504,7 +504,7 @@
 
 /* Final Stats */
 .bn-final-stats {
-    background: linear-gradient(to right, #4ade80, #22c55e);
+    background: linear-gradient(to right, var(--color-accent-green), var(--color-accent-green-darker));
     padding: 60px 20px;
 }
 
@@ -520,19 +520,19 @@
 .bn-final-stat h3 {
     font-size: 42px;
     font-weight: 700;
-    color: white;
+    color: var(--color-bg-primary);
     margin-bottom: 8px;
 }
 
 .bn-final-stat p {
     font-size: 16px;
-    color: white;
+    color: var(--color-bg-primary);
     opacity: 0.95;
 }
 
 /* Final Stats */
 .bn-final-stats {
-    background: #1a7a5e;
+    background: var(--color-accent-green-darkest);
     padding: 30px 20px;
 }
 
@@ -548,14 +548,14 @@
 .bn-final-stat h3 {
     font-size: 46px;
     font-weight: 700;
-    color: white;
+    color: var(--color-bg-primary);
     margin-bottom: 3px;
     letter-spacing: -0.5px;
 }
 
 .bn-final-stat p {
     font-size: 16px;
-    color: white;
+    color: var(--color-bg-primary);
     opacity: 0.85;
     font-weight: 400;
     margin: 0;
@@ -564,14 +564,14 @@
 /* CTA Section */
 .bn-cta {
     padding: 60px 20px;
-    background: #e5e7eb;
+    background: var(--color-bg-neutral);
     text-align: center;
 }
 
 .bn-cta-text {
     font-size: 17px;
     line-height: 1.7;
-    color: #4b5563;
+    color: var(--color-text-light);
     margin-bottom: 35px;
     font-weight: 400;
     max-width: 750px;
@@ -587,8 +587,8 @@
 }
 
 .bn-cta .bn-btn-primary {
-    background: #1a5f5a;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-bg-primary);
     padding: 15px 38px;
     border: none;
     border-radius: 50px;
@@ -600,16 +600,16 @@
 }
 
 .bn-cta .bn-btn-primary:hover {
-    background: #154a46;
+    background: var(--color-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(26, 95, 90, 0.4);
 }
 
 .bn-cta .bn-btn-secondary {
     background: transparent;
-    color: #1a5f5a;
+    color: var(--color-primary);
     padding: 13px 38px;
-    border: 2px solid #1a5f5a;
+    border: 2px solid var(--color-primary);
     border-radius: 50px;
     font-size: 15px;
     font-weight: 600;

@@ -289,7 +289,7 @@ body {
 .hero-heading {
     font-size: 48px;
     font-weight: 700;
-    color: #1a3a52;
+    color: var(--color-text-primary);
     margin: 0 0 20px 0;
     text-align: center;
     letter-spacing: -0.5px;
@@ -601,7 +601,7 @@ body {
 .pain-text p {
     font-size: 18px;
     line-height: 1.7;
-    color: #4a5568;
+    color: var(--color-text-light);
     margin: 0 0 24px 0;
     font-weight: 400;
     animation: slideInLeft 0.5s ease-out 0.1s both;
@@ -621,8 +621,8 @@ body {
 }
 
 .btn-book {
-    background: #1e3a5f;
-    color: white;
+    background: var(--color-secondary-darker);
+    color: var(--color-bg-primary);
     padding: 18px 36px;
     border-radius: 50px;
     font-size: 17px;
@@ -640,7 +640,7 @@ body {
 }
 
 .btn-book:hover {
-    background: #152d47;
+    background: var(--color-primary-darker);
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(30, 58, 95, 0.3);
 }
@@ -707,7 +707,7 @@ body {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid var(--color-bg-primary);
     margin-left: -14px;
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);

@@ -1,5 +1,5 @@
 .why-better-section {
-    background: #1e3a5f;
+    background: var(--color-secondary-darker);
     padding: 80px 80px;
 }
 
@@ -40,11 +40,11 @@
 }
 
 .section-title .title-normal {
-    color: #ffffff;
+    color: var(--color-bg-primary);
 }
 
 .section-title .highlight {
-    color: #b8f5cd;
+    color: var(--color-highlight-green);
 }
 
 .section-description {
@@ -63,8 +63,8 @@
 }
 
 .book-visit-btn {
-    background: #d4f4dd;
-    color: #1e3a5f;
+    background: var(--color-highlight-green);
+    color: var(--color-secondary-darker);
     padding: 16px 32px;
     border: none;
     border-radius: 50px;
@@ -103,8 +103,8 @@
 }
 
 .comparison-btn:hover {
-    border-color: #d4f4dd;
-    color: #d4f4dd;
+    border-color: var(--color-highlight-green);
+    color: var(--color-highlight-green);
     transform: translateY(-1px);
 }
 
@@ -225,7 +225,7 @@
 }
 
 .comparison-popup {
-    background: white;
+    background: var(--color-bg-primary);
     border-radius: 28px;
     padding: 56px 52px;
     max-width: 950px;
@@ -252,7 +252,7 @@
     position: absolute;
     top: 24px;
     right: 24px;
-    background: #f5f5f5;
+    background: var(--color-bg-secondary);
     border: none;
     width: 42px;
     height: 42px;
@@ -262,14 +262,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #666;
+    color: var(--color-text-secondary);
     transition: all 0.3s;
     line-height: 1;
     font-weight: 300;
 }
 
 .popup-close:hover {
-    background: #e5e5e5;
+    background: var(--color-bg-neutral);
     color: #333;
     transform: rotate(90deg);
 }
@@ -282,14 +282,14 @@
 .comparison-header h2 {
     font-size: 38px;
     font-weight: 700;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
     margin: 0 0 14px 0;
     line-height: 1.3;
 }
 
 .comparison-header p {
     font-size: 17px;
-    color: #666;
+    color: var(--color-text-secondary);
     margin: 0;
 }
 
@@ -315,18 +315,18 @@
 
 .criteria-header {
     text-align: left;
-    color: #999;
+    color: var(--color-text-muted);
     background: transparent;
     padding-left: 0;
 }
 
 .rehabb-header {
-    background: #1a5f5a;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-bg-primary);
 }
 
 .traditional-header {
-    color: #999;
+    color: var(--color-text-muted);
     background: transparent;
 }
 
@@ -349,20 +349,20 @@
 
 .criteria-cell {
     font-weight: 600;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
     text-align: left;
     background: transparent;
     padding-left: 0;
 }
 
 .rehabb-cell {
-    background: #f0f9f8;
+    background: var(--color-bg-teal-light);
     flex-direction: column;
     justify-content: center;
     gap: 10px;
     text-align: center;
     font-weight: 600;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .traditional-cell {
@@ -371,7 +371,7 @@
     justify-content: center;
     gap: 10px;
     text-align: center;
-    color: #999;
+    color: var(--color-text-muted);
     font-weight: 500;
 }
 
@@ -380,20 +380,20 @@
 }
 
 .check-icon {
-    color: #1a5f5a;
+    color: var(--color-primary);
     font-size: 22px;
     font-weight: 700;
 }
 
 .cross-icon {
-    color: #d0d0d0;
+    color: var(--color-border-light);
     font-size: 22px;
     font-weight: 700;
 }
 
 .popup-check-btn {
-    background: #1a5f5a;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-bg-primary);
     padding: 17px 52px;
     border: none;
     border-radius: 32px;
@@ -406,7 +406,7 @@
 }
 
 .popup-check-btn:hover {
-    background: #154d49;
+    background: var(--color-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 10px 24px rgba(26, 95, 90, 0.3);
 }
@@ -445,7 +445,7 @@
     .criteria-cell {
         text-align: center;
         font-weight: 700;
-        background: #f5f5f5;
+        background: var(--color-bg-secondary);
         padding: 16px;
         border-radius: 12px;
     }
