@@ -12,7 +12,7 @@
     cursor: pointer;
     box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 10000;
     animation: pulse-whatsapp 2s infinite;
 }
 
