@@ -134,7 +134,7 @@
 
 .form-input:focus {
     outline: none;
-    border-color: #103F5F;
+    border-color: #1a5f5a;
     background: white;
 }
 
@@ -165,7 +165,7 @@
 
 .form-textarea:focus {
     outline: none;
-    border-color: #103F5F;
+    border-color: #1a5f5a;
     background: white;
 }
 
@@ -174,8 +174,8 @@
 }
 
 .submit-appointment-btn {
-    background: #CAFF8D;
-    color: #103F5F;
+    background: #1a5f5a;
+    color: white;
     padding: 17px 48px;
     border: none;
     border-radius: 32px;
@@ -191,9 +191,9 @@
 }
 
 .submit-appointment-btn:hover {
-    background: #b8e67a;
+    background: #154d49;
     transform: translateY(-2px);
-    box-shadow: 0 10px 24px rgba(202, 255, 141, 0.4);
+    box-shadow: 0 10px 24px rgba(26, 95, 90, 0.3);
 }
 
 /* Responsive */

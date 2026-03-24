@@ -66,7 +66,7 @@
 }
 
 .social-link:hover {
-    background: #103F5F;
+    background: #1a5f5a;
     color: white;
     transform: translateY(-2px);
 }
@@ -102,7 +102,7 @@
 }
 
 .footer-links a:hover {
-    color: #103F5F;
+    color: #1a5f5a;
 }
 
 /* Contact Column */
@@ -124,7 +124,7 @@
 .contact-icon {
     width: 20px;
     height: 20px;
-    color: #103F5F;
+    color: #1a5f5a;
     flex-shrink: 0;
     margin-top: 2px;
 }
@@ -157,14 +157,14 @@
 }
 
 .footer-legal a:hover {
-    color: #103F5F;
+    color: #1a5f5a;
 }
 
 .scroll-top-btn {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: #103F5F;
+    background: #1a5f5a;
     border: none;
     display: flex;
     align-items: center;
@@ -175,11 +175,10 @@
 }
 
 .scroll-top-btn:hover {
-    background: #0d3349;
+    background: #154d49;
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(16, 63, 95, 0.3);
+    box-shadow: 0 8px 20px rgba(26, 95, 90, 0.3);
 }
-
 
 /* Responsive */
 @media (max-width: 1024px) {

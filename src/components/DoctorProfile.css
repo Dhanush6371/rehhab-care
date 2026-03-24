@@ -23,9 +23,9 @@
 }
 
 .back-btn:hover {
-    background: #103F5F;
+    background: #1a5f5a;
     color: white;
-    border-color: #103F5F;
+    border-color: #1a5f5a;
     transform: translateX(-4px);
 }
 
@@ -55,7 +55,7 @@
     left: 0;
     right: 0;
     height: 6px;
-    background: linear-gradient(90deg, #103F5F 0%, #CAFF8D 100%);
+    background: linear-gradient(90deg, #1a5f5a 0%, #26a69a 100%);
 }
 
 .doctor-hero-image {
@@ -74,7 +74,7 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background: linear-gradient(135deg, #103F5F 0%, #CAFF8D 100%);
+    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
@@ -100,7 +100,7 @@
 
 .doctor-role {
     font-size: 22px;
-    color: #103F5F;
+    color: #1a5f5a;
     font-weight: 600;
     margin: 0 0 8px 0;
 }
@@ -132,8 +132,8 @@
 
 .appointment-btn {
     padding: 16px 36px;
-    background: #CAFF8D;
-    color: #103F5F;
+    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
+    color: white;
     border: none;
     border-radius: 30px;
     font-size: 16px;
@@ -143,14 +143,13 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    box-shadow: 0 6px 20px rgba(202, 255, 141, 0.3);
+    box-shadow: 0 6px 20px rgba(26, 95, 90, 0.3);
     align-self: flex-start;
 }
 
 .appointment-btn:hover {
-    background: #b8e67a;
     transform: translateY(-3px);
-    box-shadow: 0 8px 28px rgba(202, 255, 141, 0.4);
+    box-shadow: 0 8px 28px rgba(26, 95, 90, 0.4);
 }
 
 .appointment-btn .btn-arrow {
@@ -187,7 +186,7 @@
     left: 0;
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, #103F5F 0%, #CAFF8D 100%);
+    background: linear-gradient(90deg, #1a5f5a 0%, #26a69a 100%);
     border-radius: 2px;
 }
 
@@ -206,7 +205,7 @@
 }
 
 .expertise-card {
-    background: linear-gradient(135deg, #FEFAF6 0%, #CAFF8D 100%);
+    background: linear-gradient(135deg, #f0f9f8 0%, #e0f2f1 100%);
     padding: 20px 24px;
     border-radius: 16px;
     display: flex;
@@ -227,7 +226,7 @@
 .expertise-icon {
     width: 28px;
     height: 28px;
-    background: linear-gradient(135deg, #103F5F 0%, #CAFF8D 100%);
+    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -261,7 +260,7 @@
 }
 
 .achievement-bullet {
-    color: #103F5F;
+    color: #1a5f5a;
     font-size: 20px;
     line-height: 1;
     flex-shrink: 0;
@@ -269,7 +268,7 @@
 
 /* CTA Section */
 .doctor-cta {
-    background: linear-gradient(135deg, #103F5F 0%, #CAFF8D 100%);
+    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
     border-radius: 24px;
     padding: 60px;
     text-align: center;
@@ -292,7 +291,7 @@
 .cta-btn {
     padding: 16px 40px;
     background: white;
-    color: #103F5F;
+    color: #1a5f5a;
     border: none;
     border-radius: 30px;
     font-size: 16px;
@@ -336,7 +335,7 @@
 
 .doctor-not-found button {
     padding: 14px 32px;
-    background: #103F5F;
+    background: #1a5f5a;
     color: white;
     border: none;
     border-radius: 25px;

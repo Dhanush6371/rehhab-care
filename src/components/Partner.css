@@ -19,8 +19,8 @@
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #103F5F;
-    background: #FEFAF6;
+    color: #1a5f5a;
+    background: #f0f9f8;
     padding: 10px 24px;
     border-radius: 30px;
     margin-bottom: 24px;
@@ -75,12 +75,12 @@
 .requirement-icon {
     width: 56px;
     height: 56px;
-    background: #FEFAF6;
+    background: #f0f9f8;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #103F5F;
+    color: #1a5f5a;
 }
 
 .requirement-text {
@@ -186,7 +186,7 @@
 
 .partner-section .partner-form-input:focus {
     outline: none;
-    border-color: #103F5F;
+    border-color: #1a5f5a;
     background: white;
     box-shadow: 0 0 0 3px rgba(26, 95, 90, 0.1);
 }
@@ -206,11 +206,11 @@
 }
 
 .partner-section .partner-form-select:hover {
-    border-color: #103F5F;
+    border-color: #1a5f5a;
 }
 
 .partner-section .partner-submit-btn {
-    background: #103F5F;
+    background: #1a5f5a;
     color: white;
     padding: 18px 40px;
     border: none;
@@ -225,9 +225,9 @@
 }
 
 .partner-section .partner-submit-btn:hover {
-    background: #0d3349;
+    background: #154d49;
     transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(16, 63, 95, 0.3);
+    box-shadow: 0 6px 20px rgba(26, 95, 90, 0.25);
 }
 
 .partner-section .partner-submit-btn:active {

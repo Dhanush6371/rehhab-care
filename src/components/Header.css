@@ -46,7 +46,7 @@
 .logo span {
     font-size: 20px;
     font-weight: 700;
-    background: linear-gradient(135deg, #103F5F 0%, #CAFF8D 100%);
+    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -87,14 +87,14 @@
     left: 20px;
     right: 20px;
     height: 2px;
-    background: linear-gradient(135deg, #103F5F 0%, #CAFF8D 100%);
+    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #103F5F;
-    background: rgba(16, 63, 95, 0.05);
+    color: #1a5f5a;
+    background: rgba(26, 95, 90, 0.05);
 }
 
 .nav-links a:hover::after {
@@ -129,9 +129,9 @@ button {
 }
 
 .btn-secondary {
-    background: white;
-    color: #103F5F;
-    border: 2px solid #103F5F;
+    background: linear-gradient(135deg, #f0f9f8 0%, #e0f2f1 100%);
+    color: #1a5f5a;
+    border: 2px solid #1a5f5a;
     position: relative;
     overflow: hidden;
 }
@@ -143,14 +143,14 @@ button {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #CAFF8D;
+    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
     transition: left 0.3s ease;
     z-index: -1;
 }
 
 .btn-secondary:hover {
-    color: #103F5F;
-    border-color: #103F5F;
+    color: white;
+    border-color: #1a5f5a;
 }
 
 .btn-secondary:hover::before {
@@ -158,12 +158,11 @@ button {
 }
 
 .btn-primary {
-    background: #CAFF8D;
-    color: #103F5F;
-    box-shadow: 0 4px 12px rgba(202, 255, 141, 0.3);
+    background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(26, 95, 90, 0.25);
     position: relative;
     overflow: hidden;
-    font-weight: 600;
 }
 
 .btn-primary::before {
@@ -181,7 +180,7 @@ button {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(16, 63, 95, 0.35);
+    box-shadow: 0 6px 20px rgba(26, 95, 90, 0.35);
 }
 
 .btn-primary:hover::before {
@@ -219,7 +218,7 @@ button {
     display: block;
     width: 28px;
     height: 2px;
-    background: #103F5F;
+    background: #1a5f5a;
     transition: all 0.3s ease;
 }
 
@@ -319,7 +318,7 @@ button {
         transition: top 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         z-index: 920;
         overflow-y: auto;
-        border-bottom: 3px solid #103F5F;
+        border-bottom: 3px solid #1a5f5a;
     }
 
     .nav-links.active {
@@ -377,9 +376,9 @@ button {
     }
 
     .nav-links a:hover {
-        color: #103F5F;
-        background: #FEFAF6;
-        border-color: #103F5F;
+        color: #1a5f5a;
+        background: linear-gradient(135deg, #f0f9f8 0%, #e0f2f1 100%);
+        border-color: #1a5f5a;
     }
 
     /* Mobile Menu Buttons */
@@ -412,26 +411,25 @@ button {
     }
 
     .mobile-btn-secondary {
-        background: white;
-        color: #103F5F;
-        border: 2px solid #103F5F;
+        background: linear-gradient(135deg, #f0f9f8 0%, #e0f2f1 100%);
+        color: #1a5f5a;
+        border: 2px solid #1a5f5a;
     }
 
     .mobile-btn-secondary:hover {
-        background: #CAFF8D;
-        color: #103F5F;
+        background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
+        color: white;
     }
 
     .mobile-btn-primary {
-        background: #CAFF8D;
-        color: #103F5F;
-        box-shadow: 0 4px 12px rgba(202, 255, 141, 0.3);
-        font-weight: 600;
+        background: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
+        color: white;
+        box-shadow: 0 4px 12px rgba(26, 95, 90, 0.25);
     }
 
     .mobile-btn-primary:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(16, 63, 95, 0.35);
+        box-shadow: 0 6px 20px rgba(26, 95, 90, 0.35);
     }
 }
 
