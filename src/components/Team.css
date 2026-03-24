@@ -392,14 +392,19 @@
         padding: 0;
         width: 100%;
         max-width: 100%;
+        overflow: visible;
     }
 
     .team-carousel {
         flex-direction: column;
         gap: 24px;
+        overflow-x: hidden;
         overflow-y: visible;
         width: 100%;
         max-width: 100%;
+        overscroll-behavior: auto;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-y;
     }
 
     .team-card {

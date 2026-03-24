@@ -61,6 +61,24 @@ const DoctorProfile = () => {
             ],
             availability: 'Mon – Sat | 9:00 AM – 6:00 PM',
             languages: ['English', 'Hindi', 'Kannada', 'Urdu']
+        },
+        'nagendra-kumar': {
+            name: 'Nagendra Kumar Uaika (PT)',
+            role: 'Physiotherapist',
+            experience: '5+ YEARS EXP.',
+            image: '/images/team-4.jpg',
+            education: 'BPT – Dr. NTR University of Health Sciences',
+            about: 'Nagendra Kumar is a dedicated physiotherapist with experience across hospital, corporate, and home-based rehabilitation settings. He specializes in treating orthopedic, neurological, and geriatric conditions using a hands-on, patient-focused approach. With strong expertise in manual therapy and modern techniques like dry needling and cupping therapy, he focuses on reducing pain, improving mobility, and helping patients recover effectively in the comfort of their home.',
+            expertise: ['Back & Neck Pain Management', 'Post-Surgery Rehabilitation', 'Stroke & Neuro Rehabilitation', 'Geriatric Physiotherapy', 'Pain Management & Mobility Recovery', 'Posture Correction & Workplace Ergonomics'],
+            achievements: [
+                'Experience in hospital-based rehabilitation at Dr. Agarwal Hospital',
+                'Provided physiotherapy services at Microsoft India (corporate wellness & ergonomics)',
+                'Extensive experience in home-based physiotherapy for multiple conditions',
+                'Certified in Dry Needling and Cupping Therapy',
+                'Skilled in chiropractic and manual therapy techniques'
+            ],
+            availability: 'Mon – Sat',
+            languages: ['English', 'Telugu', 'Hindi']
         }
     };
 
