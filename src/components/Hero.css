@@ -522,7 +522,7 @@ body {
 .health-section h3 {
     font-size: 22px;
     font-weight: 600;
-    color: #2d3748;
+    color: var(--color-text-dark-gray);
     margin-bottom: 20px;
     letter-spacing: -0.3px;
     line-height: 1.4;
@@ -550,18 +550,18 @@ body {
 }
 
 .tag-yellow {
-    background: #fef3c7;
-    color: #92400e;
+    background: var(--color-tag-yellow-bg);
+    color: var(--color-tag-yellow-text);
 }
 
 .tag-pink {
-    background: #fce7f3;
-    color: #9f1239;
+    background: var(--color-tag-pink-bg);
+    color: var(--color-tag-pink-text);
 }
 
 .tag-blue {
-    background: #dbeafe;
-    color: #1e40af;
+    background: var(--color-tag-blue-bg);
+    color: var(--color-tag-blue-text);
 }
 
 /* Right Side */
@@ -590,7 +590,7 @@ body {
 .pain-text h2 {
     font-size: 64px;
     font-weight: 700;
-    color: #1a202c;
+    color: var(--color-text-darker);
     margin: 0 0 20px 0;
     letter-spacing: -1.5px;
     line-height: 1.1;
@@ -726,7 +726,7 @@ body {
 .stats-text h4 {
     font-size: 24px;
     font-weight: 700;
-    color: #1a202c;
+    color: var(--color-text-darker);
     margin: 0 0 4px 0;
     letter-spacing: -0.5px;
     white-space: nowrap;
@@ -735,7 +735,7 @@ body {
 
 .stats-text p {
     font-size: 16px;
-    color: #718096;
+    color: var(--color-text-secondary);
     margin: 0;
     font-weight: 400;
     font-family: 'Inter', sans-serif;

@@ -47,8 +47,8 @@
 }
 
 .practices-notice {
-    background: #fff3cd;
-    border-left: 4px solid #ffc107;
+    background: var(--color-warning-bg);
+    border-left: 4px solid var(--color-warning-border);
     padding: 16px 24px;
     margin-top: 24px;
     border-radius: 8px;
@@ -56,14 +56,14 @@
 
 .practices-notice p {
     margin: 0;
-    color: #856404;
+    color: var(--color-warning-text);
     font-weight: 600;
     font-size: 0.9375rem;
     font-family: 'Inter', sans-serif;
 }
 
 .practices-commitment {
-    background: #e8f5e9;
+    background: var(--color-bg-green-light);
     padding: 32px;
     border-radius: 12px;
     margin-bottom: 48px;
@@ -132,7 +132,7 @@
 }
 
 .practices-section ul li::marker {
-    color: #11998e;
+    color: var(--color-primary);
 }
 
 .practices-section ul li strong {

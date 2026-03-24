@@ -22,7 +22,7 @@
 
 .gs-badge {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.12);
+    background: var(--overlay-white-medium);
     padding: 9px 22px;
     border-radius: 20px;
     font-size: 13px;
@@ -119,8 +119,8 @@
 }
 
 .gs-btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.9);
+    background: var(--overlay-white-light);
+    border-color: var(--overlay-white-gradient);
     transform: translateY(-2px);
 }
 
@@ -618,7 +618,7 @@
 }
 
 .gs-cta .gs-btn-secondary:hover {
-    background: rgba(26, 95, 90, 0.05);
+    background: var(--overlay-primary-light);
     transform: translateY(-2px);
 }
 

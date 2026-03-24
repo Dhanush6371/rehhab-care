@@ -1,6 +1,6 @@
 .doctor-profile-page {
     min-height: 100vh;
-    background: linear-gradient(135deg, #f8fffe 0%, var(--color-bg-teal-lighter) 100%);
+    background: linear-gradient(135deg, var(--color-bg-teal-light) 0%, var(--color-bg-teal-lighter) 100%);
     padding: 40px 20px;
     position: relative;
 }
@@ -19,7 +19,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px var(--shadow-black-sm);
 }
 
 .back-btn:hover {
@@ -42,7 +42,7 @@
     display: grid;
     grid-template-columns: 400px 1fr;
     gap: 60px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 40px var(--shadow-primary);
     margin-bottom: 40px;
     position: relative;
     overflow: hidden;
@@ -81,7 +81,7 @@
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
-    box-shadow: 0 4px 12px rgba(26, 95, 90, 0.3);
+    box-shadow: 0 4px 12px var(--shadow-primary-lg);
 }
 
 .doctor-hero-info {
@@ -143,13 +143,13 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    box-shadow: 0 6px 20px rgba(26, 95, 90, 0.3);
+    box-shadow: 0 6px 20px var(--shadow-primary-lg);
     align-self: flex-start;
 }
 
 .appointment-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 28px rgba(26, 95, 90, 0.4);
+    box-shadow: 0 8px 28px var(--shadow-primary-xl);
 }
 
 .appointment-btn .btn-arrow {
@@ -167,7 +167,7 @@
     border-radius: 24px;
     padding: 48px;
     margin-bottom: 32px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 24px var(--shadow-black-sm);
 }
 
 .section-title {
@@ -215,12 +215,12 @@
     font-weight: 500;
     color: var(--color-text-primary);
     transition: all 0.3s ease;
-    border: 1px solid rgba(26, 95, 90, 0.1);
+    border: 1px solid var(--overlay-primary-border);
 }
 
 .expertise-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(26, 95, 90, 0.15);
+    box-shadow: 0 8px 20px var(--shadow-primary-md);
 }
 
 .expertise-icon {
@@ -273,7 +273,7 @@
     padding: 60px;
     text-align: center;
     color: var(--color-bg-primary);
-    box-shadow: 0 12px 40px rgba(26, 95, 90, 0.3);
+    box-shadow: 0 12px 40px var(--shadow-primary-lg);
 }
 
 .doctor-cta h2 {
@@ -301,12 +301,12 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px var(--shadow-black-md);
 }
 
 .cta-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 28px var(--shadow-black-md);
 }
 
 .cta-btn .btn-arrow {
@@ -347,7 +347,7 @@
 
 .doctor-not-found button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(26, 95, 90, 0.3);
+    box-shadow: 0 6px 20px var(--shadow-primary-lg);
 }
 
 /* Responsive */
@@ -360,6 +360,8 @@
 
     .doctor-hero-image img {
         height: 400px;
+        object-fit: cover;
+        object-position: center top;
     }
 
     .doctor-name {
@@ -401,6 +403,8 @@
         height: 320px;
         width: 100%;
         max-width: 100%;
+        object-fit: cover;
+        object-position: center top;
     }
 
     .doctor-name {

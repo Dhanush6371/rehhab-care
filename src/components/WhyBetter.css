@@ -25,7 +25,7 @@
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 2.5px;
-    color: #7fb89a;
+    color: var(--color-text-light-green);
     text-transform: uppercase;
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -49,7 +49,7 @@
 
 .section-description {
     font-size: 16px;
-    color: #c5d4e3;
+    color: var(--color-text-light-blue);
     margin: 0;
     line-height: 1.7;
     font-family: 'Inter', sans-serif;
@@ -79,9 +79,9 @@
 }
 
 .book-visit-btn:hover {
-    background: #c0e8c9;
+    background: var(--color-accent-green-dark);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(212, 244, 221, 0.3);
+    box-shadow: 0 8px 20px var(--shadow-green-md);
 }
 
 .home-icon {
@@ -96,7 +96,7 @@
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.8px;
-    color: #e8f0f8;
+    color: var(--color-text-light-white);
     cursor: pointer;
     transition: all 0.3s;
     font-family: 'Inter', sans-serif;
@@ -133,13 +133,13 @@
 .stats-text strong {
     font-size: 16px;
     font-weight: 700;
-    color: #e8f0f8;
+    color: var(--color-text-light-white);
     font-family: 'Inter', sans-serif;
 }
 
 .stats-text p {
     font-size: 13px;
-    color: #9fb3c8;
+    color: var(--color-text-muted-blue);
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
@@ -157,20 +157,20 @@
 }
 
 .benefit-card {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--overlay-white-strong);
     padding: 28px 24px;
     border-radius: 16px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--overlay-white-light);
     transition: all 0.3s ease;
     width: 100%;
     box-sizing: border-box;
 }
 
 .benefit-card:hover {
-    background: rgba(255, 255, 255, 0.12);
+    background: var(--overlay-white-medium);
     transform: translateY(-4px);
-    border-color: rgba(212, 244, 221, 0.3);
+    border-color: var(--overlay-primary-border);
 }
 
 .benefit-icon {
@@ -183,7 +183,7 @@
 .benefit-title {
     font-size: 18px;
     font-weight: 700;
-    color: #e8f0f8;
+    color: var(--color-text-light-white);
     margin: 0 0 8px 0;
     line-height: 1.3;
     font-family: 'Inter', sans-serif;
@@ -191,7 +191,7 @@
 
 .benefit-description {
     font-size: 14px;
-    color: #c5d4e3;
+    color: var(--color-text-light-blue);
     line-height: 1.6;
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -204,7 +204,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.75);
+    background: var(--overlay-black-overlay);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -270,7 +270,7 @@
 
 .popup-close:hover {
     background: var(--color-bg-neutral);
-    color: #333;
+    color: var(--color-text-dark);
     transform: rotate(90deg);
 }
 
@@ -366,7 +366,7 @@
 }
 
 .traditional-cell {
-    background: #f8f8f8;
+    background: var(--color-bg-gray-lighter);
     flex-direction: column;
     justify-content: center;
     gap: 10px;

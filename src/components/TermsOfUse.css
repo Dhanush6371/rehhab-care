@@ -91,7 +91,7 @@
 }
 
 .terms-section ul li::marker {
-    color: #667eea;
+    color: var(--color-primary);
 }
 
 .terms-section ul li strong {

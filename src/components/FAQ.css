@@ -108,7 +108,7 @@
 }
 
 .faq-question:hover {
-    background: rgba(26, 95, 90, 0.03);
+    background: var(--overlay-primary-light);
 }
 
 .faq-question-text {

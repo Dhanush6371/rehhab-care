@@ -29,12 +29,12 @@
 
 .appointment-title .italic {
     font-style: italic;
-    color: #e8d5c4;
+    color: var(--color-text-beige);
 }
 
 .appointment-description {
     font-size: 17px;
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--overlay-white-text);
     line-height: 1.7;
     margin: 0 0 56px 0;
 }
@@ -57,8 +57,8 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.15);
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: var(--overlay-white-bg);
+    border: 2px solid var(--overlay-white-bg-border);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,13 +71,13 @@
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--overlay-white-border-strong);
 }
 
 .step-line {
     flex: 1;
     height: 2px;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--overlay-white-border);
     margin: 0 -20px;
     margin-bottom: 40px;
 }
@@ -139,7 +139,7 @@
 }
 
 .form-input::placeholder {
-    color: #bbb;
+    color: var(--color-placeholder);
 }
 
 .form-select {
@@ -170,7 +170,7 @@
 }
 
 .form-textarea::placeholder {
-    color: #bbb;
+    color: var(--color-placeholder);
 }
 
 .submit-appointment-btn {
@@ -292,8 +292,8 @@
 
 /* Status Messages */
 .success-message {
-    background: #d4edda;
-    color: #155724;
+    background: var(--color-success-bg);
+    color: var(--color-success-text);
     padding: 14px 20px;
     border-radius: 12px;
     border: 1px solid #c3e6cb;
@@ -306,8 +306,8 @@
 }
 
 .error-message {
-    background: #f8d7da;
-    color: #721c24;
+    background: var(--color-error-bg);
+    color: var(--color-error-text);
     padding: 14px 20px;
     border-radius: 12px;
     border: 1px solid #f5c6cb;
@@ -320,13 +320,13 @@
 }
 
 .submit-appointment-btn:disabled {
-    background: #ccc;
+    background: var(--color-bg-neutral);
     cursor: not-allowed;
     transform: none;
 }
 
 .submit-appointment-btn:disabled:hover {
-    background: #ccc;
+    background: var(--color-bg-neutral);
     transform: none;
     box-shadow: none;
 }

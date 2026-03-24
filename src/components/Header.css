@@ -94,7 +94,7 @@
 
 .nav-links a:hover {
     color: var(--color-primary);
-    background: rgba(26, 95, 90, 0.05);
+    background: var(--overlay-primary-light);
 }
 
 .nav-links a:hover::after {
@@ -173,7 +173,7 @@ button {
     width: 0;
     height: 0;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--overlay-white-border);
     transform: translate(-50%, -50%);
     transition: width 0.5s, height 0.5s;
 }
@@ -287,7 +287,7 @@ button {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.6);
+        background: var(--overlay-black-backdrop);
         z-index: 910;
         animation: fadeIn 0.3s ease;
     }

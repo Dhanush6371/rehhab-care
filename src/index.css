@@ -1,39 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
-    /* Primary Brand Colors */
-    --color-primary: #1a5f5a;
-    --color-primary-light: #26a69a;
-    --color-primary-dark: #154a46;
-    --color-primary-darker: #152d47;
+    /* Primary Brand Colors - Blue (#103F5F) */
+    --color-primary: #103F5F;
+    --color-primary-light: #1a5f8a;
+    --color-primary-dark: #0d3249;
+    --color-primary-darker: #0a2738;
 
     /* Secondary Colors */
-    --color-secondary: #1a3a52;
+    --color-secondary: #103F5F;
     --color-secondary-dark: #2d3e50;
-    --color-secondary-darker: #1e3a5f;
+    --color-secondary-darker: #103F5F;
 
-    /* Accent Colors */
-    --color-accent-green: #4ade80;
-    --color-accent-green-light: #7dd3ae;
-    --color-accent-green-dark: #3bc76a;
-    --color-accent-green-darker: #22c55e;
-    --color-accent-green-darkest: #1a7a5e;
+    /* Accent Colors - Vibrant Green */
+    --color-accent-green: #CAFF8D;
+    --color-accent-green-light: #d9ffaa;
+    --color-accent-green-dark: #b3e670;
+    --color-accent-green-darker: #9dd354;
+    --color-accent-green-darkest: #7ab83f;
 
     --color-accent-pink: #e91e63;
     --color-accent-pink-light: #f48fb1;
 
-    /* Text Colors */
-    --color-text-primary: #1a3a52;
-    --color-text-secondary: #6b7c93;
+    /* Text Colors - Updated with Grey */
+    --color-text-primary: #103F5F;
+    --color-text-secondary: #545454;
     --color-text-dark: #1f2937;
-    --color-text-medium: #374151;
-    --color-text-light: #4b5563;
+    --color-text-medium: #545454;
+    --color-text-light: #545454;
     --color-text-lighter: #6b7280;
     --color-text-muted: #999;
 
-    /* Background Colors */
-    --color-bg-primary: #ffffff;
-    --color-bg-secondary: #f5f5f5;
+    /* Background Colors - Night Forest, White, and Grey */
+    --color-bg-primary: #FEFAF6;
+    --color-bg-secondary: #FFFFFF;
     --color-bg-tertiary: #fafafa;
     --color-bg-gray: #f3f4f6;
     --color-bg-gray-light: #f9fafb;
@@ -51,46 +51,88 @@
     --color-border-light: #e0e0e0;
     --color-border-gray: #e5e7eb;
 
-    /* Gradient Colors */
-    --gradient-primary: linear-gradient(135deg, #1a5f5a 0%, #26a69a 100%);
-    --gradient-primary-reverse: linear-gradient(135deg, #26a69a 0%, #1a5f5a 100%);
+    /* Gradient Colors - Updated with Blue and Vibrant Green */
+    --gradient-primary: linear-gradient(135deg, #103F5F 0%, #1a5f8a 100%);
+    --gradient-primary-reverse: linear-gradient(135deg, #1a5f8a 0%, #103F5F 100%);
     --gradient-teal-light: linear-gradient(135deg, #f0f9f8 0%, #e0f2f1 100%);
     --gradient-pink: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
     --gradient-pink-hover: linear-gradient(135deg, #f8bbd0 0%, #f48fb1 100%);
-    --gradient-green: linear-gradient(to right, #4ade80, #22c55e);
+    --gradient-green: linear-gradient(to right, #CAFF8D, #b3e670);
     --gradient-card: linear-gradient(135deg, #f5f5f5 0%, #e8f5f4 100%);
 
-    /* Shadow Colors (RGBA) */
-    --shadow-primary: rgba(26, 95, 90, 0.1);
-    --shadow-primary-md: rgba(26, 95, 90, 0.2);
-    --shadow-primary-lg: rgba(26, 95, 90, 0.3);
-    --shadow-primary-xl: rgba(26, 95, 90, 0.35);
+    /* Shadow Colors (RGBA) - Updated with Blue and Vibrant Green */
+    --shadow-primary: rgba(16, 63, 95, 0.1);
+    --shadow-primary-md: rgba(16, 63, 95, 0.2);
+    --shadow-primary-lg: rgba(16, 63, 95, 0.3);
+    --shadow-primary-xl: rgba(16, 63, 95, 0.35);
     --shadow-black-sm: rgba(0, 0, 0, 0.08);
     --shadow-black-md: rgba(0, 0, 0, 0.12);
-    --shadow-green: rgba(74, 222, 128, 0.3);
-    --shadow-green-md: rgba(74, 222, 128, 0.4);
-    --shadow-green-lg: rgba(74, 222, 128, 0.18);
+    --shadow-green: rgba(202, 255, 141, 0.3);
+    --shadow-green-md: rgba(202, 255, 141, 0.4);
+    --shadow-green-lg: rgba(202, 255, 141, 0.18);
     --shadow-pink: rgba(233, 30, 99, 0.1);
     --shadow-pink-md: rgba(233, 30, 99, 0.2);
-    --shadow-secondary: rgba(30, 58, 95, 0.2);
-    --shadow-secondary-md: rgba(30, 58, 95, 0.3);
+    --shadow-secondary: rgba(16, 63, 95, 0.2);
+    --shadow-secondary-md: rgba(16, 63, 95, 0.3);
 
-    /* Overlay Colors (RGBA) */
+    /* Overlay Colors (RGBA) - Updated with Blue */
     --overlay-white-light: rgba(255, 255, 255, 0.1);
     --overlay-white-medium: rgba(255, 255, 255, 0.12);
     --overlay-white-border: rgba(255, 255, 255, 0.2);
     --overlay-white-border-strong: rgba(255, 255, 255, 0.7);
     --overlay-white-border-stronger: rgba(255, 255, 255, 0.9);
     --overlay-white-gradient: rgba(255, 255, 255, 0.9);
-    --overlay-primary-light: rgba(26, 95, 90, 0.05);
-    --overlay-primary-medium: rgba(26, 95, 90, 0.06);
-    --overlay-primary-strong: rgba(26, 95, 90, 0.08);
-    --overlay-primary-border: rgba(26, 95, 90, 0.1);
-    --overlay-primary-border-strong: rgba(26, 95, 90, 0.15);
+    --overlay-white-text: rgba(255, 255, 255, 0.85);
+    --overlay-white-text-medium: rgba(255, 255, 255, 0.8);
+    --overlay-white-bg: rgba(255, 255, 255, 0.15);
+    --overlay-white-bg-border: rgba(255, 255, 255, 0.3);
+    --overlay-primary-light: rgba(16, 63, 95, 0.05);
+    --overlay-primary-medium: rgba(16, 63, 95, 0.06);
+    --overlay-primary-strong: rgba(16, 63, 95, 0.08);
+    --overlay-primary-border: rgba(16, 63, 95, 0.1);
+    --overlay-primary-border-strong: rgba(16, 63, 95, 0.15);
     --overlay-pink-border: rgba(233, 30, 99, 0.1);
+    --overlay-white-strong: rgba(255, 255, 255, 0.08);
+    --overlay-black-overlay: rgba(0, 0, 0, 0.75);
+    --overlay-black-backdrop: rgba(0, 0, 0, 0.6);
 
-    /* Special Colors */
-    --color-highlight-green: #d4f4dd;
+    /* Special Colors - Vibrant Green Highlight */
+    --color-highlight-green: #CAFF8D;
+
+    /* Status Message Colors */
+    --color-success-bg: #d4edda;
+    --color-success-text: #155724;
+    --color-success-border: #c3e6cb;
+    --color-error-bg: #f8d7da;
+    --color-error-text: #721c24;
+    --color-error-border: #f5c6cb;
+    --color-warning-bg: #fff3cd;
+    --color-warning-text: #856404;
+    --color-warning-border: #ffc107;
+
+    /* UI Colors */
+    --color-star: #fbbf24;
+    --color-star-orange: #ffa500;
+    --color-text-light-blue: #c5d4e3;
+    --color-text-light-green: #7fb89a;
+    --color-text-light-white: #e8f0f8;
+    --color-text-muted-blue: #9fb3c8;
+    --color-dark-bg: #2d2d2d;
+    --color-badge-orange: #ff7a59;
+    --color-text-dark-gray: #2d3748;
+    --color-text-darker: #1a202c;
+
+    /* Tag Colors */
+    --color-tag-yellow-bg: #fef3c7;
+    --color-tag-yellow-text: #92400e;
+    --color-tag-pink-bg: #fce7f3;
+    --color-tag-pink-text: #9f1239;
+    --color-tag-blue-bg: #dbeafe;
+    --color-tag-blue-text: #1e40af;
+
+    /* Placeholder Colors */
+    --color-placeholder: #bbb;
+    --color-text-beige: #e8d5c4;
 }
 
 * {
@@ -101,7 +143,8 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: var(--color-bg-secondary);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-secondary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

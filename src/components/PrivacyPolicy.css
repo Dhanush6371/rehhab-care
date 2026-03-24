@@ -91,7 +91,7 @@
 }
 
 .privacy-section ul li::marker {
-    color: #00a8e8;
+    color: var(--color-primary);
 }
 
 .privacy-section ul li strong {
