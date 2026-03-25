@@ -1,18 +1,4 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!--
-  Sitemap for Rehabb Care website
-  Purpose:
-  - Helps search engines (Google, Bing, etc.) discover and index important pages
-  - Improves SEO by clearly listing priority pages
-
-  Notes:
-  - Only static and important routes are included
-  - Dynamic routes like /doctor/:id are excluded to avoid low-value or duplicate indexing
--->
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Homepage (highest priority) -->
