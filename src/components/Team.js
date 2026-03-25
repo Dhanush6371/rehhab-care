@@ -1,12 +1,29 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './Team.css';
 import LazySection from './LazySection';
 
 const Team = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
     const carouselRef = useRef(null);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+    const Wrapper = ({ children, animation, delay }) => {
+        if (isMobile) {
+            return <div>{children}</div>;
+        }
+        return <LazySection animation={animation} delay={delay}>{children}</LazySection>;
+    };
 
     const teamMembers = [
         {
@@ -138,7 +155,7 @@ const Team = () => {
     return (
         <section className="team-section" id="team">
             <div className="team-container">
-                <LazySection animation="fade-up">
+                <Wrapper animation="fade-up">
                     <div className="team-header">
                         <div className="team-header-left">
                             <p className="team-label">OUR TEAM</p>
@@ -150,7 +167,7 @@ const Team = () => {
                             </p>
                         </div>
                     </div>
-                </LazySection>
+                </Wrapper>
 
                 <div className="team-carousel-wrapper">
                     <button
@@ -168,7 +185,7 @@ const Team = () => {
                         onScroll={handleScroll}
                     >
                         {teamMembers.map((member, index) => (
-                            <LazySection key={index} animation="fade-up" delay={index * 100}>
+                            <Wrapper key={index} animation="fade-up" delay={index * 100}>
                                 <div className="team-card">
                                     <div className="team-image-wrapper">
                                         <img
@@ -201,7 +218,7 @@ const Team = () => {
                                         </button>
                                     </div>
                                 </div>
-                            </LazySection>
+                            </Wrapper>
                         ))}
                     </div>
 
@@ -216,7 +233,7 @@ const Team = () => {
                 </div>
 
                 {/* Join Team Section */}
-                <LazySection animation="fade-up" delay={200}>
+                <Wrapper animation="fade-up" delay={200}>
                     <div className="join-team-section">
                         <div className="join-team-content">
                             <h3 className="join-team-title">Join Our Growing Team</h3>
@@ -227,7 +244,7 @@ const Team = () => {
                             <button className="apply-now-btn">Apply Now</button>
                         </Link>
                     </div>
-                </LazySection>
+                </Wrapper>
             </div>
         </section>
     );
