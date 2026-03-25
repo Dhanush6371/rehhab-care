@@ -257,3 +257,15 @@
         font-size: 15px;
     }
 }
+
+
+@media (max-width: 480px) {
+    .faq-title {
+        font-size: 28px;
+    }
+
+    .faq-title .highlight {
+        padding: 4px 14px;
+        font-size: 28px;
+    }
+}

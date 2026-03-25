@@ -227,7 +227,12 @@
     }
 
     .services-header h2 {
-        font-size: 28px;
+        font-size: 24px;
+    }
+
+    .services-header h2 .highlight {
+        padding: 4px 14px;
+        font-size: 24px;
     }
 
     .services-header p {

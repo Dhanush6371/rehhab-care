@@ -339,3 +339,15 @@
     transform: none;
     box-shadow: none;
 }
+
+
+@media (max-width: 480px) {
+    .appointment-title {
+        font-size: 28px;
+    }
+
+    .appointment-title .highlight {
+        padding: 4px 14px;
+        font-size: 28px;
+    }
+}

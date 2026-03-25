@@ -77,7 +77,7 @@ const WhyBetter = () => {
                     <div className="content-left">
                         <p className="section-label">AT-HOME SERVICE</p>
                         <h2 className="section-title">
-                            <span className="title-normal">Professional <span className="highlight-box">Physiotherapy</span>, Delivered Home</span>
+                            <span className="title-normal"><span className="no-break">Professional <span className="highlight-box">Physiotherapy</span>,</span> Delivered Home</span>
                         </h2>
                         <p className="section-description">
                             Skip the commute and waiting rooms. Our certified physiotherapists come to you with all the necessary equipment for a complete rehabilitation experience.
