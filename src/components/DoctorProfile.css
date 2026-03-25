@@ -3,9 +3,6 @@
     background: linear-gradient(135deg, var(--color-bg-teal-light) 0%, var(--color-bg-teal-lighter) 100%);
     padding: 40px 20px;
     position: relative;
-    overflow-x: hidden;
-    width: 100%;
-    -webkit-overflow-scrolling: touch;
 }
 
 .back-btn {
@@ -383,14 +380,28 @@
 @media (max-width: 768px) {
     .doctor-profile-page {
         padding: 20px 16px;
-        overflow-x: hidden;
-        -webkit-overflow-scrolling: touch;
     }
 
     .doctor-profile-container {
         width: 100%;
         max-width: 100%;
-        -webkit-overflow-scrolling: touch;
+    }
+
+    .doctor-profile-page img {
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+    }
+
+    .doctor-profile-page .lazy-section {
+        touch-action: pan-y;
+    }
+
+    .doctor-hero,
+    .doctor-section,
+    .doctor-cta {
+        touch-action: pan-y;
     }
 
     .doctor-hero {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './DoctorProfile.css';
 import LazySection from './LazySection';
@@ -6,6 +6,23 @@ import LazySection from './LazySection';
 const DoctorProfile = () => {
     const { id } = useParams();
     const navigate = useNavigate();
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+    const Wrapper = ({ children, animation, delay }) => {
+        if (isMobile) {
+            return <div>{children}</div>;
+        }
+        return <LazySection animation={animation} delay={delay}>{children}</LazySection>;
+    };
 
     const doctors = {
         'mallikarjuna': {
@@ -104,7 +121,7 @@ const DoctorProfile = () => {
             </button>
 
             <div className="doctor-profile-container">
-                <LazySection animation="fade-up">
+                <Wrapper animation="fade-up">
                     <div className="doctor-hero">
                         <div className="doctor-hero-image">
                             <img src={doctor.image} alt={doctor.name} />
@@ -130,16 +147,16 @@ const DoctorProfile = () => {
                             </button>
                         </div>
                     </div>
-                </LazySection>
+                </Wrapper>
 
-                <LazySection animation="fade-up" delay={100}>
+                <Wrapper animation="fade-up" delay={100}>
                     <div className="doctor-section">
                         <h2 className="section-title">About</h2>
                         <p className="doctor-about">{doctor.about}</p>
                     </div>
-                </LazySection>
+                </Wrapper>
 
-                <LazySection animation="fade-up" delay={200}>
+                <Wrapper animation="fade-up" delay={200}>
                     <div className="doctor-section">
                         <h2 className="section-title">Areas of Expertise</h2>
                         <div className="expertise-grid">
@@ -151,9 +168,9 @@ const DoctorProfile = () => {
                             ))}
                         </div>
                     </div>
-                </LazySection>
+                </Wrapper>
 
-                <LazySection animation="fade-up" delay={300}>
+                <Wrapper animation="fade-up" delay={300}>
                     <div className="doctor-section">
                         <h2 className="section-title">Achievements & Recognition</h2>
                         <ul className="achievements-list">
@@ -165,9 +182,9 @@ const DoctorProfile = () => {
                             ))}
                         </ul>
                     </div>
-                </LazySection>
+                </Wrapper>
 
-                <LazySection animation="fade-up" delay={400}>
+                <Wrapper animation="fade-up" delay={400}>
                     <div className="doctor-cta">
                         <h2>Ready to start your recovery journey?</h2>
                         <p>Book a consultation with {doctor.name.split(' ')[1]} today</p>
@@ -176,7 +193,7 @@ const DoctorProfile = () => {
                             <span className="btn-arrow">→</span>
                         </button>
                     </div>
-                </LazySection>
+                </Wrapper>
             </div>
         </div>
     );
