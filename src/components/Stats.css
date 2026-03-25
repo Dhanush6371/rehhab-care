@@ -19,6 +19,15 @@
     line-height: 1.2;
 }
 
+.stats-heading .highlight {
+    background: var(--color-secondary-dark);
+    padding: 6px 20px;
+    border-radius: 10px;
+    color: var(--color-highlight-green);
+    font-weight: 900;
+    display: inline-block;
+}
+
 /* Stats Cards Container */
 .stats-combined-container {
     max-width: 1400px;

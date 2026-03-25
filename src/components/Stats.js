@@ -56,7 +56,7 @@ const Stats = () => {
         <section className="stats-section">
             {/* Heading */}
             <LazySection animation="fade-up" delay={0}>
-                <h2 className="stats-heading">You're not alone!</h2>
+                <h2 className="stats-heading">You're not <span className="highlight">alone!</span></h2>
             </LazySection>
 
             {/* Combined Stats and Form Container */}

@@ -57,21 +57,12 @@
 }
 
 .testimonials-title .highlight {
-    color: var(--color-secondary-darker);
-    position: relative;
+    background: var(--color-secondary-dark);
+    padding: 6px 20px;
+    border-radius: 10px;
+    color: var(--color-highlight-green);
+    font-weight: 900;
     display: inline-block;
-}
-
-.testimonials-title .highlight::after {
-    content: '';
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    right: 0;
-    height: 12px;
-    background: var(--color-highlight-green);
-    z-index: -1;
-    border-radius: 4px;
 }
 
 .testimonials-nav {

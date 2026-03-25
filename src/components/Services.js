@@ -54,7 +54,7 @@ const Services = () => {
                 <LazySection animation="fade-up">
                     <div className="services-header">
                         <p className="services-label">OUR SERVICES</p>
-                        <h2>Comprehensive <span className="highlight">Rehab</span><br />Programs</h2>
+                        <h2>Comprehensive<br /><span className="highlight">Rehab</span> Programs</h2>
                         <p className="services-description">From sports injuries to post-surgical recovery, our expert team provides personalized care to help you regain mobility and live pain-free.</p>
                     </div>
                 </LazySection>

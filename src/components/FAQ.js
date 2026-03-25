@@ -42,7 +42,7 @@ const FAQ = () => {
                 <LazySection animation="fade-up">
                     <div className="faq-header">
                         <h2 className="faq-title">
-                            Frequently Asked <span className="italic">Questions</span>
+                            Frequently Asked <span className="highlight">Questions</span>
                         </h2>
                         <p className="faq-subtitle">
                             Quick answers to common questions about our therapy process and services.

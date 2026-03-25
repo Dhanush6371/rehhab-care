@@ -32,6 +32,15 @@
     color: var(--color-primary);
 }
 
+.appointment-title .highlight {
+    background: var(--color-secondary-dark);
+    padding: 6px 20px;
+    border-radius: 10px;
+    color: var(--color-highlight-green);
+    font-weight: 900;
+    display: inline-block;
+}
+
 .appointment-description {
     font-size: 17px;
     color: var(--color-text-secondary);
