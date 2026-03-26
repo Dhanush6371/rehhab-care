@@ -1,0 +1,10 @@
+# robots.txt file for controlling how search engine crawlers access the site
+
+# Apply rules to all crawlers (Googlebot, Bingbot, etc.)
+User-agent: *
+
+# Allow crawling of all pages on the website
+Allow: /
+
+# Specify the location of the sitemap for better indexing
+Sitemap: https://rehabb-care.netlify.app/sitemap.xml
