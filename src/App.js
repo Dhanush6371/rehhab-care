@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -30,6 +31,10 @@ import ScrollToTop from './components/ScrollToTop';
 function HomePage() {
     return (
         <>
+            <Helmet>
+                <title>Home Physiotherapy in Hyderabad | Rehabb Care</title>
+                <meta name="description" content="Expert home physiotherapy in Hyderabad for back pain, knee pain, post-surgery recovery & more. Trusted by 2000+ families. Book a free consultation today." />
+            </Helmet>
             <Header />
             <Hero />
             <Stats />
@@ -49,6 +54,10 @@ function HomePage() {
 function PartnerPage() {
     return (
         <>
+            <Helmet>
+                <title>Partner With Us | Join Rehabb Care as a Physiotherapist</title>
+                <meta name="description" content="Are you a licensed physiotherapist in Hyderabad? Partner with Rehabb Care to deliver home physiotherapy sessions on your own schedule. Apply now." />
+            </Helmet>
             <Header />
             <Partner />
             <Footer />
@@ -60,6 +69,10 @@ function PartnerPage() {
 function PrivacyPolicyPage() {
     return (
         <>
+            <Helmet>
+                <title>Privacy Policy | Rehabb Care</title>
+                <meta name="description" content="Read Rehabb Care's Privacy Policy to understand how we collect, use, and protect your personal information when you use our home physiotherapy services." />
+            </Helmet>
             <Header />
             <PrivacyPolicy />
             <Footer />
@@ -71,6 +84,10 @@ function PrivacyPolicyPage() {
 function TermsOfUsePage() {
     return (
         <>
+            <Helmet>
+                <title>Terms of Use | Rehabb Care</title>
+                <meta name="description" content="Review the Terms of Use for Rehabb Care's website and home physiotherapy services in Hyderabad, including booking, cancellation, and liability policies." />
+            </Helmet>
             <Header />
             <TermsOfUse />
             <Footer />
@@ -82,6 +99,10 @@ function TermsOfUsePage() {
 function PrivacyPracticesPage() {
     return (
         <>
+            <Helmet>
+                <title>Notice of Privacy Practices | Rehabb Care</title>
+                <meta name="description" content="Rehabb Care's Notice of Privacy Practices explains how your health information is collected, used, and protected in line with Indian healthcare regulations." />
+            </Helmet>
             <Header />
             <PrivacyPractices />
             <Footer />
@@ -93,6 +114,10 @@ function PrivacyPracticesPage() {
 function BackNeckServicePage() {
     return (
         <>
+            <Helmet>
+                <title>Back & Neck Pain Physiotherapy at Home in Hyderabad | Rehabb Care</title>
+                <meta name="description" content="Struggling with back or neck pain? Get expert home physiotherapy in Hyderabad for sciatica, herniated discs, posture issues & more. Book a free consultation." />
+            </Helmet>
             <Header />
             <BackNeckService />
             <Footer />
@@ -104,6 +129,10 @@ function BackNeckServicePage() {
 function KneeAnkleServicePage() {
     return (
         <>
+            <Helmet>
+                <title>Knee & Ankle Pain Physiotherapy at Home in Hyderabad | Rehabb Care</title>
+                <meta name="description" content="Knee or ankle pain slowing you down? Rehabb Care's home physiotherapy in Hyderabad treats arthritis, ACL injuries, sprains & more. Avoid surgery — book now." />
+            </Helmet>
             <Header />
             <KneeAnkleService />
             <Footer />
@@ -115,6 +144,10 @@ function KneeAnkleServicePage() {
 function ShoulderElbowServicePage() {
     return (
         <>
+            <Helmet>
+                <title>Shoulder & Elbow Pain Physiotherapy at Home in Hyderabad | Rehabb Care</title>
+                <meta name="description" content="Frozen shoulder, rotator cuff pain, or tennis elbow? Get targeted home physiotherapy in Hyderabad from Rehabb Care. Regain full movement — book a free consultation." />
+            </Helmet>
             <Header />
             <ShoulderElbowService />
             <Footer />
@@ -126,6 +159,10 @@ function ShoulderElbowServicePage() {
 function GeriatricServicePage() {
     return (
         <>
+            <Helmet>
+                <title>Geriatric Physiotherapy at Home in Hyderabad | Rehabb Care</title>
+                <meta name="description" content="Gentle, safe home physiotherapy for elderly patients in Hyderabad. Rehabb Care helps seniors improve mobility, reduce fall risk, and regain independence." />
+            </Helmet>
             <Header />
             <GeriatricService />
             <Footer />
@@ -137,6 +174,10 @@ function GeriatricServicePage() {
 function PostSurgeryServicePage() {
     return (
         <>
+            <Helmet>
+                <title>Post-Surgery Physiotherapy at Home in Hyderabad | Rehabb Care</title>
+                <meta name="description" content="Recover faster after surgery with expert home physiotherapy in Hyderabad. Rehabb Care provides post-surgery rehab for knee replacement, spine surgery & more." />
+            </Helmet>
             <Header />
             <PostSurgeryService />
             <Footer />
@@ -148,6 +189,10 @@ function PostSurgeryServicePage() {
 function PostOperativeServicePage() {
     return (
         <>
+            <Helmet>
+                <title>Post-Operative Care Physiotherapy at Home in Hyderabad | Rehabb Care</title>
+                <meta name="description" content="Structured post-operative physiotherapy at home in Hyderabad. Rehabb Care's surgeon-aligned rehab programs help you recover safely after any operation." />
+            </Helmet>
             <Header />
             <PostOperativeService />
             <Footer />
@@ -159,6 +204,10 @@ function PostOperativeServicePage() {
 function FAQPageRoute() {
     return (
         <>
+            <Helmet>
+                <title>Frequently Asked Questions | Rehabb Care Home Physiotherapy Hyderabad</title>
+                <meta name="description" content="Got questions about home physiotherapy in Hyderabad? Find answers about pricing, booking, session details, conditions treated, and more — Rehabb Care FAQ." />
+            </Helmet>
             <Header />
             <FAQPage />
             <Footer />
