@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import './App.css';
 import Header from './components/Header';
@@ -29,6 +29,19 @@ import PostOperativeService from './services/PostOperativeService';
 import ScrollToTop from './components/ScrollToTop';
 
 function HomePage() {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.state?.scrollTo === 'appointment') {
+            setTimeout(() => {
+                const appointmentSection = document.getElementById('appointment');
+                if (appointmentSection) {
+                    appointmentSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 300);
+        }
+    }, [location]);
+
     return (
         <>
             <Helmet>

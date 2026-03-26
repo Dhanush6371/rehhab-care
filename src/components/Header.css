@@ -159,7 +159,7 @@ button {
 
 .btn-primary {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-    color: var(--color-bg-primary);
+    color: #34d399;
     box-shadow: 0 4px 12px rgba(26, 95, 90, 0.25);
     position: relative;
     overflow: hidden;
@@ -423,7 +423,7 @@ button {
 
     .mobile-btn-primary {
         background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-        color: var(--color-bg-primary);
+        color: #34d399;
         box-shadow: 0 4px 12px rgba(26, 95, 90, 0.25);
     }
 

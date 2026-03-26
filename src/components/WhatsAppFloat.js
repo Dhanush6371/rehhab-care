@@ -2,7 +2,7 @@ import React from 'react';
 import './WhatsAppFloat.css';
 
 const WhatsAppFloat = () => {
-    const phoneNumber = '919653148777';
+    const phoneNumber = '919045678345';
     const message = 'Hello! I would like to book an appointment.';
 
     const handleClick = () => {

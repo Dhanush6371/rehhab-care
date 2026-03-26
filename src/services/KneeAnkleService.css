@@ -588,7 +588,7 @@
 
 .ka-cta .ka-btn-primary {
     background: var(--color-primary);
-    color: var(--color-bg-primary);
+    color: #34d399;
     padding: 15px 38px;
     border: none;
     border-radius: 50px;
