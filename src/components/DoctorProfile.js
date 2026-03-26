@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './DoctorProfile.css';
 import LazySection from './LazySection';
@@ -6,6 +6,23 @@ import LazySection from './LazySection';
 const DoctorProfile = () => {
     const { id } = useParams();
     const navigate = useNavigate();
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+    const Wrapper = ({ children, animation, delay }) => {
+        if (isMobile) {
+            return <div>{children}</div>;
+        }
+        return <LazySection animation={animation} delay={delay}>{children}</LazySection>;
+    };
 
     const doctors = {
         'mallikarjuna': {
@@ -61,10 +78,32 @@ const DoctorProfile = () => {
             ],
             availability: 'Mon – Sat | 9:00 AM – 6:00 PM',
             languages: ['English', 'Hindi', 'Kannada', 'Urdu']
+        },
+        'nagendra-kumar': {
+            name: 'Nagendra Kumar Uaika (PT)',
+            role: 'Physiotherapist',
+            experience: '5+ YEARS EXP.',
+            image: '/images/team-4.jpg',
+            education: 'BPT – Dr. NTR University of Health Sciences',
+            about: 'Nagendra Kumar is a dedicated physiotherapist with experience across hospital, corporate, and home-based rehabilitation settings. He specializes in treating orthopedic, neurological, and geriatric conditions using a hands-on, patient-focused approach. With strong expertise in manual therapy and modern techniques like dry needling and cupping therapy, he focuses on reducing pain, improving mobility, and helping patients recover effectively in the comfort of their home.',
+            expertise: ['Back & Neck Pain Management', 'Post-Surgery Rehabilitation', 'Stroke & Neuro Rehabilitation', 'Geriatric Physiotherapy', 'Pain Management & Mobility Recovery', 'Posture Correction & Workplace Ergonomics'],
+            achievements: [
+                'Experience in hospital-based rehabilitation at Dr. Agarwal Hospital',
+                'Provided physiotherapy services at Microsoft India (corporate wellness & ergonomics)',
+                'Extensive experience in home-based physiotherapy for multiple conditions',
+                'Certified in Dry Needling and Cupping Therapy',
+                'Skilled in chiropractic and manual therapy techniques'
+            ],
+            availability: 'Mon – Sat',
+            languages: ['English', 'Telugu', 'Hindi']
         }
     };
 
     const doctor = doctors[id];
+
+    const handleAppointmentClick = () => {
+        navigate('/', { state: { scrollTo: 'appointment' } });
+    };
 
     if (!doctor) {
         return (
@@ -82,7 +121,7 @@ const DoctorProfile = () => {
             </button>
 
             <div className="doctor-profile-container">
-                <LazySection animation="fade-up">
+                <Wrapper animation="fade-up">
                     <div className="doctor-hero">
                         <div className="doctor-hero-image">
                             <img src={doctor.image} alt={doctor.name} />
@@ -102,22 +141,22 @@ const DoctorProfile = () => {
                                     <span>{doctor.languages.join(', ')}</span>
                                 </div>
                             </div>
-                            <button className="appointment-btn">
+                            <button className="appointment-btn" onClick={handleAppointmentClick}>
                                 Book Appointment
                                 <span className="btn-arrow">→</span>
                             </button>
                         </div>
                     </div>
-                </LazySection>
+                </Wrapper>
 
-                <LazySection animation="fade-up" delay={100}>
+                <Wrapper animation="fade-up" delay={100}>
                     <div className="doctor-section">
                         <h2 className="section-title">About</h2>
                         <p className="doctor-about">{doctor.about}</p>
                     </div>
-                </LazySection>
+                </Wrapper>
 
-                <LazySection animation="fade-up" delay={200}>
+                <Wrapper animation="fade-up" delay={200}>
                     <div className="doctor-section">
                         <h2 className="section-title">Areas of Expertise</h2>
                         <div className="expertise-grid">
@@ -129,9 +168,9 @@ const DoctorProfile = () => {
                             ))}
                         </div>
                     </div>
-                </LazySection>
+                </Wrapper>
 
-                <LazySection animation="fade-up" delay={300}>
+                <Wrapper animation="fade-up" delay={300}>
                     <div className="doctor-section">
                         <h2 className="section-title">Achievements & Recognition</h2>
                         <ul className="achievements-list">
@@ -143,18 +182,18 @@ const DoctorProfile = () => {
                             ))}
                         </ul>
                     </div>
-                </LazySection>
+                </Wrapper>
 
-                <LazySection animation="fade-up" delay={400}>
+                <Wrapper animation="fade-up" delay={400}>
                     <div className="doctor-cta">
                         <h2>Ready to start your recovery journey?</h2>
                         <p>Book a consultation with {doctor.name.split(' ')[1]} today</p>
-                        <button className="cta-btn">
+                        <button className="cta-btn" onClick={handleAppointmentClick}>
                             Schedule Consultation
                             <span className="btn-arrow">→</span>
                         </button>
                     </div>
-                </LazySection>
+                </Wrapper>
             </div>
         </div>
     );

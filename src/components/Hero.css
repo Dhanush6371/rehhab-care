@@ -622,7 +622,7 @@ body {
 
 .btn-book {
     background: var(--color-secondary-darker);
-    color: var(--color-bg-primary);
+    color: #34d399;
     padding: 18px 36px;
     border-radius: 50px;
     font-size: 17px;

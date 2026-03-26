@@ -62,12 +62,12 @@ const Appointment = () => {
     };
 
     return (
-        <section className="appointment-section" id="contact">
+        <section className="appointment-section" id="appointment">
             <div className="appointment-container">
                 <LazySection animation="fade-right">
                     <div className="appointment-content">
                         <h2 className="appointment-title">
-                            Ready to Start Your <span className="italic">Recovery?</span>
+                            Ready to Start Your <span className="highlight">Recovery?</span>
                         </h2>
                         <p className="appointment-description">
                             Fill out the form below to schedule your physiotherapy consultation. Our elite clinical team will confirm your booking within 2 business hours.
