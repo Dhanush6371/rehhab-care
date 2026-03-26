@@ -1,5 +1,5 @@
 // Backend API Configuration
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://hu85bfhfbg.execute-api.eu-west-3.amazonaws.com/api';
 
 // API endpoints
 export const API_ENDPOINTS = {
