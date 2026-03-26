@@ -5,13 +5,15 @@ import { submitAppointment } from '../config/api';
 
 const Appointment = () => {
     const [formData, setFormData] = useState({
-        fullName: '',
+        name: '',
         phone: '',
         email: '',
-        service: '',
-        dateTime: '',
+        serviceArea: '',
+        preferredDateTime: '',
+        city: '',
         pincode: '',
-        message: ''
+        address: '',
+        notes: ''
     });
 
     const [submitStatus, setSubmitStatus] = useState({
@@ -38,13 +40,15 @@ const Appointment = () => {
 
             // Reset form after successful submission
             setFormData({
-                fullName: '',
+                name: '',
                 phone: '',
                 email: '',
-                service: '',
-                dateTime: '',
+                serviceArea: '',
+                preferredDateTime: '',
+                city: '',
                 pincode: '',
-                message: ''
+                address: '',
+                notes: ''
             });
 
             // Clear success message after 5 seconds
@@ -99,13 +103,13 @@ const Appointment = () => {
                         <form className="appointment-form" onSubmit={handleSubmit}>
                             <div className="form-row-two">
                                 <div className="form-group">
-                                    <label className="form-label">FULL NAME</label>
+                                    <label className="form-label">NAME</label>
                                     <input
                                         type="text"
-                                        name="fullName"
+                                        name="name"
                                         className="form-input"
                                         placeholder="John Doe"
-                                        value={formData.fullName}
+                                        value={formData.name}
                                         onChange={handleChange}
                                         required
                                     />
@@ -131,44 +135,60 @@ const Appointment = () => {
                                         type="email"
                                         name="email"
                                         className="form-input"
-                                        placeholder="john@..."
+                                        placeholder="john@example.com"
                                         value={formData.email}
                                         onChange={handleChange}
                                         required
                                     />
                                 </div>
                                 <div className="form-group">
-                                    <label className="form-label">SERVICE</label>
+                                    <label className="form-label">SERVICE AREA</label>
                                     <select
-                                        name="service"
+                                        name="serviceArea"
                                         className="form-input form-select"
-                                        value={formData.service}
+                                        value={formData.serviceArea}
                                         onChange={handleChange}
                                         required
                                     >
                                         <option value="">Select Service</option>
-                                        <option value="knee-ankle">Knee & Ankle Care</option>
-                                        <option value="shoulder-elbow">Shoulder & Elbow Rehab</option>
-                                        <option value="geriatric">Geriatric Physiotherapy</option>
-                                        <option value="post-operative">Post-Operative Rehabilitation</option>
-                                        <option value="sports-medicine">Sports Medicine</option>
-                                        <option value="neurological">Neurological Therapy</option>
+                                        <option value="Knee & Ankle Care">Knee & Ankle Care</option>
+                                        <option value="Shoulder & Elbow Rehab">Shoulder & Elbow Rehab</option>
+                                        <option value="Back & Neck Pain">Back & Neck Pain</option>
+                                        <option value="Geriatric Physiotherapy">Geriatric Physiotherapy</option>
+                                        <option value="Post-Operative Rehabilitation">Post-Operative Rehabilitation</option>
+                                        <option value="Sports Medicine">Sports Medicine</option>
+                                        <option value="Neurological Therapy">Neurological Therapy</option>
                                     </select>
                                 </div>
                             </div>
 
                             <div className="form-row-two">
                                 <div className="form-group">
-                                    <label className="form-label">DATE & TIME</label>
+                                    <label className="form-label">PREFERRED DATE & TIME</label>
                                     <input
                                         type="datetime-local"
-                                        name="dateTime"
+                                        name="preferredDateTime"
                                         className="form-input"
-                                        value={formData.dateTime}
+                                        value={formData.preferredDateTime}
                                         onChange={handleChange}
                                         required
                                     />
                                 </div>
+                                <div className="form-group">
+                                    <label className="form-label">CITY</label>
+                                    <input
+                                        type="text"
+                                        name="city"
+                                        className="form-input"
+                                        placeholder="Mumbai"
+                                        value={formData.city}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="form-row-two">
                                 <div className="form-group">
                                     <label className="form-label">PINCODE</label>
                                     <input
@@ -181,18 +201,29 @@ const Appointment = () => {
                                         required
                                     />
                                 </div>
+                                <div className="form-group">
+                                    <label className="form-label">ADDRESS</label>
+                                    <input
+                                        type="text"
+                                        name="address"
+                                        className="form-input"
+                                        placeholder="Street address"
+                                        value={formData.address}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
                             </div>
 
                             <div className="form-group">
-                                <label className="form-label">ADDRESS & MESSAGE</label>
+                                <label className="form-label">NOTES (Optional)</label>
                                 <textarea
-                                    name="message"
+                                    name="notes"
                                     className="form-textarea"
-                                    placeholder="Detailed address or symptoms..."
+                                    placeholder="Any additional information or symptoms..."
                                     rows="4"
-                                    value={formData.message}
+                                    value={formData.notes}
                                     onChange={handleChange}
-                                    required
                                 ></textarea>
                             </div>
 

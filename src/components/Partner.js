@@ -5,12 +5,13 @@ import { submitPartner } from '../config/api';
 
 const Partner = () => {
     const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
+        name: '',
         phone: '',
-        zipCode: '',
-        experience: ''
+        email: '',
+        specialization: '',
+        pincode: '',
+        city: '',
+        referralCode: ''
     });
 
     const [submitStatus, setSubmitStatus] = useState({
@@ -37,12 +38,13 @@ const Partner = () => {
 
             // Reset form
             setFormData({
-                firstName: '',
-                lastName: '',
-                email: '',
+                name: '',
                 phone: '',
-                zipCode: '',
-                experience: ''
+                email: '',
+                specialization: '',
+                pincode: '',
+                city: '',
+                referralCode: ''
             });
 
             // Clear success message after 5 seconds
@@ -132,37 +134,12 @@ const Partner = () => {
 
                             <div className="partner-form-row">
                                 <div className="partner-form-group">
-                                    <label className="partner-form-label">First Name*</label>
+                                    <label className="partner-form-label">Name*</label>
                                     <input
                                         type="text"
-                                        name="firstName"
+                                        name="name"
                                         className="partner-form-input"
-                                        value={formData.firstName}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div>
-                                <div className="partner-form-group">
-                                    <label className="partner-form-label">Last Name*</label>
-                                    <input
-                                        type="text"
-                                        name="lastName"
-                                        className="partner-form-input"
-                                        value={formData.lastName}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="partner-form-row">
-                                <div className="partner-form-group">
-                                    <label className="partner-form-label">Email*</label>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        className="partner-form-input"
-                                        value={formData.email}
+                                        value={formData.name}
                                         onChange={handleChange}
                                         required
                                     />
@@ -182,32 +159,73 @@ const Partner = () => {
 
                             <div className="partner-form-row">
                                 <div className="partner-form-group">
-                                    <label className="partner-form-label">ZIP Code*</label>
+                                    <label className="partner-form-label">Email*</label>
                                     <input
-                                        type="text"
-                                        name="zipCode"
+                                        type="email"
+                                        name="email"
                                         className="partner-form-input"
-                                        value={formData.zipCode}
+                                        value={formData.email}
                                         onChange={handleChange}
                                         required
                                     />
                                 </div>
                                 <div className="partner-form-group">
-                                    <label className="partner-form-label">Years of Experience as a Licensed PT*</label>
+                                    <label className="partner-form-label">Specialization*</label>
                                     <select
-                                        name="experience"
+                                        name="specialization"
                                         className="partner-form-input partner-form-select"
-                                        value={formData.experience}
+                                        value={formData.specialization}
                                         onChange={handleChange}
                                         required
                                     >
                                         <option value="">Select...</option>
-                                        <option value="less-than-1">Less than 1 year</option>
-                                        <option value="1-3">1-3 years</option>
-                                        <option value="3-5">3-5 years</option>
-                                        <option value="5-10">5-10 years</option>
-                                        <option value="10+">10+ years</option>
+                                        <option value="Orthopedic">Orthopedic</option>
+                                        <option value="Sports">Sports</option>
+                                        <option value="Neurological">Neurological</option>
+                                        <option value="Pediatric">Pediatric</option>
+                                        <option value="Geriatric">Geriatric</option>
+                                        <option value="Cardiopulmonary">Cardiopulmonary</option>
+                                        <option value="Women's Health">Women's Health</option>
+                                        <option value="Other">Other</option>
                                     </select>
+                                </div>
+                            </div>
+
+                            <div className="partner-form-row">
+                                <div className="partner-form-group">
+                                    <label className="partner-form-label">Pincode*</label>
+                                    <input
+                                        type="text"
+                                        name="pincode"
+                                        className="partner-form-input"
+                                        value={formData.pincode}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+                                <div className="partner-form-group">
+                                    <label className="partner-form-label">City*</label>
+                                    <input
+                                        type="text"
+                                        name="city"
+                                        className="partner-form-input"
+                                        value={formData.city}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="partner-form-row">
+                                <div className="partner-form-group">
+                                    <label className="partner-form-label">Referral Code (Optional)</label>
+                                    <input
+                                        type="text"
+                                        name="referralCode"
+                                        className="partner-form-input"
+                                        value={formData.referralCode}
+                                        onChange={handleChange}
+                                    />
                                 </div>
                             </div>
 
