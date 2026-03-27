@@ -209,9 +209,9 @@ const Hero = () => {
                             {/* Appointment Stats */}
                             <div className="appointment-stats">
                                 <div className="stats-avatars">
-                                    <img src="/images/avatar1.jpg" alt="Patient" loading="eager" />
-                                    <img src="/images/avatar2.jpg" alt="Patient" loading="eager" />
-                                    <img src="/images/avatar3.jpg" alt="Patient" loading="eager" />
+                                    <img src="/images/app1.png" alt="Patient" loading="eager" />
+                                    <img src="/images/app2.png" alt="Patient" loading="eager" />
+                                    <img src="/images/app3.png" alt="Patient" loading="eager" />
                                 </div>
                                 <div className="stats-text">
                                     <h4>10,000+ Appointments Completed</h4>
