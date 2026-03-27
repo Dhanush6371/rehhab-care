@@ -40,7 +40,7 @@ const WhyBetter = () => {
     const comparisonData = [
         {
             criteria: 'Convenience',
-            rehabb: 'PT comes to you',
+            rehabb: 'Physiotherapist comes to you',
             traditional: 'You drive to the clinic'
         },
         {
@@ -50,13 +50,13 @@ const WhyBetter = () => {
         },
         {
             criteria: 'Appointment availability',
-            rehabb: 'Less than 48 hours',
+            rehabb: '24 Hours',
             traditional: 'Up to 2 week waitlists'
         },
         {
             criteria: 'Exclusive, dedicated care',
-            rehabb: '1:1 attention from PT',
-            traditional: 'PT seeing many patients at once'
+            rehabb: '1:1 attention from Physiotherapist',
+            traditional: 'Physiotherapist seeing many patients at once'
         },
         {
             criteria: 'Safety & comfort',
@@ -71,13 +71,13 @@ const WhyBetter = () => {
     ];
 
     return (
-        <section className="why-better-section">
+        <section className="why-better-section" id="why-better">
             <div className="why-better-container">
                 <div className="why-better-content">
                     <div className="content-left">
                         <p className="section-label">AT-HOME SERVICE</p>
                         <h2 className="section-title">
-                            <span className="title-normal"><span className="no-break">Professional <span className="highlight-box">Physiotherapy</span>,</span> Delivered Home</span>
+                            <span className="title-normal"><span className="no-break">Professional <span className="highlight-box">Physiotherapy</span>,</span><br />Delivered Home</span>
                         </h2>
                         <p className="section-description">
                             Skip the commute and waiting rooms. Our certified physiotherapists come to you with all the necessary equipment for a complete rehabilitation experience.
@@ -104,7 +104,7 @@ const WhyBetter = () => {
                                 <span className="stat-icon">🏠</span>
                             </div>
                             <div className="stats-text">
-                                <strong>5000+ Home Sessions</strong>
+                                <strong>10,000+ Home Sessions</strong>
                                 <p>Completed this year</p>
                             </div>
                         </div>

@@ -18,22 +18,22 @@ const Footer = () => {
                             <span>Rehabb Care</span>
                         </div>
                         <p className="footer-description">
-                            Empowering lives with expert physiotherapy and personalized care. Your journey to wellness starts here.
+                            A 100% home physiotherapy company in Hyderabad, offering expert care through verified, experienced male & female physiotherapists - all in the comfort of your home.
                         </p>
                         <div className="footer-social">
-                            <a href="https://instagram.com" className="social-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/rehabbcare/" className="social-link" target="_blank" rel="noopener noreferrer">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                                 </svg>
                             </a>
-                            <a href="https://facebook.com" className="social-link" target="_blank" rel="noopener noreferrer">
+                            <a href=" https://www.facebook.com/rehabbcare" className="social-link" target="_blank" rel="noopener noreferrer">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                                 </svg>
                             </a>
-                            <a href="https://linkedin.com" className="social-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/company/rehabbcare/" className="social-link" target="_blank" rel="noopener noreferrer">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                                     <rect x="2" y="9" width="4" height="12"></rect>
@@ -47,11 +47,11 @@ const Footer = () => {
                     <div className="footer-column">
                         <h3 className="footer-column-title">Quick Links</h3>
                         <ul className="footer-links">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#services">Our Services</a></li>
-                            <li><a href="#process">Our Process</a></li>
+                            <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
+                            <li><a href="#services">What We Treat</a></li>
+                            <li><a href="#why-better">Our Process</a></li>
                             <li><a href="#why-choose">Why Choose Us?</a></li>
-                            <li><a href="#faq">FAQs</a></li>
+                            <li><Link to="/faq" onClick={scrollToTop}>FAQs</Link></li>
                         </ul>
                     </div>
 
@@ -60,10 +60,12 @@ const Footer = () => {
                         <h3 className="footer-column-title">Our Services</h3>
                         <ul className="footer-links">
                             <li><a href="#services">Back & Neck Pain</a></li>
-                            <li><a href="#services">Knee & Ankle Care</a></li>
-                            <li><a href="#services">Sports Medicine</a></li>
-                            <li><a href="#services">Geriatric Care</a></li>
-                            <li><a href="#services">Post-Op Rehab</a></li>
+                            <li><a href="#services">Knee & Ankle Pain</a></li>
+                            <li><a href="#services">Shoulder & Elbow Rehab</a></li>
+                            <li><a href="#services">Post-Surgery Rehab</a></li>
+                            <li><a href="#services">Paralysis / Stroke Rehab</a></li>
+                            <li><a href="#services">Geriatric Physiotherapy</a></li>
+                            <li><a href="#services">Sports Injury Rehab</a></li>
                         </ul>
                     </div>
 
@@ -89,7 +91,7 @@ const Footer = () => {
                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                     <polyline points="22,6 12,13 2,6"></polyline>
                                 </svg>
-                                <span>rehabcare@gmail.com</span>
+                                <span>care@rehabb.care</span>
                             </div>
                         </div>
                     </div>

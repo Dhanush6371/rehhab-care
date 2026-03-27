@@ -47,7 +47,7 @@ const WhyChoose = () => {
     ];
 
     return (
-        <section className="why-choose-section">
+        <section className="why-choose-section" id="why-choose">
             <div className="why-choose-container">
                 <div className="why-choose-content">
                     <LazySection animation="fade-up">

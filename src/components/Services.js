@@ -41,8 +41,8 @@ const Services = () => {
         },
         {
             id: 6,
-            category: 'Recovery',
-            title: 'Post-Operative Rehabilitation',
+            category: 'Neuro Rehabilitation',
+            title: 'Stroke, Paralysis & Neuro Recovery',
             image: '/images/service-6.png',
             link: '/services/post-operative'
         }

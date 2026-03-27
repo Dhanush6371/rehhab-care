@@ -266,7 +266,7 @@ body {
     margin: 0 auto;
     padding: 0px 60px;
     position: relative;
-    margin-top: -150px;
+    margin-top: -60px;
     z-index: 1;
 }
 
@@ -637,6 +637,7 @@ body {
     gap: 8px;
     animation: slideInLeft 0.5s ease-out 0.2s both;
     font-family: 'Inter', sans-serif;
+    white-space: nowrap;
 }
 
 .btn-book:hover {
@@ -745,7 +746,7 @@ body {
 @media (max-width: 1200px) {
     .hero-container {
         padding: 0 40px;
-        margin-top: -120px;
+        margin-top: -40px;
     }
 
     .hero-card {
@@ -769,7 +770,7 @@ body {
 @media (max-width: 1024px) {
     .hero-container {
         padding: 0 30px;
-        margin-top: -80px;
+        margin-top: -20px;
     }
 
     .hero-card {
@@ -837,7 +838,7 @@ body {
 
     .hero-container {
         padding: 0 20px;
-        margin-top: -50px;
+        margin-top: 0px;
         width: 100%;
         max-width: 100%;
     }
@@ -977,7 +978,7 @@ body {
 
 @media (max-width: 640px) {
     .hero-container {
-        margin-top: -30px;
+        margin-top: 0px;
     }
 
     .body-diagram-wrapper {
@@ -1002,7 +1003,7 @@ body {
 
     .hero-container {
         padding: 0 15px;
-        margin-top: -20px;
+        margin-top: 0px;
         width: 100%;
         max-width: 100%;
     }
@@ -1194,7 +1195,7 @@ body {
 @media (max-width: 360px) {
     .hero-container {
         padding: 0 12px;
-        margin-top: -15px;
+        margin-top: 0px;
         width: 100%;
         max-width: 100%;
     }

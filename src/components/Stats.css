@@ -7,16 +7,17 @@
 }
 
 .stats-heading {
-    font-size: 48px;
-    font-weight: 700;
-    color: var(--color-text-primary);
-    margin: 0 0 40px 0;
+    font-size: var(--heading-font-size);
+    font-weight: var(--heading-font-weight);
+    color: var(--heading-color);
+    margin: 0 0 var(--heading-margin-bottom) 0;
     text-align: left;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Inter', sans-serif;
-    line-height: 1.2;
+    font-family: var(--heading-font-family);
+    line-height: var(--heading-line-height);
+    letter-spacing: var(--heading-letter-spacing);
 }
 
 .stats-heading .highlight {
@@ -426,7 +427,7 @@
     }
 
     .stats-heading {
-        font-size: 42px;
+        font-size: var(--heading-font-size-tablet);
         margin-bottom: 32px;
     }
 
@@ -492,7 +493,7 @@
     }
 
     .stats-heading {
-        font-size: 36px;
+        font-size: var(--heading-font-size-mobile);
         margin-bottom: 28px;
     }
 
@@ -593,7 +594,7 @@
     }
 
     .stats-heading {
-        font-size: 24px;
+        font-size: var(--heading-font-size-small);
         margin-bottom: 24px;
     }
 

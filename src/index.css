@@ -133,6 +133,20 @@
     /* Placeholder Colors */
     --color-placeholder: #bbb;
     --color-text-beige: #e8d5c4;
+
+    /* Section Heading Styles */
+    --heading-font-size: 48px;
+    --heading-font-weight: 700;
+    --heading-line-height: 1.25;
+    --heading-letter-spacing: -0.5px;
+    --heading-font-family: 'Inter', sans-serif;
+    --heading-color: var(--color-text-primary);
+    --heading-margin-bottom: 40px;
+
+    /* Responsive Heading Sizes */
+    --heading-font-size-tablet: 42px;
+    --heading-font-size-mobile: 32px;
+    --heading-font-size-small: 28px;
 }
 
 * {

@@ -1,0 +1,12 @@
+/* Global Section Heading Styles - Import this in components that need consistent headings */
+
+.section-heading {
+    font-size: var(--heading-font-size);
+    font-weight: var(--heading-font-weight);
+    color: var(--heading-color);
+    line-height: var(--heading-line-height);
+    font-family: var(--heading-font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}

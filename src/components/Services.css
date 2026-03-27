@@ -25,13 +25,13 @@
 }
 
 .services-header h2 {
-    font-size: 52px;
-    font-weight: 900;
-    color: var(--color-secondary-darker);
+    font-size: var(--heading-font-size);
+    font-weight: var(--heading-font-weight);
+    color: var(--heading-color);
     margin: 0 0 20px 0;
-    line-height: 1.4;
-    font-family: 'Arial Black', 'Arial Bold', sans-serif;
-    letter-spacing: -0.5px;
+    line-height: var(--heading-line-height);
+    font-family: var(--heading-font-family);
+    letter-spacing: var(--heading-letter-spacing);
 }
 
 .services-header h2 .highlight {
@@ -164,7 +164,7 @@
     }
 
     .services-header h2 {
-        font-size: 32px;
+        font-size: var(--heading-font-size-mobile);
         margin-bottom: 16px;
         line-height: 1.3;
     }
@@ -227,12 +227,12 @@
     }
 
     .services-header h2 {
-        font-size: 24px;
+        font-size: var(--heading-font-size-small);
     }
 
     .services-header h2 .highlight {
         padding: 4px 14px;
-        font-size: 24px;
+        font-size: var(--heading-font-size-small);
     }
 
     .services-header p {

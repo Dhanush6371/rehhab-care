@@ -63,12 +63,12 @@ const Header = () => {
             <nav className="navbar">
                 <Link to="/" className="logo">
                     <img src="/images/logo.png" alt="Rebuild Care" fetchpriority="high" />
-                    <span>Rebuild Care</span>
+                    <span>Rehabb Care</span>
                 </Link>
 
                 <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                     <li><a href="/" onClick={(e) => handleNavClick(e, 'home')}>HOME</a></li>
-                    <li><a href="/#services" onClick={(e) => handleNavClick(e, 'services')}>SERVICES</a></li>
+                    <li><a href="/#services" onClick={(e) => handleNavClick(e, 'services')}>WHAT WE TREAT</a></li>
                     <li><a href="/#team" onClick={(e) => handleNavClick(e, 'team')}>TEAM</a></li>
                     <li><a href="/#contact" onClick={(e) => handleNavClick(e, 'contact')}>CONTACT</a></li>
                     <li><Link to="/faq">FAQ</Link></li>

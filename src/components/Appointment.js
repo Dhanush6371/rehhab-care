@@ -85,7 +85,7 @@ const Appointment = () => {
                             <div className="step-line"></div>
                             <div className="step-item">
                                 <div className="step-circle">2</div>
-                                <span className="step-label">PICK SERVICE</span>
+                                <span className="step-label">SELECT YOUR CONCERN</span>
                             </div>
                             <div className="step-line"></div>
                             <div className="step-item">
@@ -142,7 +142,7 @@ const Appointment = () => {
                                     />
                                 </div>
                                 <div className="form-group">
-                                    <label className="form-label">SERVICE AREA</label>
+                                    <label className="form-label">SELECT YOUR CONCERN</label>
                                     <select
                                         name="serviceArea"
                                         className="form-input form-select"
@@ -151,13 +151,14 @@ const Appointment = () => {
                                         required
                                     >
                                         <option value="">Select Service</option>
-                                        <option value="Knee & Ankle Care">Knee & Ankle Care</option>
-                                        <option value="Shoulder & Elbow Rehab">Shoulder & Elbow Rehab</option>
                                         <option value="Back & Neck Pain">Back & Neck Pain</option>
+                                        <option value="Knee & Ankle Pain">Knee & Ankle Pain</option>
+                                        <option value="Shoulder & Elbow Rehab">Shoulder & Elbow Rehab</option>
+                                        <option value="Post-Surgery Rehab">Post-Surgery Rehab</option>
+                                        <option value="Paralysis / Stroke Rehab">Paralysis / Stroke Rehab</option>
                                         <option value="Geriatric Physiotherapy">Geriatric Physiotherapy</option>
-                                        <option value="Post-Operative Rehabilitation">Post-Operative Rehabilitation</option>
-                                        <option value="Sports Medicine">Sports Medicine</option>
-                                        <option value="Neurological Therapy">Neurological Therapy</option>
+                                        <option value="Sports Injury Rehab">Sports Injury Rehab</option>
+                                        <option value="Other">Other (Not sure / Need guidance)</option>
                                     </select>
                                 </div>
                             </div>

@@ -4,45 +4,45 @@ import LazySection from '../components/LazySection';
 
 const PostOperativeService = () => {
     const symptoms = [
-        "Pain and restricted movement after the operation",
-        "Confusion about what exercises are safe to do",
-        "Muscle atrophy from extended bed rest",
-        "Post-operative swelling that isn't reducing",
-        "Lack of professional guidance after discharge"
+        "Weakness or loss of movement in arms, legs or one side of the body",
+        "Difficulty walking, balancing, or performing daily tasks",
+        "Slurred speech or difficulty swallowing after a stroke",
+        "Muscle stiffness, spasms, or abnormal tone due to neurological damage",
+        "Fear of falling or loss of confidence in movement"
     ];
 
     const commonSigns = [
-        { text: "Persistent pain or discomfort around the operated site" },
-        { text: "Reduced joint or muscle function" },
-        { text: "Swelling that worsens with activity" },
-        { text: "Difficulty with basic tasks like walking, dressing, or bathing" },
-        { text: "Scar tightness or numbness around the incision" },
-        { text: "Low energy and poor stamina after surgery" }
+        { text: "Weakness or paralysis on one side of the body (hemiplegia)" },
+        { text: "Loss of balance and difficulty walking independently" },
+        { text: "Muscle spasticity — stiffness or involuntary tightening" },
+        { text: "Difficulty with speech, swallowing, or coordination" },
+        { text: "Drop foot or abnormal gait patterns after stroke" },
+        { text: "Cognitive fatigue and reduced stamina during movement" }
     ];
 
     const treatmentApproach = [
         {
-            title: "Surgeon-protocol aligned rehab from day one post-discharge",
+            title: "Neuroplasticity-based exercises to rewire brain-muscle connections",
             description: ""
         },
         {
-            title: "Pain and swelling control techniques",
+            title: "Gait training and balance rehabilitation to restore safe walking",
             description: ""
         },
         {
-            title: "Safe early mobilization to prevent complications",
+            title: "Upper limb recovery — hand, arm and shoulder movement restoration",
             description: ""
         },
         {
-            title: "Muscle activation and progressive strength training",
+            title: "Spasticity and muscle tone management",
             description: ""
         },
         {
-            title: "Wound-site monitoring and scar management",
+            title: "Functional task training — dressing, bathing, cooking, and daily activities",
             description: ""
         },
         {
-            title: "Nutrition and lifestyle guidance for faster healing",
+            title: "Speech and swallowing exercises in coordination with speech therapists",
             description: ""
         }
     ];
@@ -52,47 +52,47 @@ const PostOperativeService = () => {
         "Home visits — no travel, no stress",
         "Focus on outcomes, not number of sessions",
         "Honest guidance — we don't overpromise",
-        "Special expertise in neuro & elderly care"
+        "Deep specialisation in neuro and stroke rehabilitation"
     ];
 
     const recoverySteps = [
         {
             number: 1,
-            title: "Assessment",
-            description: "Review discharge summary, surgery type, and current status"
+            title: "Neurological assessment",
+            description: "Evaluate motor function, balance, speech, and cognition at home"
         },
         {
             number: 2,
-            title: "Surgeon-Aligned Plan",
-            description: "Rehab plan built around your surgical protocol"
+            title: "Personalised neuro plan",
+            description: "Programme built around your specific neurological condition and goals"
         },
         {
             number: 3,
-            title: "Home Sessions",
-            description: "30–60 min sessions at home — no strain of travel"
+            title: "Home sessions",
+            description: "45–60 min neuro rehab sessions — in a familiar, comfortable environment"
         },
         {
             number: 4,
-            title: "Progress Tracking",
-            description: "Weekly milestone reviews tied to recovery targets"
+            title: "Progress tracking",
+            description: "Weekly milestone reviews — movement, strength, balance, and function"
         },
         {
             number: 5,
-            title: "Return to Life",
-            description: "Gradual, safe return to work, activities, and independence"
+            title: "Return to independence",
+            description: "Gradual restoration of walking, daily tasks, and confident living"
         }
     ];
 
     const testimonials = [
         {
-            text: "After my hip replacement, I was nervous about moving. Rehabb Care's physiotherapist made me feel safe, started small, and I've recovered much better than expected.",
-            name: "Lakshmi Devi",
-            location: "LB Nagar"
+            text: "My father had a stroke and lost movement on his right side. Rehabb Care's physiotherapist visited us in Manikonda within 24 hours. After 3 months of sessions, he is walking with support and feeding himself again.",
+            name: "Surekha Rao",
+            location: "Manikonda"
         },
         {
-            text: "We stay in Nallagandla and took physiotherapy for my father after his surgery. The physio was very patient and gentle. His walking has improved slowly and steadily.",
-            name: "Anitha Reddy",
-            location: "Nallagandla"
+            text: "My mother had a brain haemorrhage and we were told recovery would be very slow. Rehabb Care designed a proper plan and the consistency of home sessions made a real difference. Her speech has also improved.",
+            name: "Ramesh Gupta",
+            location: "Kondapur"
         }
     ];
 
@@ -103,11 +103,11 @@ const PostOperativeService = () => {
                 <div className="po-hero-content">
                     <div className="po-badge">Home Physiotherapy · Hyderabad</div>
                     <h1 className="po-hero-title">
-                        <span className="normal-text">Post-Operative Care That Comes to You</span><br />
-                        <span className="normal-text">Expert Physiotherapy in Hyderabad</span>
+                        <span className="highlight-text">NEURO REHABILITATION</span><br />
+                        <span className="normal-text">Stroke, Paralysis & Neuro Recovery That Comes to You</span>
                     </h1>
                     <p className="po-hero-subtitle">
-                        Structured recovery programs designed around your surgery — at home, at your pace.
+                        Personalised neuro rehabilitation for stroke, paralysis, and neurological conditions — at home, at your pace.
                     </p>
                     <div className="po-hero-stats">
                         <div className="po-stat-item">
@@ -125,7 +125,7 @@ const PostOperativeService = () => {
                     </div>
                     <div className="po-hero-buttons">
                         <a
-                            href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Post-Operative%20Care."
+                            href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Neuro%20Rehabilitation."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="po-btn-primary"
@@ -152,8 +152,8 @@ const PostOperativeService = () => {
                         <p>Average Rating</p>
                     </div>
                     <div className="po-stat">
-                        <h3>30%</h3>
-                        <p>Reduced Readmission</p>
+                        <h3>85%</h3>
+                        <p>Patients Regain Independence</p>
                     </div>
                 </div>
             </section>
@@ -173,7 +173,7 @@ const PostOperativeService = () => {
                                 ))}
                             </ul>
                             <p className="po-reassurance">
-                                <em>You're not alone. Most patients delay the right physiotherapy — and that makes recovery harder.</em>
+                                <em>You're not alone. Most families don't know where to start after a stroke or neurological diagnosis — and early, expert rehabilitation makes the biggest difference.</em>
                             </p>
                         </div>
                     </LazySection>
@@ -185,7 +185,7 @@ const PostOperativeService = () => {
                 <LazySection animation="fade-up">
                     <div className="po-info-content">
                         <p>
-                            <strong>Early post-operative physiotherapy reduces hospital readmission rates by up to 30%</strong> and helps patients return to full function significantly faster than rest alone.
+                            <strong>Early neuro rehabilitation after stroke can improve recovery outcomes by up to 40%</strong> — the brain's ability to rewire itself (neuroplasticity) is strongest in the first weeks after a neurological event.
                         </p>
                     </div>
                 </LazySection>
@@ -196,9 +196,9 @@ const PostOperativeService = () => {
                 <div className="po-container">
                     <LazySection animation="fade-up">
                         <p className="po-section-label">What is this condition</p>
-                        <h2 className="po-section-heading">Understanding Post-Operative Rehabilitation</h2>
+                        <h2 className="po-section-heading">Understanding Stroke, Paralysis & Neuro Rehabilitation</h2>
                         <p className="po-section-description">
-                            Post-operative rehabilitation focuses on the critical recovery window immediately after surgery. Unlike general physiotherapy, it requires deep knowledge of surgical procedures, wound healing timelines, and weight-bearing protocols. Our physiotherapists work in alignment with your surgeon's discharge instructions to ensure a safe, structured, and effective recovery.
+                            Neuro rehabilitation is the specialised process of helping the brain and nervous system recover after a stroke, paralysis, or other neurological event. It works on the principle of neuroplasticity — the brain's remarkable ability to rewire and rebuild connections when consistently stimulated through targeted movement and activity. Our physiotherapists are trained in neuro-specific techniques and design programmes that progressively restore movement, function, and independence in familiar home surroundings.
                         </p>
                     </LazySection>
                 </div>
@@ -227,7 +227,7 @@ const PostOperativeService = () => {
                 <div className="po-container">
                     <LazySection animation="fade-up">
                         <p className="po-section-label">How we help</p>
-                        <h2 className="po-section-heading">At Rehabb Care, we focus on real recovery — not just sessions</h2>
+                        <h2 className="po-section-heading">At Rehabb Care, we focus on real neurological recovery — not just sessions</h2>
                         <div className="po-treatment-grid">
                             {treatmentApproach.map((item, index) => (
                                 <div key={index} className="po-treatment-card">
@@ -262,7 +262,7 @@ const PostOperativeService = () => {
                 <div className="po-container">
                     <LazySection animation="fade-up">
                         <p className="po-section-label">Treatment plan</p>
-                        <h2 className="po-section-heading">Your recovery journey — step by step</h2>
+                        <h2 className="po-section-heading">Your neuro recovery journey — step by step</h2>
                         <div className="po-recovery-steps">
                             {recoverySteps.map((step) => (
                                 <div key={step.number} className="po-recovery-step">
@@ -320,11 +320,11 @@ const PostOperativeService = () => {
                 <div className="po-container">
                     <LazySection animation="fade-up">
                         <p className="po-cta-text">
-                            Post-operative recovery is not the time to figure things out on your own. Let our experienced physiotherapists guide you — safely, effectively, at home.
+                            Stroke and neurological recovery is not the time to figure things out on your own. The first few months are critical — let our experienced neuro physiotherapists guide your loved one safely, at home.
                         </p>
                         <div className="po-cta-buttons">
                             <a
-                                href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Post-Operative%20Care."
+                                href="https://wa.me/919653148777?text=Hello!%20I%20would%20like%20to%20book%20a%20consultation%20for%20Neuro%20Rehabilitation."
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="po-btn-primary"

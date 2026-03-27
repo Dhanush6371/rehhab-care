@@ -5,6 +5,34 @@ import LazySection from './LazySection';
 const Testimonials = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    // Function to get initials from name
+    const getInitials = (name) => {
+        const names = name.split(' ');
+        if (names.length >= 2) {
+            return names[0][0] + names[1][0];
+        }
+        return names[0][0];
+    };
+
+    // Function to get color based on index
+    const getAvatarColor = (index) => {
+        const colors = [
+            '#103F5F', // Primary blue
+            '#25D366', // WhatsApp green
+            '#e91e63', // Pink
+            '#9c27b0', // Purple
+            '#ff9800', // Orange
+            '#00bcd4', // Cyan
+            '#4caf50', // Green
+            '#f44336', // Red
+            '#3f51b5', // Indigo
+            '#009688', // Teal
+            '#795548', // Brown
+            '#607d8b'  // Blue grey
+        ];
+        return colors[index % colors.length];
+    };
+
     const testimonials = [
         {
             name: 'Ratna Kalra',
@@ -146,12 +174,12 @@ const Testimonials = () => {
                         return (
                             <div key={actualIndex} className="testimonial-text-card">
                                 <div className="testimonial-header">
-                                    <img
-                                        src={testimonial.avatar}
-                                        alt={testimonial.name}
+                                    <div
                                         className="testimonial-avatar"
-                                        loading="lazy"
-                                    />
+                                        style={{ backgroundColor: getAvatarColor(actualIndex) }}
+                                    >
+                                        {getInitials(testimonial.name)}
+                                    </div>
                                     <h3 className="testimonial-name">{testimonial.name}</h3>
                                 </div>
                                 <p className="testimonial-text">{testimonial.text}</p>

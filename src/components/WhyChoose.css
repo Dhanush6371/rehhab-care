@@ -18,11 +18,16 @@
 }
 
 .why-choose-title {
-    font-size: 48px;
-    font-weight: 700;
-    color: var(--color-text-primary);
+    font-size: var(--heading-font-size);
+    font-weight: var(--heading-font-weight);
+    color: var(--heading-color);
     margin: 0 0 48px 0;
-    line-height: 1.2;
+    line-height: var(--heading-line-height);
+    font-family: var(--heading-font-family);
+    letter-spacing: var(--heading-letter-spacing);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 .why-choose-title .highlight {
@@ -134,7 +139,7 @@
     }
 
     .why-choose-title {
-        font-size: 42px;
+        font-size: var(--heading-font-size-tablet);
         margin-bottom: 40px;
     }
 
@@ -149,7 +154,7 @@
     }
 
     .why-choose-title {
-        font-size: 36px;
+        font-size: var(--heading-font-size-mobile);
         margin-bottom: 36px;
     }
 

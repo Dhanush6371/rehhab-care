@@ -27,7 +27,7 @@ const Team = () => {
 
     const teamMembers = [
         {
-            name: 'Dr. M. Mallikarjuna (PT)',
+            name: 'Dr. M. Mallikarjuna',
             role: 'Senior Orthopedic & Neuro Physiotherapist',
             experience: '5+ YEARS EXP.',
             image: '/images/team-1.jpg',
@@ -47,7 +47,7 @@ const Team = () => {
             languages: ['English', 'Telugu', 'Hindi']
         },
         {
-            name: 'Nanda Kumar Raju Dandu (PT)',
+            name: 'Nanda Kumar Raju Dandu',
             role: 'Senior Physiotherapist',
             experience: '10+ YEARS EXP.',
             image: '/images/team-2.jpg',
@@ -67,7 +67,7 @@ const Team = () => {
             languages: ['English', 'Telugu', 'Tamil', 'Hindi']
         },
         {
-            name: 'Dr. Durreshahewar (PT)',
+            name: 'Dr. Durreshahewar',
             role: 'Consultant Physiotherapist',
             experience: '5+ YEARS EXP.',
             image: '/images/team-3.jpg',
@@ -87,7 +87,7 @@ const Team = () => {
             languages: ['English', 'Hindi', 'Kannada', 'Urdu']
         },
         {
-            name: 'Nagendra Kumar Uaika (PT)',
+            name: 'Nagendra Kumar Uaika',
             role: 'Physiotherapist',
             experience: '3+ YEARS EXP.',
             image: '/images/team-4.jpg',
@@ -157,15 +157,11 @@ const Team = () => {
             <div className="team-container">
                 <Wrapper animation="fade-up">
                     <div className="team-header">
-                        <div className="team-header-left">
-                            <p className="team-label">OUR TEAM</p>
-                            <h2 className="team-title">Meet Your <span className="highlight">Recovery</span> Partners</h2>
-                        </div>
-                        <div className="team-header-right">
-                            <p className="team-subtitle">
-                                Our team of certified physiotherapists brings decades of combined experience to help you achieve your recovery goals.
-                            </p>
-                        </div>
+                        <p className="team-label">OUR TEAM</p>
+                        <h2 className="team-title">Meet Your <span className="highlight">Recovery</span> Partners</h2>
+                        <p className="team-subtitle">
+                            Our network of 300+ certified physiotherapists comprises verified, experienced, and senior male and female experts, ensuring high-quality care every time.
+                        </p>
                     </div>
                 </Wrapper>
 
@@ -199,7 +195,6 @@ const Team = () => {
                                     <div className="team-info">
                                         <h3 className="team-name">{member.name}</h3>
                                         <p className="team-role">{member.role}</p>
-                                        <p className="team-experience">{member.experience}</p>
                                         {member.specializations && (
                                             <div className="team-specializations">
                                                 {member.specializations.map((spec, idx) => (

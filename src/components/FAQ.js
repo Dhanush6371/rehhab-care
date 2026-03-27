@@ -85,6 +85,18 @@ const FAQ = () => {
                         ))}
                     </div>
                 </div>
+
+                {/* More Questions Section */}
+                <LazySection animation="fade-up" delay={100}>
+                    <div className="faq-more-section">
+                        <p className="faq-more-text">
+                            Still have questions? Explore our detailed FAQ page for comprehensive answers.
+                        </p>
+                        <a href="/faq" className="faq-detailed-btn">
+                            Detailed FAQs
+                        </a>
+                    </div>
+                </LazySection>
             </div>
         </section>
     );
