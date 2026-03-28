@@ -43,6 +43,19 @@ const Header = () => {
         setIsMenuOpen(false);
     };
 
+    const handleLogoClick = (e) => {
+        e.preventDefault();
+        setIsMenuOpen(false);
+
+        if (location.pathname !== '/') {
+            // Navigate to home page first, then scroll
+            navigate('/', { state: { scrollToSection: 'home' } });
+        } else {
+            // Scroll to top of page
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    };
+
     const handleNavClick = (e, sectionId) => {
         e.preventDefault();
         setIsMenuOpen(false);
@@ -51,9 +64,16 @@ const Header = () => {
             // Navigate to home page first, then scroll
             navigate('/', { state: { scrollToSection: sectionId } });
         } else {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (sectionId === 'home') {
+                // Scroll to top for home
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    const headerHeight = 80; // Approximate header height
+                    const sectionTop = section.offsetTop - headerHeight;
+                    window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+                }
             }
         }
     };
@@ -61,10 +81,9 @@ const Header = () => {
     return (
         <header className="header">
             <nav className="navbar">
-                <Link to="/" className="logo">
-                    <img src="/images/logo.png" alt="Rebuild Care" fetchpriority="high" />
-                    <span>Rehabb Care</span>
-                </Link>
+                <a href="/" className="logo" onClick={handleLogoClick}>
+                    <img src="/images/logo-2.png" alt="Rehabb Care" fetchpriority="high" />
+                </a>
 
                 <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                     <li><a href="/" onClick={(e) => handleNavClick(e, 'home')}>HOME</a></li>

@@ -8,42 +8,50 @@ const Hero = () => {
     const painPointData = {
         neck: {
             title: 'Neck',
-            description: "We've treated 1,000+ neck pain cases - right at home.",
+            stat: "We've treated 1,000+ neck pain cases - right at home.",
+            description: "Neck pain can result from poor posture, muscle strain, or underlying conditions. It often leads to headaches and reduced mobility.",
             image: '/images/neck_pain.webp'
         },
         shoulder: {
             title: 'Shoulder',
-            description: '1,500+ patients have been put back on their feet with our care.',
+            stat: '1,500+ patients have been put back on their feet with our care.',
+            description: 'Shoulder pain can stem from rotator cuff injuries, frozen shoulder, or repetitive strain. It significantly impacts daily activities.',
             image: '/images/Shoulder_pain.webp'
         },
         elbow: {
             title: 'Elbow',
-            description: 'Most elbow pain cases improve in under 5 sessions. We can do it for you too.',
+            stat: 'Most elbow pain cases improve in under 5 sessions. We can do it for you too.',
+            description: 'Most elbow pain cases improve in under 5 sessions with targeted physiotherapy. We can help you recover faster.',
             image: '/images/elbow.webp'
         },
         wrist: {
             title: 'Wrist',
-            description: 'Our patients are back to daily tasks in 2 weeks. You can too.',
+            stat: 'Our patients are back to daily tasks in 2 weeks. You can too.',
+            description: 'Wrist pain from carpal tunnel, sprains, or repetitive strain can affect typing, writing, and daily hand movements.',
             image: '/images/wrist.webp'
         },
         lowerBack: {
             title: 'Lower Back',
-            description: '2,000+ families trust us for back pain recovery at home.',
+            stat: '2,000+ families trust us for back pain recovery at home.',
+            description: 'Lower back pain is the leading cause of disability worldwide. It can result from muscle strain, disc issues, or poor biomechanics.',
             image: '/images/lowerback.webp'
         },
         hip: {
             title: 'Hip',
-            description: '600+ have regained walking confidence with our structured rehab.',
+            stat: '600+ have regained walking confidence with our structured rehab.',
+            description: 'Hip pain can be caused by arthritis, bursitis, or muscle strains. It affects walking, sitting, and overall quality of life.',
             image: '/images/hip_pain.png'
         },
         knee: {
             title: 'Knee',
-            description: '8 out of 10 knee pain patients improve without needing surgery.',
+            stat: '8 out of 10 knee pain patients improve without needing surgery.',
+            description: 'Knee pain is often related to injuries, arthritis, or overuse. It can severely limit mobility and athletic performance.',
             image: '/images/knee.webp'
         },
         ankle: {
             title: 'Ankle',
-            description: '500+ patients have been put back on their feet with our care.',
+            stat: '500+ patients have been put back on their feet with our care.',
+            description: 'Ankle pain from sprains, strains, or instability can lead to chronic issues if not properly rehabilitated.',
             image: '/images/ankle.webp'
         }
     };
@@ -183,7 +191,13 @@ const Hero = () => {
                             <div className="pain-content-wrapper">
                                 {/* Pain Description */}
                                 <div className="pain-text" key={activePainPoint}>
-                                    <h2>{currentPainPoint.title}</h2>
+                                    <h2>{currentPainPoint.title} Pain</h2>
+
+                                    {/* Statistic Callout */}
+                                    <div className="pain-stat-box">
+                                        {currentPainPoint.stat}
+                                    </div>
+
                                     <p>{currentPainPoint.description}</p>
 
                                     {/* CTA Button */}

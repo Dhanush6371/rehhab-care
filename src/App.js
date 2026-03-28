@@ -32,11 +32,27 @@ function HomePage() {
     const location = useLocation();
 
     useEffect(() => {
-        if (location.state?.scrollTo === 'appointment') {
+        if (location.state?.scrollToAppointment) {
             setTimeout(() => {
-                const appointmentSection = document.getElementById('appointment');
+                const appointmentSection = document.querySelector('.appointment-section');
                 if (appointmentSection) {
-                    appointmentSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    const headerHeight = 80;
+                    const sectionTop = appointmentSection.offsetTop - headerHeight;
+                    window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+                }
+            }, 300);
+        } else if (location.state?.scrollToSection) {
+            setTimeout(() => {
+                const sectionId = location.state.scrollToSection;
+                if (sectionId === 'home') {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    const section = document.getElementById(sectionId);
+                    if (section) {
+                        const headerHeight = 80;
+                        const sectionTop = section.offsetTop - headerHeight;
+                        window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+                    }
                 }
             }, 300);
         }
