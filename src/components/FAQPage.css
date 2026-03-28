@@ -8,6 +8,7 @@
     font-family: var(--font-sans);
     min-height: 100vh;
     background: linear-gradient(to bottom, #E1F5EE 0%, var(--color-bg-primary) 300px);
+    padding-top: 80px;
 }
 
 .topbar {

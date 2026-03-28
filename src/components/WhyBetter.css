@@ -1,11 +1,14 @@
 .why-better-section {
     background: var(--color-bg-secondary);
     padding: 80px 80px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .why-better-container {
     max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .why-better-content {
@@ -514,6 +517,23 @@
 @media (max-width: 768px) {
     .why-better-section {
         padding: 48px 24px;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .why-better-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .why-better-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .content-left {
+        width: 100%;
+        max-width: 100%;
     }
 
     .section-label {
@@ -526,48 +546,57 @@
         line-height: 1.3;
         word-wrap: break-word;
         overflow-wrap: break-word;
-    }
-
-    .why-better-section .section-title .no-break {
-        white-space: nowrap;
-        display: inline-block;
+        width: 100%;
         max-width: 100%;
     }
 
-    .why-better-section .section-title .highlight-box {
-        white-space: nowrap;
-        display: inline-block;
-        padding: 3px 12px;
-        font-size: var(--heading-font-size-mobile);
+    .why-better-section .section-title .no-break {
+        white-space: normal;
+        display: block;
+        max-width: 100%;
+    }
+
+    .why-better-section .section-title br {
+        display: none;
     }
 
     .why-better-section .section-title .title-normal {
-        display: inline;
+        display: block;
     }
 
     .section-description {
         font-size: 14px;
         line-height: 1.6;
+        width: 100%;
+        max-width: 100%;
     }
 
     .action-buttons {
         flex-direction: column;
         width: 100%;
+        max-width: 100%;
     }
 
     .book-visit-btn,
     .comparison-btn {
         width: 100%;
+        max-width: 100%;
         justify-content: center;
+        box-sizing: border-box;
     }
 
     .benefits-grid {
         grid-template-columns: 1fr;
         gap: 16px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .benefit-card {
         padding: 24px 20px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .benefit-title {
@@ -581,6 +610,9 @@
     .comparison-popup {
         padding: 40px 28px;
         max-height: 85vh;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .comparison-header h2 {
@@ -595,17 +627,30 @@
         min-height: 60px;
         padding: 18px 16px;
         font-size: 14px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .popup-check-btn {
         padding: 15px 40px;
         font-size: 14px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 }
 
 @media (max-width: 480px) {
     .why-better-section {
         padding: 40px 20px;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .why-better-container {
+        width: 100%;
+        max-width: 100%;
     }
 
     .section-label {
@@ -616,6 +661,8 @@
     .why-better-section .section-title {
         font-size: var(--heading-font-size-small);
         line-height: 1.4;
+        width: 100%;
+        max-width: 100%;
     }
 
     .why-better-section .section-title .highlight-box {
@@ -626,20 +673,28 @@
     .section-description {
         font-size: 13px;
         line-height: 1.6;
+        width: 100%;
+        max-width: 100%;
     }
 
     .book-visit-btn {
         padding: 14px 28px;
         font-size: 15px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .comparison-btn {
         padding: 12px 24px;
         font-size: 11px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .benefit-card {
         padding: 20px 16px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .benefit-icon {
@@ -664,6 +719,8 @@
 
     .comparison-popup {
         padding: 32px 20px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .popup-close {
@@ -687,6 +744,8 @@
         padding: 16px 12px;
         font-size: 13px;
         min-height: 50px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .check-icon,
@@ -696,5 +755,6 @@
 
     .popup-check-btn {
         width: 100%;
+        max-width: 100%;
     }
 }

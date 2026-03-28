@@ -59,12 +59,12 @@ const Footer = () => {
                     <div className="footer-column">
                         <h3 className="footer-column-title">Our Services</h3>
                         <ul className="footer-links">
-                            <li><a href="#services">Back & Neck Pain</a></li>
-                            <li><a href="#services">Knee & Ankle Pain</a></li>
-                            <li><a href="#services">Shoulder & Elbow Rehab</a></li>
-                            <li><a href="#services">Post-Surgery Rehab</a></li>
-                            <li><a href="#services">Paralysis / Stroke Rehab</a></li>
-                            <li><a href="#services">Geriatric Physiotherapy</a></li>
+                            <li><Link to="/services/back-neck-pain" onClick={scrollToTop}>Back & Neck Pain</Link></li>
+                            <li><Link to="/services/knee-ankle-pain" onClick={scrollToTop}>Knee & Ankle Pain</Link></li>
+                            <li><Link to="/services/shoulder-elbow-pain" onClick={scrollToTop}>Shoulder & Elbow Rehab</Link></li>
+                            <li><Link to="/services/post-surgery" onClick={scrollToTop}>Post-Surgery Rehab</Link></li>
+                            <li><Link to="/services/post-operative" onClick={scrollToTop}>Paralysis / Stroke Rehab</Link></li>
+                            <li><Link to="/services/geriatric-care" onClick={scrollToTop}>Geriatric Physiotherapy</Link></li>
                             <li><a href="#services">Sports Injury Rehab</a></li>
                         </ul>
                     </div>
