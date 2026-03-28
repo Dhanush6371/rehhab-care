@@ -158,7 +158,7 @@ const WhyBetter = () => {
                         </div>
 
                         <a
-                            href="https://wa.me/919653148777?text=Hi%2C%20I%20would%20like%20to%20check%20availability%20for%20physiotherapy%20services"
+                            href="https://wa.me/+919045678345?text=Hi%2C%20I%20would%20like%20to%20check%20availability%20for%20physiotherapy%20services"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="popup-check-btn-link"
