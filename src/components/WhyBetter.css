@@ -420,6 +420,13 @@
     font-weight: 700;
 }
 
+.popup-check-btn-link {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
 .popup-check-btn {
     background: var(--color-primary);
     color: var(--color-bg-primary);

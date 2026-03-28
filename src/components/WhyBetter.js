@@ -157,7 +157,14 @@ const WhyBetter = () => {
                             ))}
                         </div>
 
-                        <button className="popup-check-btn">Check Availability</button>
+                        <a
+                            href="https://wa.me/919653148777?text=Hi%2C%20I%20would%20like%20to%20check%20availability%20for%20physiotherapy%20services"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="popup-check-btn-link"
+                        >
+                            <button className="popup-check-btn">Check Availability</button>
+                        </a>
                     </div>
                 </div>
             )}
