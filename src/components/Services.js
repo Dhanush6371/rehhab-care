@@ -8,42 +8,42 @@ const Services = () => {
             id: 1,
             category: 'Pain Management',
             title: 'Back & Neck Pain Physiotherapy',
-            image: '/images/service-1.png',
+            image: '/images/service-1.webp',
             link: '/services/back-neck-pain'
         },
         {
             id: 2,
             category: 'Joint Care',
             title: 'Knee & Ankle Pain Physiotherapy',
-            image: '/images/service-2.png',
+            image: '/images/service-2.webp',
             link: '/services/knee-ankle-pain'
         },
         {
             id: 3,
             category: 'Rehabilitation',
             title: 'Shoulder & Elbow Rehabilitation',
-            image: '/images/service-3.png',
+            image: '/images/service-3.webp',
             link: '/services/shoulder-elbow-pain'
         },
         {
             id: 4,
             category: 'Geriatric Care',
             title: 'Geriatric Physiotherapy',
-            image: '/images/service-4.png',
+            image: '/images/service-4.webp',
             link: '/services/geriatric-care'
         },
         {
             id: 5,
             category: 'Post-Surgery',
             title: 'Post-Surgery Rehabilitation',
-            image: '/images/service-5.png',
+            image: '/images/service-5.webp',
             link: '/services/post-surgery'
         },
         {
             id: 6,
             category: 'Neuro Rehabilitation',
             title: 'Stroke, Paralysis & Neuro Recovery',
-            image: '/images/service-6.png',
+            image: '/images/service-6.webp',
             link: '/services/post-operative'
         }
     ];

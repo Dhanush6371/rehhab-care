@@ -40,7 +40,7 @@ const Hero = () => {
             title: 'Hip',
             stat: '600+ have regained walking confidence with our structured rehab.',
             description: 'Hip pain can be caused by arthritis, bursitis, or muscle strains. It affects walking, sitting, and overall quality of life.',
-            image: '/images/hip_pain.png'
+            image: '/images/hip_pain.webp'
         },
         knee: {
             title: 'Knee',
