@@ -2,12 +2,12 @@
 
 .testimonials-section {
     background: var(--color-bg-secondary);
-    padding: 80px 20px;
+    padding: 80px 60px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 .testimonials-container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 

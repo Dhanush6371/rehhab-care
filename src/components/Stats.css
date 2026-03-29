@@ -1,6 +1,6 @@
 .stats-section {
     background: var(--color-bg-secondary);
-    padding: 60px 40px 80px;
+    padding: 60px 60px 80px;
     margin: 0;
     position: relative;
     z-index: 3;
@@ -12,7 +12,7 @@
     color: var(--heading-color);
     margin: 0 0 var(--heading-margin-bottom) 0;
     text-align: left;
-    max-width: 1400px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
     font-family: var(--heading-font-family);
@@ -31,7 +31,7 @@
 
 /* Stats Cards Container */
 .stats-combined-container {
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
     background: var(--color-bg-primary);
     border-radius: 20px;

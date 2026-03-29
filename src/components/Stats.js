@@ -16,84 +16,6 @@ const Stats = () => {
         error: null
     });
 
-    const [locationDetecting, setLocationDetecting] = useState(false);
-
-    // Remove auto-detect on mount - only detect when user clicks
-
-    const detectLocation = async () => {
-        setLocationDetecting(true);
-
-        if ('geolocation' in navigator) {
-            try {
-                const position = await new Promise((resolve, reject) => {
-                    navigator.geolocation.getCurrentPosition(resolve, reject, {
-                        timeout: 10000,
-                        enableHighAccuracy: true
-                    });
-                });
-
-                const { latitude, longitude } = position.coords;
-
-                // Use reverse geocoding to get city name
-                const response = await fetch(
-                    `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`,
-                    {
-                        headers: {
-                            'User-Agent': 'RebuildCare/1.0'
-                        }
-                    }
-                );
-                const data = await response.json();
-
-                // Extract all possible location identifiers
-                const detectedLocations = [
-                    data.address?.city,
-                    data.address?.town,
-                    data.address?.village,
-                    data.address?.state_district,
-                    data.address?.county,
-                    data.address?.state
-                ].filter(Boolean).map(loc => loc.toLowerCase());
-
-                console.log('Detected locations:', detectedLocations);
-                console.log('Full address data:', data.address);
-
-                // Build location string with town/village and nearby city/district
-                const primaryLocation = data.address?.village || data.address?.town || data.address?.city || '';
-                const secondaryLocation = data.address?.state_district || data.address?.county || data.address?.city || '';
-
-                let detectedLocation = '';
-
-                // If we have both and they're different, combine them
-                if (primaryLocation && secondaryLocation &&
-                    primaryLocation.toLowerCase() !== secondaryLocation.toLowerCase()) {
-                    detectedLocation = `${primaryLocation}, ${secondaryLocation}`;
-                } else if (primaryLocation) {
-                    detectedLocation = primaryLocation;
-                } else if (secondaryLocation) {
-                    detectedLocation = secondaryLocation;
-                }
-
-                console.log('Selected location:', detectedLocation);
-
-                if (detectedLocation) {
-                    setFormData(prev => ({ ...prev, location: detectedLocation }));
-                }
-            } catch (error) {
-                console.log('Location detection failed:', error);
-            }
-        }
-
-        setLocationDetecting(false);
-    };
-
-    const handleLocationClick = () => {
-        // Only detect location when user clicks on the input
-        if (!formData.location && !locationDetecting) {
-            detectLocation();
-        }
-    };
-
     const handleChange = (e) => {
         setFormData({
             ...formData,
@@ -218,11 +140,9 @@ const Stats = () => {
                                     <input
                                         type="text"
                                         name="location"
-                                        placeholder={locationDetecting ? 'Detecting locality...' : 'Click to detect locality'}
+                                        placeholder="Gachibowli"
                                         value={formData.location}
                                         onChange={handleChange}
-                                        onClick={handleLocationClick}
-                                        disabled={locationDetecting}
                                     />
                                 </div>
                                 <button

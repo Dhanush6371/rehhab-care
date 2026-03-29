@@ -1,11 +1,11 @@
 .services-section {
     background: var(--color-bg-secondary);
-    padding: 80px 80px;
+    padding: 80px 60px;
     margin: 0;
 }
 
 .services-container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 

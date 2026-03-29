@@ -154,7 +154,7 @@ const Team = () => {
                 <Wrapper animation="fade-up">
                     <div className="team-header">
                         <p className="team-label">OUR TEAM</p>
-                        <h2 className="team-title"><span className="title-line-1">Meet Your <span className="highlight">Recovery</span></span> <span className="title-line-2">Partners</span></h2>
+                        <h2 className="team-title"><span className="title-line-1">Meet Your </span> <span className="title-line-2"><span className="highlight">Recovery</span>Partners</span></h2>
                         <p className="team-subtitle">
                             Our network of 300+ certified physiotherapists comprises verified, experienced, and senior male and female experts, ensuring high-quality care every time.
                         </p>

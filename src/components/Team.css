@@ -1,6 +1,6 @@
 .team-section {
     background: var(--color-bg-secondary);
-    padding: 100px 40px;
+    padding: 100px 60px;
     position: relative;
     overflow: hidden;
 }
@@ -174,8 +174,8 @@
     background: var(--color-bg-primary);
     border: 2px solid var(--color-border-light);
     color: var(--color-text-primary);
-    font-size: 32px;
-    font-weight: 300;
+    font-size: 28px;
+    font-weight: 400;
     cursor: pointer;
     z-index: 10;
     transition: all 0.3s ease;
@@ -183,6 +183,9 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 6px 20px var(--shadow-black-md);
+    line-height: 0;
+    padding: 0;
+    padding-bottom: 2px;
 }
 
 .carousel-arrow:hover:not(.disabled) {
