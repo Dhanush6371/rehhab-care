@@ -111,7 +111,7 @@ const KneeAnkleService = () => {
                         </div>
                         <div className="ka-stat-item">
                             <span className="ka-stat-icon">✓</span>
-                            <span>Trusted by 2000+ families</span>
+                            <span>Trusted by 2,000+ families</span>
                         </div>
                         <div className="ka-stat-item">
                             <span className="ka-stat-icon">✓</span>
@@ -139,7 +139,7 @@ const KneeAnkleService = () => {
                         <p>Sessions Completed</p>
                     </div>
                     <div className="ka-stat">
-                        <h3>2000+</h3>
+                        <h3>2,000+</h3>
                         <p>Families Served</p>
                     </div>
                     <div className="ka-stat">
@@ -300,7 +300,7 @@ const KneeAnkleService = () => {
                         <p>Sessions Completed</p>
                     </div>
                     <div className="ka-final-stat">
-                        <h3>2000+</h3>
+                        <h3>2,000+</h3>
                         <p>Happy Families</p>
                     </div>
                     <div className="ka-final-stat">

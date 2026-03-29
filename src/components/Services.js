@@ -6,43 +6,43 @@ const Services = () => {
     const services = [
         {
             id: 1,
-            category: 'Pain Management',
+            category: 'Spine & Posture',
             title: 'Back & Neck Pain Physiotherapy',
             image: '/images/service-1.webp',
             link: '/services/back-neck-pain'
         },
         {
             id: 2,
-            category: 'Joint Care',
+            category: 'Knee & Joint Care',
             title: 'Knee & Ankle Pain Physiotherapy',
             image: '/images/service-2.webp',
             link: '/services/knee-ankle-pain'
         },
         {
             id: 3,
-            category: 'Rehabilitation',
-            title: 'Shoulder & Elbow Rehabilitation',
+            category: 'Upper Body Care',
+            title: 'Shoulder & Elbow Physiotherapy',
             image: '/images/service-3.webp',
             link: '/services/shoulder-elbow-pain'
         },
         {
             id: 4,
-            category: 'Geriatric Care',
-            title: 'Geriatric Physiotherapy',
+            category: 'Elder Care',
+            title: 'Elderly & Senior Care',
             image: '/images/service-4.webp',
             link: '/services/geriatric-care'
         },
         {
             id: 5,
             category: 'Post-Surgery',
-            title: 'Post-Surgery Rehabilitation',
+            title: 'Post-Surgery Physiotherapy',
             image: '/images/service-5.webp',
             link: '/services/post-surgery'
         },
         {
             id: 6,
             category: 'Neuro Rehabilitation',
-            title: 'Stroke, Paralysis & Neuro Recovery',
+            title: 'Stroke & Neuro Rehabilitation',
             image: '/images/service-6.webp',
             link: '/services/post-operative'
         }

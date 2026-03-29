@@ -116,7 +116,7 @@ const PostSurgeryService = () => {
                         </div>
                         <div className="ps-stat-item">
                             <span className="ps-stat-icon">✓</span>
-                            <span>Trusted by 2000+ families</span>
+                            <span>Trusted by 2,000+ families</span>
                         </div>
                         <div className="ps-stat-item">
                             <span className="ps-stat-icon">✓</span>
@@ -144,7 +144,7 @@ const PostSurgeryService = () => {
                         <p>Sessions Completed</p>
                     </div>
                     <div className="ps-stat">
-                        <h3>2000+</h3>
+                        <h3>2,000+</h3>
                         <p>Families Served</p>
                     </div>
                     <div className="ps-stat">
@@ -305,7 +305,7 @@ const PostSurgeryService = () => {
                         <p>Sessions Completed</p>
                     </div>
                     <div className="ps-final-stat">
-                        <h3>2000+</h3>
+                        <h3>2,000+</h3>
                         <p>Happy Families</p>
                     </div>
                     <div className="ps-final-stat">

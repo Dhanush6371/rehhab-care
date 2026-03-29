@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './WhyBetter.css';
 
 const WhyBetter = () => {
     const [showComparison, setShowComparison] = useState(false);
+    const navigate = useNavigate();
+
+    const handleBookVisit = () => {
+        navigate('/', { state: { scrollToAppointment: true } });
+    };
 
     const benefits = [
         {
@@ -77,14 +83,14 @@ const WhyBetter = () => {
                     <div className="content-left">
                         <p className="section-label">AT-HOME SERVICE</p>
                         <h2 className="section-title">
-                            <span className="title-normal"><span className="no-break">Professional <span className="highlight-box">Physiotherapy</span>,</span><br />Delivered Home</span>
+                            <span className="title-normal"><span className="no-break">Professional Physiotherapy,</span><br /><span className="highlight-box">Delivered Home</span></span>
                         </h2>
                         <p className="section-description">
                             Skip the commute and waiting rooms. Our certified physiotherapists come to you with all the necessary equipment for a complete rehabilitation experience.
                         </p>
 
                         <div className="action-buttons">
-                            <button className="book-visit-btn">
+                            <button className="book-visit-btn" onClick={handleBookVisit}>
                                 <span className="home-icon">🏠</span>
                                 Book Home Visit
                             </button>

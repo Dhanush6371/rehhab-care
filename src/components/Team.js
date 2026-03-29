@@ -29,7 +29,6 @@ const Team = () => {
         {
             name: 'Dr. M. Mallikarjuna',
             role: 'Senior Orthopedic & Neuro Physiotherapist',
-            experience: '5+ YEARS EXP.',
             image: '/images/team-1.jpg',
             specializations: ['Post-Surgery Rehab', 'Neuro Rehab', 'Back & Neck Pain', '+3'],
             id: 'mallikarjuna',
@@ -49,7 +48,6 @@ const Team = () => {
         {
             name: 'Nanda Kumar Raju Dandu',
             role: 'Senior Physiotherapist',
-            experience: '10+ YEARS EXP.',
             image: '/images/team-2.jpg',
             specializations: ['Back & Neck Pain', 'Neuro Rehab', 'Joint Pain', '+3'],
             id: 'nanda-kumar',
@@ -69,7 +67,6 @@ const Team = () => {
         {
             name: 'Dr. Durreshahewar',
             role: 'Consultant Physiotherapist',
-            experience: '5+ YEARS EXP.',
             image: '/images/team-3.jpg',
             specializations: ['ICU & Critical Care', 'Neuro Rehab', 'Cardiac Rehab', '+3'],
             id: 'durreshahewar',
@@ -89,7 +86,6 @@ const Team = () => {
         {
             name: 'Nagendra Kumar Uaika',
             role: 'Physiotherapist',
-            experience: '3+ YEARS EXP.',
             image: '/images/team-4.jpg',
             specializations: ['Ortho & Neuro', 'Home Care', 'Pain Management', '+3'],
             id: 'nagendra-kumar',

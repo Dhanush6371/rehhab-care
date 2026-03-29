@@ -5,7 +5,6 @@ import './FAQPage.css';
 const FAQPage = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [activeSection, setActiveSection] = useState('all');
-    const [openCard, setOpenCard] = useState(null);
     const [showScrollTop, setShowScrollTop] = useState(false);
     const navigate = useNavigate();
 
@@ -24,14 +23,9 @@ const FAQPage = () => {
         };
     }, []);
 
-    const toggleCard = (cardId) => {
-        setOpenCard(openCard === cardId ? null : cardId);
-    };
-
     const showSection = (key) => {
         setActiveSection(key);
         setSearchQuery('');
-        setOpenCard(null);
     };
 
     const filterCards = (value) => {
@@ -123,7 +117,7 @@ const FAQPage = () => {
                     id: 'q10',
                     num: 'Q10',
                     question: 'How much does a session cost in Hyderabad?',
-                    answer: '₹500–₹1,000 per visit depending on treatment type. Package pricing available for regular sessions — ask when you book.',
+                    answer: '₹500 - ₹1,500 per visit depending on treatment type. Package pricing available for regular sessions — ask when you book.',
                     tags: 'pricing cost how much hyderabad'
                 },
                 {
@@ -264,9 +258,9 @@ const FAQPage = () => {
 
             <div className="content">
                 <div className="stats-row">
-                    <div className="stat"><div className="stat-num">₹500–₹1k</div><div className="stat-label">per session</div></div>
+                    <div className="stat"><div className="stat-num">₹500 - ₹1,500</div><div className="stat-label">per session</div></div>
                     <div className="stat"><div className="stat-num">24 hrs</div><div className="stat-label">first visit</div></div>
-                    <div className="stat"><div className="stat-num">All Hyd</div><div className="stat-label">coverage</div></div>
+                    <div className="stat"><div className="stat-num">All Hyderabad</div><div className="stat-label">coverage</div></div>
                 </div>
 
                 {searchQuery && !hasVisibleQuestions() ? (
@@ -287,15 +281,13 @@ const FAQPage = () => {
                                         shouldShowQuestion(q) && (
                                             <div
                                                 key={q.id}
-                                                className={`q-card ${openCard === q.id ? 'open' : ''}`}
-                                                onClick={() => toggleCard(q.id)}
+                                                className="q-card open"
                                             >
                                                 <div className="q-card-top">
                                                     <span className="q-num">{q.num}</span>
                                                     <span className="q-text">{q.question}</span>
-                                                    <span className={`q-arrow ${openCard === q.id ? 'open' : ''}`}>›</span>
                                                 </div>
-                                                <div className={`q-answer ${openCard === q.id ? 'open' : ''}`}>
+                                                <div className="q-answer open">
                                                     {q.answer}
                                                 </div>
                                             </div>
@@ -310,7 +302,7 @@ const FAQPage = () => {
                 <div className="bottom-cta">
                     <div className="bottom-cta-left">
                         <p>Didn't find your answer?</p>
-                        <p>WhatsApp us — we reply within a few hours, every day.</p>
+                        <p>WhatsApp us — we reply within a few minutes, every day</p>
                     </div>
                     <button
                         className="bottom-cta-btn"

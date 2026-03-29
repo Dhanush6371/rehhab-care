@@ -116,7 +116,7 @@ const ShoulderElbowService = () => {
                         </div>
                         <div className="se-stat-item">
                             <span className="se-stat-icon">✓</span>
-                            <span>Trusted by 2000+ families</span>
+                            <span>Trusted by 2,000+ families</span>
                         </div>
                         <div className="se-stat-item">
                             <span className="se-stat-icon">✓</span>
@@ -144,7 +144,7 @@ const ShoulderElbowService = () => {
                         <p>Sessions Completed</p>
                     </div>
                     <div className="se-stat">
-                        <h3>2000+</h3>
+                        <h3>2,000+</h3>
                         <p>Families Served</p>
                     </div>
                     <div className="se-stat">
@@ -305,7 +305,7 @@ const ShoulderElbowService = () => {
                         <p>Sessions Completed</p>
                     </div>
                     <div className="se-final-stat">
-                        <h3>2000+</h3>
+                        <h3>2,000+</h3>
                         <p>Happy Families</p>
                     </div>
                     <div className="se-final-stat">

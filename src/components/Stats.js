@@ -208,15 +208,14 @@ const Stats = () => {
                                     />
                                 </div>
                                 <div className="form-group">
-                                    <label>Location</label>
+                                    <label>Locality</label>
                                     <input
                                         type="text"
                                         name="location"
-                                        placeholder={locationDetecting ? 'Detecting location...' : 'Click to detect location'}
+                                        placeholder={locationDetecting ? 'Detecting locality...' : 'Click to detect locality'}
                                         value={formData.location}
                                         onChange={handleChange}
                                         onClick={handleLocationClick}
-                                        required
                                         disabled={locationDetecting}
                                     />
                                 </div>

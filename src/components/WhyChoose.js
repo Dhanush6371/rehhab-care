@@ -51,7 +51,7 @@ const WhyChoose = () => {
             <div className="why-choose-container">
                 <div className="why-choose-content">
                     <LazySection animation="fade-up">
-                        <h2 className="why-choose-title">Why Choose <span className="highlight">Rehab</span> Care?</h2>
+                        <h2 className="why-choose-title">Why Choose <span className="highlight">Rehabb Care?</span> </h2>
                     </LazySection>
 
                     <div className="why-choose-features">

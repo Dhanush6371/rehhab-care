@@ -8,7 +8,7 @@
     font-family: var(--font-sans);
     min-height: 100vh;
     background: linear-gradient(to bottom, #E1F5EE 0%, var(--color-bg-primary) 300px);
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .topbar {
@@ -101,7 +101,7 @@
     width: 18px;
     height: 18px;
     flex-shrink: 0;
-    color: var(--color-accent-green);
+    color: #7cb342;
     transition: color 0.3s;
 }
 
@@ -120,7 +120,7 @@
 }
 
 .search-wrap input::placeholder {
-    color: var(--color-accent-green);
+    color: #7cb342;
 }
 
 .pill-row {
@@ -135,7 +135,7 @@
     font-size: 13px;
     padding: 8px 18px;
     border-radius: 24px;
-    border: 1.5px solid var(--color-accent-green);
+    border: 1.5px solid #7cb342;
     color: var(--color-primary);
     background: var(--color-bg-primary);
     cursor: pointer;
@@ -210,13 +210,12 @@
     border: 2px solid #E8F6F1;
     border-radius: 16px;
     padding: 1.25rem 1.5rem;
-    cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .q-card:hover {
-    border-color: var(--color-accent-green);
+    border-color: #7cb342;
     box-shadow: 0 6px 20px var(--shadow-primary-md);
     transform: translateY(-4px);
 }
@@ -243,7 +242,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--color-accent-green) 0%, var(--color-accent-green-dark) 100%);
+    background: linear-gradient(135deg, #7cb342 0%, #689f38 100%);
     border-radius: 50%;
     flex-shrink: 0;
     position: relative;
@@ -260,11 +259,12 @@
 
 .q-arrow {
     font-size: 20px;
-    color: var(--color-accent-green);
+    color: #7cb342;
     flex-shrink: 0;
     transition: all 0.3s ease;
     margin-top: -1px;
     font-weight: bold;
+    display: none;
 }
 
 .q-card:hover .q-arrow {
@@ -278,15 +278,14 @@
 
 .q-answer {
     font-size: 13.5px;
-    color: var(--color-text-secondary, #555);
+    color: #333;
     line-height: 1.8;
-    margin-top: 0;
-    padding-top: 0;
+    margin-top: 1rem;
+    padding-top: 1rem;
     padding-left: 34px;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: all 0.4s ease;
+    border-top: 2px solid #E8F6F1;
+    opacity: 1;
+    visibility: visible;
 }
 
 .q-answer.open {
@@ -295,6 +294,7 @@
     border-top: 2px solid #E8F6F1;
     max-height: 500px;
     opacity: 1;
+    visibility: visible;
 }
 
 .bottom-cta {
@@ -394,7 +394,7 @@
 }
 
 .stat:hover {
-    border-color: var(--color-accent-green);
+    border-color: #7cb342;
     transform: translateY(-4px);
     box-shadow: 0 6px 20px var(--shadow-primary-md);
 }
@@ -502,7 +502,7 @@
 }
 
 .quick-link-card:hover {
-    border-color: var(--color-accent-green);
+    border-color: #7cb342;
     transform: translateY(-4px);
     box-shadow: 0 6px 20px var(--shadow-primary-md);
 }

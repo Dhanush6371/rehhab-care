@@ -7,12 +7,9 @@ const Appointment = () => {
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
-        email: '',
         serviceArea: '',
-        preferredDateTime: '',
         city: '',
-        pincode: '',
-        address: '',
+        locality: '',
         notes: ''
     });
 
@@ -42,12 +39,9 @@ const Appointment = () => {
             setFormData({
                 name: '',
                 phone: '',
-                email: '',
                 serviceArea: '',
-                preferredDateTime: '',
                 city: '',
-                pincode: '',
-                address: '',
+                locality: '',
                 notes: ''
             });
 
@@ -130,18 +124,6 @@ const Appointment = () => {
 
                             <div className="form-row-two">
                                 <div className="form-group">
-                                    <label className="form-label">EMAIL</label>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        className="form-input"
-                                        placeholder="john@example.com"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div>
-                                <div className="form-group">
                                     <label className="form-label">SELECT YOUR CONCERN</label>
                                     <select
                                         name="serviceArea"
@@ -161,27 +143,13 @@ const Appointment = () => {
                                         <option value="Other">Other (Not sure / Need guidance)</option>
                                     </select>
                                 </div>
-                            </div>
-
-                            <div className="form-row-two">
-                                <div className="form-group">
-                                    <label className="form-label">PREFERRED DATE & TIME</label>
-                                    <input
-                                        type="datetime-local"
-                                        name="preferredDateTime"
-                                        className="form-input"
-                                        value={formData.preferredDateTime}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div>
                                 <div className="form-group">
                                     <label className="form-label">CITY</label>
                                     <input
                                         type="text"
                                         name="city"
                                         className="form-input"
-                                        placeholder="Mumbai"
+                                        placeholder="Hyderabad"
                                         value={formData.city}
                                         onChange={handleChange}
                                         required
@@ -189,35 +157,21 @@ const Appointment = () => {
                                 </div>
                             </div>
 
-                            <div className="form-row-two">
-                                <div className="form-group">
-                                    <label className="form-label">PINCODE</label>
-                                    <input
-                                        type="text"
-                                        name="pincode"
-                                        className="form-input"
-                                        placeholder="110001"
-                                        value={formData.pincode}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label className="form-label">ADDRESS</label>
-                                    <input
-                                        type="text"
-                                        name="address"
-                                        className="form-input"
-                                        placeholder="Street address"
-                                        value={formData.address}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div>
+                            <div className="form-group">
+                                <label className="form-label">LOCALITY</label>
+                                <input
+                                    type="text"
+                                    name="locality"
+                                    className="form-input"
+                                    placeholder="Gachibowli"
+                                    value={formData.locality}
+                                    onChange={handleChange}
+                                    required
+                                />
                             </div>
 
                             <div className="form-group">
-                                <label className="form-label">NOTES (Optional)</label>
+                                <label className="form-label">NOTES (OPTIONAL)</label>
                                 <textarea
                                     name="notes"
                                     className="form-textarea"

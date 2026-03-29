@@ -193,12 +193,12 @@ const Hero = () => {
                                 <div className="pain-text" key={activePainPoint}>
                                     <h2>{currentPainPoint.title} Pain</h2>
 
+                                    <p>{currentPainPoint.description}</p>
+
                                     {/* Statistic Callout */}
                                     <div className="pain-stat-box">
                                         {currentPainPoint.stat}
                                     </div>
-
-                                    <p>{currentPainPoint.description}</p>
 
                                     {/* CTA Button */}
                                     <button className="btn-book" onClick={handleBookCall}>

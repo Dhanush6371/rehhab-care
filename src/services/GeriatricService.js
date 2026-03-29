@@ -116,7 +116,7 @@ const GeriatricService = () => {
                         </div>
                         <div className="gs-stat-item">
                             <span className="gs-stat-icon">✓</span>
-                            <span>Trusted by 2000+ families</span>
+                            <span>Trusted by 2,000+ families</span>
                         </div>
                         <div className="gs-stat-item">
                             <span className="gs-stat-icon">✓</span>
@@ -144,7 +144,7 @@ const GeriatricService = () => {
                         <p>Sessions Completed</p>
                     </div>
                     <div className="gs-stat">
-                        <h3>2000+</h3>
+                        <h3>2,000+</h3>
                         <p>Families Served</p>
                     </div>
                     <div className="gs-stat">
@@ -305,7 +305,7 @@ const GeriatricService = () => {
                         <p>Sessions Completed</p>
                     </div>
                     <div className="gs-final-stat">
-                        <h3>2000+</h3>
+                        <h3>2,000+</h3>
                         <p>Happy Families</p>
                     </div>
                     <div className="gs-final-stat">

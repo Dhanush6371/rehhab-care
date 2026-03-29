@@ -41,6 +41,15 @@ function HomePage() {
                     window.scrollTo({ top: sectionTop, behavior: 'smooth' });
                 }
             }, 300);
+        } else if (location.state?.scrollToStats) {
+            setTimeout(() => {
+                const statsSection = document.querySelector('.stats-section');
+                if (statsSection) {
+                    const headerHeight = 80;
+                    const sectionTop = statsSection.offsetTop - headerHeight;
+                    window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+                }
+            }, 300);
         } else if (location.state?.scrollToSection) {
             setTimeout(() => {
                 const sectionId = location.state.scrollToSection;

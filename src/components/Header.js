@@ -82,14 +82,14 @@ const Header = () => {
         <header className="header">
             <nav className="navbar">
                 <a href="/" className="logo" onClick={handleLogoClick}>
-                    <img src="/images/logo-2.png" alt="Rehabb Care" fetchpriority="high" />
+                    <img src="/images/logo.png" alt="Rehabb Care" fetchpriority="high" />
                 </a>
 
                 <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                     <li><a href="/" onClick={(e) => handleNavClick(e, 'home')}>HOME</a></li>
                     <li><a href="/#services" onClick={(e) => handleNavClick(e, 'services')}>WHAT WE TREAT</a></li>
                     <li><a href="/#team" onClick={(e) => handleNavClick(e, 'team')}>TEAM</a></li>
-                    <li><a href="/#contact" onClick={(e) => handleNavClick(e, 'contact')}>CONTACT</a></li>
+                    <li><a href="/#appointment" onClick={(e) => { e.preventDefault(); handleBookAppointment(); }}>CONTACT</a></li>
                     <li><Link to="/faq">FAQ</Link></li>
 
                     <div className="mobile-menu-buttons">

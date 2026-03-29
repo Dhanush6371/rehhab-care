@@ -1,10 +1,49 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    const handleNavClick = (e, sectionId) => {
+        e.preventDefault();
+
+        if (location.pathname !== '/') {
+            // Navigate to home page first, then scroll
+            navigate('/', { state: { scrollToSection: sectionId } });
+        } else {
+            if (sectionId === 'home') {
+                // Scroll to top for home
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    const headerHeight = 80;
+                    const sectionTop = section.offsetTop - headerHeight;
+                    window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+                }
+            }
+        }
+    };
+
+    const handleBookAppointment = (e) => {
+        e.preventDefault();
+
+        if (location.pathname !== '/') {
+            navigate('/', { state: { scrollToAppointment: true } });
+        } else {
+            const appointmentSection = document.querySelector('.appointment-section');
+            if (appointmentSection) {
+                const headerHeight = 80;
+                const sectionTop = appointmentSection.offsetTop - headerHeight;
+                window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+            }
+        }
     };
 
     return (
@@ -47,11 +86,11 @@ const Footer = () => {
                     <div className="footer-column">
                         <h3 className="footer-column-title">Quick Links</h3>
                         <ul className="footer-links">
-                            <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
-                            <li><a href="#services">What We Treat</a></li>
-                            <li><a href="#why-better">Our Process</a></li>
-                            <li><a href="#why-choose">Why Choose Us?</a></li>
-                            <li><Link to="/faq" onClick={scrollToTop}>FAQs</Link></li>
+                            <li><a href="/" onClick={(e) => handleNavClick(e, 'home')}>Home</a></li>
+                            <li><a href="/#services" onClick={(e) => handleNavClick(e, 'services')}>What We Treat</a></li>
+                            <li><a href="/#team" onClick={(e) => handleNavClick(e, 'team')}>Team</a></li>
+                            <li><a href="/#appointment" onClick={handleBookAppointment}>Contact</a></li>
+                            <li><Link to="/faq" onClick={scrollToTop}>FAQ</Link></li>
                         </ul>
                     </div>
 
@@ -59,13 +98,12 @@ const Footer = () => {
                     <div className="footer-column">
                         <h3 className="footer-column-title">Our Services</h3>
                         <ul className="footer-links">
-                            <li><Link to="/services/back-neck-pain" onClick={scrollToTop}>Back & Neck Pain</Link></li>
-                            <li><Link to="/services/knee-ankle-pain" onClick={scrollToTop}>Knee & Ankle Pain</Link></li>
-                            <li><Link to="/services/shoulder-elbow-pain" onClick={scrollToTop}>Shoulder & Elbow Rehab</Link></li>
-                            <li><Link to="/services/post-surgery" onClick={scrollToTop}>Post-Surgery Rehab</Link></li>
-                            <li><Link to="/services/post-operative" onClick={scrollToTop}>Paralysis / Stroke Rehab</Link></li>
-                            <li><Link to="/services/geriatric-care" onClick={scrollToTop}>Geriatric Physiotherapy</Link></li>
-                            <li><a href="#services">Sports Injury Rehab</a></li>
+                            <li><Link to="/services/back-neck-pain" onClick={scrollToTop}>Back & Neck Pain Physiotherapy</Link></li>
+                            <li><Link to="/services/knee-ankle-pain" onClick={scrollToTop}>Knee & Ankle Pain Physiotherapy</Link></li>
+                            <li><Link to="/services/shoulder-elbow-pain" onClick={scrollToTop}>Shoulder & Elbow Physiotherapy</Link></li>
+                            <li><Link to="/services/geriatric-care" onClick={scrollToTop}>Elderly & Senior Care</Link></li>
+                            <li><Link to="/services/post-surgery" onClick={scrollToTop}>Post-Surgery Physiotherapy</Link></li>
+                            <li><Link to="/services/post-operative" onClick={scrollToTop}>Stroke & Neuro Rehabilitation</Link></li>
                         </ul>
                     </div>
 
@@ -84,7 +122,7 @@ const Footer = () => {
                                 <svg className="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                                 </svg>
-                                <span>+91 96531 48777</span>
+                                <span>+91 965 2468 777</span>
                             </div>
                             <div className="contact-item">
                                 <svg className="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -110,7 +148,7 @@ const Footer = () => {
 
                 {/* Footer Bottom */}
                 <div className="footer-bottom">
-                    <p className="footer-copyright">© 2025 Rehab Care. All rights reserved.</p>
+                    <p className="footer-copyright">© 2026 Rehabb Care. All rights reserved.</p>
                     <div className="footer-legal">
                         <Link to="/privacy-policy">Privacy Policy</Link>
                         <Link to="/terms-of-use">Terms of Service</Link>
