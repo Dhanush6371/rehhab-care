@@ -614,10 +614,12 @@ body {
     letter-spacing: 0.3px;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     animation: slideInLeft 0.5s ease-out 0.2s both;
     font-family: 'Inter', sans-serif;
     white-space: nowrap;
+    line-height: 1;
 }
 
 .btn-book:hover {
