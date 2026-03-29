@@ -7,4 +7,4 @@ User-agent: *
 Allow: /
 
 # Specify the location of the sitemap for better indexing
-Sitemap: https://rehabb-care.netlify.app/sitemap.xml
+Sitemap: https://rehabbcare.netlify.app/sitemap.xml
