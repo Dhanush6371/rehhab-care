@@ -1,6 +1,6 @@
 .faq-section {
     background: var(--color-bg-secondary);
-    padding: 100px 40px;
+    padding: 100px 60px;
 }
 
 .faq-container {
@@ -10,9 +10,9 @@
 
 /* Header */
 .faq-header {
-    text-align: center;
+    text-align: left;
     max-width: 800px;
-    margin: 0 auto 72px;
+    margin: 0 0 72px 0;
 }
 
 .faq-title {
