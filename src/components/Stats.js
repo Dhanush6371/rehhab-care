@@ -106,7 +106,13 @@ const Stats = () => {
         setSubmitStatus({ loading: true, success: false, error: null });
 
         try {
-            await submitConsultation(formData);
+            // Send "-" if locality is empty
+            const submissionData = {
+                ...formData,
+                location: formData.location.trim() || '-'
+            };
+
+            await submitConsultation(submissionData);
 
             setSubmitStatus({ loading: false, success: true, error: null });
 

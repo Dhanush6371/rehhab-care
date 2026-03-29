@@ -12,7 +12,7 @@ body {
 .hero {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(135deg, #E6EBF2 0%, #F1F4F8 50%, #E9F1FB 100%);
+    background: #E6EBF2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,34 +23,11 @@ body {
 }
 
 .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:
-        radial-gradient(ellipse at 15% 25%, rgba(233, 241, 251, 0.6) 0%, transparent 45%),
-        radial-gradient(ellipse at 85% 35%, rgba(241, 244, 248, 0.5) 0%, transparent 50%),
-        radial-gradient(ellipse at 50% 75%, rgba(230, 235, 242, 0.4) 0%, transparent 55%);
-    z-index: 0;
-    pointer-events: none;
+    display: none;
 }
 
 .hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 180px;
-    background:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.4' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,112C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") no-repeat bottom center,
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23F8FAFC' fill-opacity='0.6' d='M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") no-repeat bottom center;
-    background-size: cover;
-    z-index: 0;
-    pointer-events: none;
-    opacity: 0.8;
+    display: none;
 }
 
 /* Bubble Background Animation */
@@ -305,19 +282,7 @@ body {
 }
 
 .body-diagram-wrapper::after {
-    content: '';
-    position: absolute;
-    bottom: -40px;
-    left: -20px;
-    right: -20px;
-    height: 80px;
-    background:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23F1F4F8' fill-opacity='0.5' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,112C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") no-repeat bottom center,
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23E9F1FB' fill-opacity='0.4' d='M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") no-repeat bottom center;
-    background-size: cover;
-    z-index: -1;
-    pointer-events: none;
-    opacity: 0.7;
+    display: none;
 }
 
 .body-diagram-image {
@@ -676,9 +641,9 @@ body {
 
 /* Person Image */
 .pain-image {
-    flex: 0 0 350px;
+    flex: 0 0 220px;
     height: 100%;
-    min-height: 400px;
+    min-height: 250px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -783,8 +748,8 @@ body {
     }
 
     .pain-image {
-        flex: 0 0 300px;
-        min-height: 350px;
+        flex: 0 0 240px;
+        min-height: 280px;
     }
 
     .body-diagram-wrapper {
