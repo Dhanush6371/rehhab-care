@@ -2,9 +2,21 @@
   command = "npm run build"
   publish = "build"
 
-# Enable image optimization
+# Cache control for HTML - no cache to always get latest version
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Cache control for images - shorter cache for easier updates
 [[headers]]
   for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, must-revalidate"
+
+# Cache control for JS and CSS - with versioning
+[[headers]]
+  for = "/static/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
