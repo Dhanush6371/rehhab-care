@@ -45,13 +45,15 @@ const Appointment = () => {
                 notes: ''
             });
 
-            // Redirect to WhatsApp after successful submission
+            // Redirect to WhatsApp after showing success message
             setTimeout(() => {
                 const phoneNumber = '919045678345';
                 const message = "I'm looking for expert Physiotherapy Services.";
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                window.location.href = whatsappUrl;
-            }, 2000);
+                window.open(whatsappUrl, '_blank');
+
+                setSubmitStatus({ loading: false, success: false, error: null });
+            }, 1500);
 
         } catch (error) {
             setSubmitStatus({
