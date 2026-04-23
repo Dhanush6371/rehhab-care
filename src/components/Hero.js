@@ -96,7 +96,7 @@ const Hero = () => {
                     {/* Left Side - Body Diagram */}
                     <div className="hero-left">
                         <LazySection animation="fade-right">
-                            <h2 className="hero-heading">Where Does It Hurt?</h2>
+                            <h1 className="hero-heading">Where Does It Hurt?</h1>
                             <div className="body-diagram-wrapper">
                                 <img
                                     src="/images/stamp-2.png"
