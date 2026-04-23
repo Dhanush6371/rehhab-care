@@ -9,6 +9,7 @@ const Partner = () => {
         phone: '',
         email: '',
         specialization: '',
+        yearsOfExperience: '',
         pincode: '',
         city: '',
         referralCode: ''
@@ -42,6 +43,7 @@ const Partner = () => {
                 phone: '',
                 email: '',
                 specialization: '',
+                yearsOfExperience: '',
                 pincode: '',
                 city: '',
                 referralCode: ''
@@ -193,6 +195,23 @@ const Partner = () => {
 
                             <div className="partner-form-row">
                                 <div className="partner-form-group">
+                                    <label className="partner-form-label">Years of Experience*</label>
+                                    <select
+                                        name="yearsOfExperience"
+                                        className="partner-form-input partner-form-select"
+                                        value={formData.yearsOfExperience}
+                                        onChange={handleChange}
+                                        required
+                                    >
+                                        <option value="">Select...</option>
+                                        <option value="0-1">0-1 years</option>
+                                        <option value="1-3">1-3 years</option>
+                                        <option value="3-5">3-5 years</option>
+                                        <option value="5-10">5-10 years</option>
+                                        <option value="10+">10+ years</option>
+                                    </select>
+                                </div>
+                                <div className="partner-form-group">
                                     <label className="partner-form-label">Pincode*</label>
                                     <input
                                         type="text"
@@ -203,6 +222,9 @@ const Partner = () => {
                                         required
                                     />
                                 </div>
+                            </div>
+
+                            <div className="partner-form-row">
                                 <div className="partner-form-group">
                                     <label className="partner-form-label">City*</label>
                                     <input
@@ -214,9 +236,6 @@ const Partner = () => {
                                         required
                                     />
                                 </div>
-                            </div>
-
-                            <div className="partner-form-row">
                                 <div className="partner-form-group">
                                     <label className="partner-form-label">Referral Code (Optional)</label>
                                     <input
