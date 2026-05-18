@@ -16,7 +16,7 @@ const WhatsAppFloat = () => {
     };
 
     const handleSend = () => {
-        const textToSend = message.trim() || "Hi, I'm looking for Home Physiotherapy in Hyderabad. What treatment options do you offer and what are the charges?";
+        const textToSend = message.trim() || "Hi, I'm looking for Home Physiotherapy in Hyderabad. What are the charges?";
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(textToSend)}`;
         window.open(url, '_blank');
         handleClose();

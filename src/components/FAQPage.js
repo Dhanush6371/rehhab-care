@@ -306,7 +306,7 @@ const FAQPage = () => {
                     </div>
                     <button
                         className="bottom-cta-btn"
-                        onClick={() => window.open('https://wa.me/919652468777?text=Hi%2C%20I%27m%20looking%20for%20Home%20Physiotherapy%20in%20Hyderabad.%20What%20treatment%20options%20do%20you%20offer%20and%20what%20are%20the%20charges%3F', '_blank')}
+                        onClick={() => window.open('https://wa.me/919652468777?text=Hi%2C%20I%27m%20looking%20for%20Home%20Physiotherapy%20in%20Hyderabad.%20What%20are%20the%20charges%3F', '_blank')}
                     >
                         WhatsApp us now
                     </button>
